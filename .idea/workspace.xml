@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/docker/development/nginx.docker" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/docker/development/nginx/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/docker/development/php-fpm.docker" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/docker/production/nginx.docker" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/docker/production/nginx/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/apache.docker" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/production/apache.docker" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,8 +111,16 @@
       <workItem from="1569316032807" duration="1284000" />
       <workItem from="1569344447959" duration="1558000" />
       <workItem from="1569357269015" duration="2709000" />
-      <workItem from="1569360679121" duration="985000" />
+      <workItem from="1569360679121" duration="1766000" />
     </task>
+    <task id="LOCAL-00001" summary="docker-compose">
+      <created>1569361707364</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569361707364</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,5 +138,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="docker-compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker-compose" />
   </component>
 </project>
