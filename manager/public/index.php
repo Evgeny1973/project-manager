@@ -10,7 +10,7 @@ echo '
     <title>App</title>
 </head>
 <body>
-
+<h3>Приваааа!</h3>
 </body>
 </html>';
 
