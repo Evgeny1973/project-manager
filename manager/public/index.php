@@ -1,17 +1,25 @@
 <?php
-echo '
-<!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>App</title>
-</head>
-<body>
-<h3>Приваааа!</h3>
-</body>
-</html>';
+use Slim\App;
+use Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ServerRequestInterface as Request;
 
+chdir(dirname(__DIR__));
+require 'vendor/autoload.php';
 
+http_response_code(500);
+
+(function () {
+    $app = new App([
+        'settings' => [
+            'addContentLengthHeader' => false,
+            'displayErrorDetails' => (bool)getenv('APP_DEBUG'),
+        ],
+    ]);
+    $app->get('/', function (Request $request, Response $response) {
+        return $response->withJson([
+            'name' => 'Manager',
+            'param' => $request->getQueryParam('param'),
+        ]);
+    });
+    $app->run();
+})();
