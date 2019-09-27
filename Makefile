@@ -1,4 +1,4 @@
-uo: docker up
+up: docker-up
 init: docker-down docker-pull docker-build docker-up
 
 docker-up:

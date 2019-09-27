@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="build-production">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+    <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/docker/development/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/nginx/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/docker/development/php-cli.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/php-cli.docker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/docker/development/php-fpm.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/php-fpm.docker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/docker/production/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/nginx/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/public/.htaccess" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +24,17 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="docker-compose" />
+        <entry key="$PROJECT_DIR$" value="slim-framework" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,6 +42,7 @@
   <component name="ProjectId" id="1RH0bnn9uEzKpBoXjeZL1F2dTxy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/docker/production" />
@@ -92,8 +106,19 @@
     <recent_temporary>
       <list>
         <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="PHP Script.index.php" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -116,7 +141,9 @@
       <workItem from="1569360679121" duration="1978000" />
       <workItem from="1569390357928" duration="5696000" />
       <workItem from="1569434504085" duration="144000" />
-      <workItem from="1569434674987" duration="2781000" />
+      <workItem from="1569434674987" duration="4886000" />
+      <workItem from="1569443878446" duration="3109000" />
+      <workItem from="1569582068442" duration="1803000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -146,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569432814955</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="build-production">
+      <created>1569441127397</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569441127397</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
