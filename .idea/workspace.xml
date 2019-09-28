@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/.env.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/bin/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +138,6 @@
       <path value="$PROJECT_DIR$/manager/vendor/symfony/asset" />
       <path value="$PROJECT_DIR$/manager/vendor/symfony/config" />
       <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/web-server-bundle" />
       <path value="$PROJECT_DIR$/manager/vendor/symfony/web-link" />
       <path value="$PROJECT_DIR$/manager/vendor/symfony/http-kernel" />
       <path value="$PROJECT_DIR$/manager/vendor/symfony/security-csrf" />
@@ -267,7 +259,7 @@
       <workItem from="1569582068442" duration="3833000" />
       <workItem from="1569591680895" duration="7611000" />
       <workItem from="1569619166153" duration="1258000" />
-      <workItem from="1569699837250" duration="247000" />
+      <workItem from="1569699837250" duration="1123000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -318,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569617234625</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Symfony">
+      <created>1569700135088</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1569700135088</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,6 +340,7 @@
     <MESSAGE value="docker-compose" />
     <MESSAGE value="build-production" />
     <MESSAGE value="slim" />
-    <option name="LAST_COMMIT_MESSAGE" value="slim" />
+    <MESSAGE value="Symfony" />
+    <option name="LAST_COMMIT_MESSAGE" value="Symfony" />
   </component>
 </project>
