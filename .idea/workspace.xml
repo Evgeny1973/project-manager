@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="slim">
-      <change afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/docker/production/php/default.ini" afterDir="false" />
+    <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manager/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/.env.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/php-cli.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/php-cli.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/production/php-cli.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/php-cli.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/bin/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/public/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +22,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/manager/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
@@ -38,6 +43,115 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/manager/vendor/easycorp/easy-log-handler" />
+      <path value="$PROJECT_DIR$/manager/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/manager/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/manager/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/manager/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/manager/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/manager/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/manager/vendor/composer" />
+      <path value="$PROJECT_DIR$/manager/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/manager/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/manager/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/manager/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/manager/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/manager/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/serializer-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/test-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/debug-pack" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1RH0bnn9uEzKpBoXjeZL1F2dTxy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -47,18 +161,18 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/docker/production" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager" />
-      <recent name="$PROJECT_DIR$/manager/docker/production" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/docker/production" />
       <recent name="$PROJECT_DIR$/manager/docker/production/nginx" />
       <recent name="$PROJECT_DIR$/manager/docker/development" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager" />
+      <recent name="$PROJECT_DIR$/manager/docker/production" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -99,12 +213,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Makefile.manager-init">
+    <configuration name="manager-init" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="manager-init" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/manager/public/index.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Makefile.manager-init" />
         <item itemvalue="PHP Script.index.php" />
         <item itemvalue="PHP Script.index.php" />
       </list>
@@ -144,7 +265,9 @@
       <workItem from="1569434674987" duration="4886000" />
       <workItem from="1569443878446" duration="3109000" />
       <workItem from="1569582068442" duration="3833000" />
-      <workItem from="1569591680895" duration="6410000" />
+      <workItem from="1569591680895" duration="7611000" />
+      <workItem from="1569619166153" duration="1258000" />
+      <workItem from="1569699837250" duration="247000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -188,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569584820653</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="slim">
+      <created>1569617234625</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1569617234625</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

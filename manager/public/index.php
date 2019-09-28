@@ -1,25 +1,27 @@
 <?php
-use Slim\App;
-use Psr\Http\Message\ResponseInterface as Response;
-use Psr\Http\Message\ServerRequestInterface as Request;
 
-chdir(dirname(__DIR__));
-require 'vendor/autoload.php';
+use App\Kernel;
+use Symfony\Component\Debug\Debug;
+use Symfony\Component\HttpFoundation\Request;
 
-http_response_code(500);
+require dirname(__DIR__).'/config/bootstrap.php';
 
-(function () {
-    $app = new App([
-        'settings' => [
-            'addContentLengthHeader' => false,
-            'displayErrorDetails' => (bool)getenv('APP_DEBUG'),
-        ],
-    ]);
-    $app->get('/', function (Request $request, Response $response) {
-        return $response->withJson([
-            'name' => 'Manager',
-            'param' => $request->getQueryParam('param'),
-        ]);
-    });
-    $app->run();
-})();
+if ($_SERVER['APP_DEBUG']) {
+    umask(0000);
+
+    Debug::enable();
+}
+
+if ($trustedProxies = $_SERVER['TRUSTED_PROXIES'] ?? $_ENV['TRUSTED_PROXIES'] ?? false) {
+    Request::setTrustedProxies(explode(',', $trustedProxies), Request::HEADER_X_FORWARDED_ALL ^ Request::HEADER_X_FORWARDED_HOST);
+}
+
+if ($trustedHosts = $_SERVER['TRUSTED_HOSTS'] ?? $_ENV['TRUSTED_HOSTS'] ?? false) {
+    Request::setTrustedHosts([$trustedHosts]);
+}
+
+$kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);
+$request = Request::createFromGlobals();
+$response = $kernel->handle($request);
+$response->send();
+$kernel->terminate($request, $response);
