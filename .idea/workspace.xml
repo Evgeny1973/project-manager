@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/HelloController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/production/php-cli.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/php-cli.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +154,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/docker/production" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -260,7 +261,7 @@
       <workItem from="1569591680895" duration="7611000" />
       <workItem from="1569619166153" duration="1258000" />
       <workItem from="1569699837250" duration="2404000" />
-      <workItem from="1569773296554" duration="3578000" />
+      <workItem from="1569773296554" duration="8358000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -325,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569701096822</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Symfony-environment">
+      <created>1569781321247</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1569781321247</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,6 +357,7 @@
     <MESSAGE value="build-production" />
     <MESSAGE value="slim" />
     <MESSAGE value="Symfony" />
-    <option name="LAST_COMMIT_MESSAGE" value="Symfony" />
+    <MESSAGE value="Symfony-environment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Symfony-environment" />
   </component>
 </project>
