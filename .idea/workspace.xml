@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/HelloController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -261,7 +256,8 @@
       <workItem from="1569591680895" duration="7611000" />
       <workItem from="1569619166153" duration="1258000" />
       <workItem from="1569699837250" duration="2404000" />
-      <workItem from="1569773296554" duration="8358000" />
+      <workItem from="1569773296554" duration="8461000" />
+      <workItem from="1569921540017" duration="1320000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -333,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569781321247</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Postgres">
+      <created>1569789876829</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1569789876829</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,6 +361,7 @@
     <MESSAGE value="slim" />
     <MESSAGE value="Symfony" />
     <MESSAGE value="Symfony-environment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Symfony-environment" />
+    <MESSAGE value="Postgres" />
+    <option name="LAST_COMMIT_MESSAGE" value="Postgres" />
   </component>
 </project>
