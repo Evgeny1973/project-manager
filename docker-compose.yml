@@ -14,23 +14,23 @@ services:
     build:
       context: ./manager/docker/development
       dockerfile: php-fpm.docker
-    environment:
-      APP_DEBUG: 1
     volumes:
       - ./manager:/app
+    depends_on:
+      - manager-postgres
   manager-php-cli:
     build:
       context: ./manager/docker/development
       dockerfile: php-cli.docker
-    environment:
-      APP_DEBUG: 1
     volumes:
       - ./manager:/app
       - composer:/root/.composer/cache
+    depends_on:
+      - manager-postgres
   manager-postgres:
-    image: postgres:11.2-alpine
+    image: postgres:11.5-alpine
     volumes:
-      - manager-postgres:/var/lib/postgressl/data
+      - ./manager/docker/development/bd:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: app
       POSTGRES_PASSWORD: secret
