@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/twig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/docker/development/php-cli.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/php-cli.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/php-fpm.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/php-fpm.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/HelloController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/app/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Entity/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Migrations/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Repository/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/home.html.twig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,117 +43,118 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="slim" />
+        <entry key="$PROJECT_DIR$" value="Posts" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-intl-idn" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-php73" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/monolog-bridge" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/browser-kit" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/finder" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/dbal" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/migrations" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/common" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/inflector" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-migrations-bundle" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/event-manager" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/lexer" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/orm" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/cache" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/reflection" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/collections" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-bundle" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/persistence" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-cache-bundle" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/annotations" />
-      <path value="$PROJECT_DIR$/manager/vendor/easycorp/easy-log-handler" />
-      <path value="$PROJECT_DIR$/manager/vendor/ocramius/package-versions" />
-      <path value="$PROJECT_DIR$/manager/vendor/ocramius/proxy-manager" />
-      <path value="$PROJECT_DIR$/manager/vendor/webmozart/assert" />
-      <path value="$PROJECT_DIR$/manager/vendor/swiftmailer/swiftmailer" />
-      <path value="$PROJECT_DIR$/manager/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/manager/vendor/phpdocumentor/type-resolver" />
-      <path value="$PROJECT_DIR$/manager/vendor/phpdocumentor/reflection-docblock" />
-      <path value="$PROJECT_DIR$/manager/vendor/zendframework/zend-eventmanager" />
-      <path value="$PROJECT_DIR$/manager/vendor/zendframework/zend-code" />
-      <path value="$PROJECT_DIR$/manager/vendor/composer" />
-      <path value="$PROJECT_DIR$/manager/vendor/fig/link-util" />
-      <path value="$PROJECT_DIR$/manager/vendor/psr/link" />
       <path value="$PROJECT_DIR$/manager/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/manager/vendor/psr/cache" />
-      <path value="$PROJECT_DIR$/manager/vendor/psr/container" />
-      <path value="$PROJECT_DIR$/manager/vendor/twig/twig" />
-      <path value="$PROJECT_DIR$/manager/vendor/jdorn/sql-formatter" />
-      <path value="$PROJECT_DIR$/manager/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/manager/vendor/sensio/framework-extra-bundle" />
-      <path value="$PROJECT_DIR$/manager/vendor/egulias/email-validator" />
-      <path value="$PROJECT_DIR$/manager/vendor/monolog/monolog" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/debug-bundle" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/dotenv" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/var-exporter" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/debug" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/cache-contracts" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/property-access" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/property-info" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/phpunit-bridge" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/swiftmailer-bundle" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/orm-pack" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/expression-language" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-client-contracts" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/yaml" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/dependency-injection" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/validator" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/mime" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/web-profiler-bundle" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/serializer-pack" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/event-dispatcher-contracts" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/inflector" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-core" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/event-dispatcher" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/routing" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/css-selector" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/maker-bundle" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/stopwatch" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/doctrine-bridge" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/translation-contracts" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-bundle" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/intl" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/flex" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/twig-bundle" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/var-dumper" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/monolog-bundle" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/filesystem" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/process" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/form" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/profiler-pack" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/translation" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-intl-icu" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-http" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/framework-bundle" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/options-resolver" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/dom-crawler" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/service-contracts" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-foundation" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/twig-bridge" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/serializer" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-client" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-guard" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/cache" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/test-pack" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/asset" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/config" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/web-link" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-kernel" />
-      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/manager/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/manager/vendor/composer" />
+      <path value="$PROJECT_DIR$/manager/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/manager/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/manager/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/manager/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/manager/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/manager/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/manager/vendor/easycorp/easy-log-handler" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/manager/vendor/symfony/debug-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/test-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/serializer-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/manager/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/manager/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/manager/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/manager/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/cache" />
     </include_path>
   </component>
   <component name="ProjectId" id="1RH0bnn9uEzKpBoXjeZL1F2dTxy" />
@@ -269,6 +277,9 @@
       <workItem from="1569921540017" duration="9503000" />
       <workItem from="1569932366637" duration="9236000" />
       <workItem from="1569955658298" duration="3433000" />
+      <workItem from="1569999730685" duration="349000" />
+      <workItem from="1570034292269" duration="4746000" />
+      <workItem from="1570093823598" duration="4739000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -354,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569923045661</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Posts">
+      <created>1569999888647</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1569999888647</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,6 +398,7 @@
     <MESSAGE value="Symfony" />
     <MESSAGE value="Symfony-environment" />
     <MESSAGE value="Postgres" />
-    <option name="LAST_COMMIT_MESSAGE" value="Postgres" />
+    <MESSAGE value="Posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Posts" />
   </component>
 </project>
