@@ -4,30 +4,35 @@
 namespace App\Model\User\UseCase\SignUp\Request;
 
 
+use App\Model\User\Entity\Email;
 use App\Model\User\Entity\User;
-use Doctrine\ORM\EntityManagerInterface;
+use App\Model\User\Entity\UserRepository;
+use Ramsey\Uuid\Uuid;
 
 class Handler
 {
     /**
-     * @var EntityManagerInterface
+     * @var UserRepository
      */
-    private $em;
+    private $users;
+    /**
+     * @var PasswordHasher
+     */
+    private $hasher;
+    /**
+     * @var Flusher
+     */
+    private $flusher;
 
-    public function __construct(EntityManagerInterface $entityManager)
+    public function __construct(UserRepository $users, PasswordHasher $hasher, Flusher $flusher)
     {
-        $this->em = $entityManager;
+        $this->users = $users;
+        $this->hasher = $hasher;
+        $this->flusher = $flusher;
     }
 
     public function handle(Command $command): void
     {
-        $email = mb_strtolower($command->email);
-
-        if ($this->em->getRepository(User::class)->findOneBy(['email' => $email])) {
-            throw new \DomainException('Такой пользователь уже есть');
-        }
-        $user = new User($email, password_hash($command->password, PASSWORD_ARGON2I));
-        $this->em->persist($user);
-        $this->em->flush();
+        $email = new Email($command->email);
     }
 }
