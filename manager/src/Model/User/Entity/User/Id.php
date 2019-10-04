@@ -1,12 +1,13 @@
 <?php
 
 
-namespace App\Model\User\Entity;
+namespace App\Model\User\Entity\User;
 
 
+use Ramsey\Uuid\Uuid;
 use Webmozart\Assert\Assert;
 
-class Email
+class Id
 {
     /**
      * @var string
@@ -16,10 +17,12 @@ class Email
     public function __construct(string $value)
     {
         Assert::notEmpty($value);
-        if (!filter_var($value, FILTER_VALIDATE_EMAIL)) {
-            throw new \InvalidArgumentException('Некорректный email');
-        }
-        $this->value = mb_strtolower($value);
+        $this->value = $value;
+    }
+
+    public static function next(): self
+    {
+        return new self(Uuid::uuid4()->toString());
     }
 
     public function getValue(): string

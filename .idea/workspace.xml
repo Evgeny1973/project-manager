@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/.env.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/Email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/Id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Flusher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Service/ConfirmTokenSender.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Service/ConfirmTokinizer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Service/PasswordHasher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Confirm/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Confirm/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/ConfirmTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/Email.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/Id.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Id.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/UserRepository.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -187,21 +187,22 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/docker/production" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/src/Model/User/Entity/User" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/src/Model/User/Entity/User" />
+      <recent name="$PROJECT_DIR$/manager" />
+      <recent name="$PROJECT_DIR$/manager/docker/production" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/docker/production" />
       <recent name="$PROJECT_DIR$/manager/docker/production/nginx" />
       <recent name="$PROJECT_DIR$/manager/docker/development" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager" />
-      <recent name="$PROJECT_DIR$/manager/docker/production" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -305,7 +306,7 @@
       <workItem from="1570034292269" duration="4746000" />
       <workItem from="1570093823598" duration="9071000" />
       <workItem from="1570137140453" duration="2054000" />
-      <workItem from="1570167047598" duration="9212000" />
+      <workItem from="1570167047598" duration="17431000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -412,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570167430808</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Model User">
+      <created>1570177851986</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1570177851986</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,6 +448,7 @@
     <MESSAGE value="Postgres" />
     <MESSAGE value="Posts" />
     <MESSAGE value="Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model" />
+    <MESSAGE value="Model User" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model User" />
   </component>
 </project>
