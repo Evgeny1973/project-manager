@@ -107,7 +107,35 @@
       <path value="$PROJECT_DIR$/manager/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/manager/vendor/psr/container" />
       <path value="$PROJECT_DIR$/manager/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/manager/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/manager/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/manager/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/manager/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/manager/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/manager/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/manager/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/manager/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/manager/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/manager/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/manager/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/manager/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/manager/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/manager/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/manager/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/manager/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/manager/vendor/myclabs/deep-copy" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="$PROJECT_DIR$/manager/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
 </project>
