@@ -2,10 +2,14 @@
 
 namespace App\Model\User\Entity\User;
 
+use Doctrine\Common\Collections\ArrayCollection;
+
 class User
 {
     private const STATUS_WAIT = 'wait';
     private const STATUS_ACTIVE = 'active';
+    private const STATUS_NEW = 'new';
+
     /**
      * @var Id
      */
@@ -43,10 +47,24 @@ class User
      */
     private $status;
 
-    public function __construct(Id $id, \DateTimeImmutable $date, Email $email, string $hash, string $token)
+    /**
+     * @var Network[] | ArrayCollection
+     */
+    private $networks;
+
+    public function __construct(Id $id, \DateTimeImmutable $date)
     {
         $this->id = $id;
         $this->date = $date;
+        $this->status = self::STATUS_NEW;
+        $this->networks = new ArrayCollection;
+    }
+
+    public function signUpByEmail(Email $email, string $hash, string $token): void
+    {
+        if (!$this->isNew()) {
+            throw new \DomainException('Пользователь уже зарегистрирован.');
+        }
         $this->email = $email;
         $this->passwordhash = $hash;
         $this->confirmToken = $token;
@@ -60,6 +78,30 @@ class User
         }
         $this->status = self::STATUS_ACTIVE;
         $this->confirmToken = null;
+    }
+
+    public function signUpByNetwork(string $network, string $identity): void
+    {
+        if (!$this->isNew()) {
+            throw new \DomainException('Пользователь уже зарегистрирован.');
+        }
+        $this->attachNetwork($network, $identity);
+        $this->status = self::STATUS_ACTIVE;
+    }
+
+    private function attachNetwork(string $network, string $identity): void
+    {
+        foreach ($this->networks as $existing) {
+            if ($existing->isForNetwork() === $network) {
+                throw new \DomainException('Сеть уже привязана.');
+            }
+        }
+        $this->networks->add(new Network($this, $network, $identity));
+    }
+    
+    public function isNew(): bool
+    {
+        return $this->status === self::STATUS_NEW;
     }
 
     public function isWait(): bool
@@ -104,5 +146,12 @@ class User
         return $this->confirmToken;
     }
 
+    /**
+     * @return Network[]
+     */
+    public function getNetworks(): array
+    {
+        return $this->networks->toArray();
+    }
 
 }
