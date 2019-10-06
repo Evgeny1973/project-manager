@@ -12,7 +12,7 @@ class RequestTest extends TestCase
     {
         $now = new \DateTimeImmutable();
         $token = new ResetToken('token', $now->modify('+1 day'));
-        $user = (new UserBuilder())->viaEmail()->build();
+        $user = (new UserBuilder())->viaEmail()->confirmed()->build();
         $user->requestPasswordReset($token, $now);
         self::assertNotNull($user->getResetToken());
     }
@@ -21,7 +21,7 @@ class RequestTest extends TestCase
     {
         $now = new \DateTimeImmutable();
         $token = new ResetToken('token', $now->modify('+1 day'));
-        $user = (new UserBuilder())->viaEmail()->build();
+        $user = (new UserBuilder())->viaEmail()->confirmed()->build();
         $user->requestPasswordReset($token, $now);
         $this->expectExceptionMessage('Сброс пароля уже запрошен.');
         $user->requestPasswordReset($token, $now);
@@ -30,7 +30,7 @@ class RequestTest extends TestCase
     public function testExpired(): void
     {
         $now = new \DateTimeImmutable();
-        $user = (new UserBuilder())->viaEmail()->build();
+        $user = (new UserBuilder())->viaEmail()->confirmed()->build();
         $token1 = new ResetToken('token', $now->modify('+1 day'));
         $user->requestPasswordReset($token1, $now);
         self::assertEquals($token1, $user->getResetToken());
