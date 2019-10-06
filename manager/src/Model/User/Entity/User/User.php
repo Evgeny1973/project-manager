@@ -43,6 +43,10 @@ class User
     private $confirmToken;
 
     /**
+     * @var ResetToken | null
+     */
+    private $resetToken;
+    /**
      * @var string
      */
     private $status;
@@ -87,6 +91,30 @@ class User
         }
         $this->attachNetwork($network, $identity);
         $this->status = self::STATUS_ACTIVE;
+    }
+
+    public function requestPasswordReset(ResetToken $token, \DateTimeImmutable $date): void
+    {
+        if (!$this->isActive()) {
+            throw new \DomainException('Пользователь не активирован.');
+        }
+        if (!$this->email) {
+            throw new \DomainException('Email не задан.');
+        }
+        if ($this->resetToken && !$this->resetToken->isExpiriesTo($date)) {
+            throw new \DomainException('Сброс пароля уже запрошен.');
+        }
+        $this->resetToken = $token;
+    }
+
+    public function passwordReset(\DateTimeImmutable $date, string $hash): void
+    {
+        if (!$this->resetToken) {
+            throw new \DomainException('Сброс пароля не запрошен.');
+        }
+        if ($this->resetToken->isExpiriesTo($date)) {
+            throw new \DomainException('Токен сброса пароля просрочен.');
+        }
     }
 
     private function attachNetwork(string $network, string $identity): void
@@ -154,4 +182,8 @@ class User
         return $this->networks->toArray();
     }
 
+    public function getResetToken(): ?ResetToken
+    {
+        return $this->resetToken;
+    }
 }

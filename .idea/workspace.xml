@@ -2,24 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Network.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/CreateTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/Network/AuthTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/ResetToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Service/ResetTokenSender.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Service/ResetTokenizer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Reset/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Reset/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Builder/User/UserBuilder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/Reset/RequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/Reset/ResetTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/base/13117/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/base/13117/pg_internal.init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/base/16384/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/base/16384/pg_internal.init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/global/pg_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/global/pg_internal.init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/pg_notify/0000" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/pg_notify/0000" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/pg_stat/db_0.stat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/pg_stat/db_13117.stat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/pg_stat/db_16384.stat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/pg_stat/global.stat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/Network/AuthTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/Network/AuthTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/ConfirmTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/ConfirmTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" afterDir="false" />
     </list>
@@ -192,23 +188,23 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/src/Model/User/Entity/User" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/docker/production" />
-      <recent name="$PROJECT_DIR$/manager/docker/production/nginx" />
-      <recent name="$PROJECT_DIR$/manager/docker/development" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request" />
       <recent name="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth" />
       <recent name="$PROJECT_DIR$/manager/src/Model/User/Entity/User" />
       <recent name="$PROJECT_DIR$/manager" />
       <recent name="$PROJECT_DIR$/manager/docker/production" />
-      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/docker/production" />
+      <recent name="$PROJECT_DIR$/manager/docker/production/nginx" />
+      <recent name="$PROJECT_DIR$/manager/docker/development" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -315,7 +311,8 @@
       <workItem from="1570167047598" duration="18212000" />
       <workItem from="1570264216323" duration="598000" />
       <workItem from="1570301630777" duration="6316000" />
-      <workItem from="1570309189768" duration="31000" />
+      <workItem from="1570309189768" duration="1453000" />
+      <workItem from="1570367731761" duration="11108000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -436,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570196591313</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="User registration via networks">
+      <created>1570309263117</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1570309263117</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,6 +470,7 @@
     <MESSAGE value="Model" />
     <MESSAGE value="Model User" />
     <MESSAGE value="User registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="User registration" />
+    <MESSAGE value="User registration via networks" />
+    <option name="LAST_COMMIT_MESSAGE" value="User registration via networks" />
   </component>
 </project>
