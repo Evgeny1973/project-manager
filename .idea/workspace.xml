@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/Reset/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/Reset/RequestTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request/Handler.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -298,7 +301,9 @@
       <workItem from="1570264216323" duration="598000" />
       <workItem from="1570301630777" duration="6316000" />
       <workItem from="1570309189768" duration="1453000" />
-      <workItem from="1570367731761" duration="12082000" />
+      <workItem from="1570367731761" duration="12147000" />
+      <workItem from="1570521189099" duration="597000" />
+      <workItem from="1570542591194" duration="971000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -433,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570393625628</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Model User ready">
+      <created>1570394626596</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1570394626596</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,6 +477,8 @@
     <MESSAGE value="User registration" />
     <MESSAGE value="User registration via networks" />
     <MESSAGE value="User password reset" />
-    <option name="LAST_COMMIT_MESSAGE" value="User password reset" />
+    <MESSAGE value="User ready" />
+    <MESSAGE value="Model User ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model User ready" />
   </component>
 </project>

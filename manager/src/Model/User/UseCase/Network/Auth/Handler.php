@@ -1,13 +1,14 @@
 <?php
 
 
-namespace App\Model\User\UseCase\Network;
+namespace App\Model\User\UseCase\Network\Auth;
 
 
 use App\Model\Flusher;
 use App\Model\User\Entity\User\Id;
 use App\Model\User\Entity\User\User;
 use App\Model\User\Entity\User\UserRepository;
+use App\Model\User\UseCase\Network\Auth\Command;
 
 class Handler
 {

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Model\User\UseCase\Network;
+namespace App\Model\User\UseCase\Network\Auth;
 
 
 class Command
