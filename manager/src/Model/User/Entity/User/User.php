@@ -52,6 +52,11 @@ class User
     private $status;
 
     /**
+     * @var Role
+     */
+    private $role;
+
+    /**
      * @var Network[] | ArrayCollection
      */
     private $networks;
@@ -60,6 +65,7 @@ class User
     {
         $this->id = $id;
         $this->date = $date;
+        $this->role = Role::user();
         $this->networks = new ArrayCollection;
     }
 
@@ -117,13 +123,21 @@ class User
     private function attachNetwork(string $network, string $identity): void
     {
         foreach ($this->networks as $existing) {
-            if ($existing->isForNetwork() === $network) {
+            if ($existing->isForNetwork($network) === $network) {
                 throw new \DomainException('Сеть уже привязана.');
             }
         }
         $this->networks->add(new Network($this, $network, $identity));
     }
-    
+
+    public function changeRole(Role $role): void
+    {
+        if ($this->role->isEqual($role)) {
+            throw new \DomainException('Эта роль уже задана.');
+        }
+        $this->role = $role;
+    }
+
     public function isNew(): bool
     {
         return $this->status === self::STATUS_NEW;
@@ -182,5 +196,13 @@ class User
     public function getResetToken(): ?ResetToken
     {
         return $this->resetToken;
+    }
+
+    /**
+     * @return Role
+     */
+    public function getRole(): Role
+    {
+        return $this->role;
     }
 }

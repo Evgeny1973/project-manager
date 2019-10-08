@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php-docker-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Role/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Role/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/RoleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/base/13117/pg_internal.init" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/base/16384/pg_internal.init" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/global/pg_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/global/pg_internal.init" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Builder/User/UserBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Builder/User/UserBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/Network/AuthTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/Network/AuthTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/UserRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +43,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="project-manager_manager-php-cli:latest">
     <include_path>
       <path value="$PROJECT_DIR$/manager/vendor/psr/log" />
       <path value="$PROJECT_DIR$/manager/vendor/psr/link" />
@@ -241,11 +239,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Makefile.manager-init">
+  <component name="RunManager" selected="PHPUnit.RoleTest.testSuccess">
     <configuration name="manager-init" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/Makefile" target="manager-init" workingDirectory="" arguments="">
         <envs />
       </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="RoleTest.testSuccess" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\Unit\Model\User\Entity\User\RoleTest" file="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/RoleTest.php" method="testSuccess" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/manager/public/index.php">
@@ -253,6 +255,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.RoleTest.testSuccess" />
         <item itemvalue="Makefile.manager-init" />
         <item itemvalue="PHP Script.index.php" />
         <item itemvalue="PHP Script.index.php" />
@@ -310,7 +313,7 @@
       <workItem from="1570309189768" duration="1453000" />
       <workItem from="1570367731761" duration="12147000" />
       <workItem from="1570521189099" duration="597000" />
-      <workItem from="1570542591194" duration="4528000" />
+      <workItem from="1570542591194" duration="8943000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -459,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570544097727</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Model User change to static">
+      <created>1570559229130</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1570559229130</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,6 +503,7 @@
     <MESSAGE value="User password reset" />
     <MESSAGE value="User ready" />
     <MESSAGE value="Model User ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model User ready" />
+    <MESSAGE value="Model User change to static" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model User change to static" />
   </component>
 </project>
