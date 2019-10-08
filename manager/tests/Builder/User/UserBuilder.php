@@ -14,9 +14,9 @@ class UserBuilder
     private $email;
     private $hash;
     private $token;
+    private $confirmed;
     private $network;
     private $identity;
-    private $confirmed;
 
     public function __construct()
     {
@@ -33,6 +33,13 @@ class UserBuilder
         return $clone;
     }
 
+    public function confirmed(): self
+    {
+        $clone = clone $this;
+        $clone->confirmed = true;
+        return $clone;
+    }
+
     public function viaNetwork(string $network = null, string $identity = null): self
     {
         $clone = clone $this;
@@ -41,28 +48,29 @@ class UserBuilder
         return $clone;
     }
 
-    public function confirmed(): self
-    {
-        $clone = clone $this;
-        $clone->confirmed = true;
-        return $clone;
-    }
-
     public function build(): User
     {
-        $user = new User($this->id, $this->date);
-
         if ($this->email) {
-            $user->signUpByEmail($this->email, $this->hash, $this->token);
+            $user = User::signUpByEmail(
+                $this->id,
+                $this->date,
+                $this->email,
+                $this->hash,
+                $this->token
+            );
             if ($this->confirmed) {
                 $user->confirmSignUp();
             }
+            return $user;
         }
-
         if ($this->network) {
-            $user->signUpByNetwork($this->network, $this->identity);
+            return User::signUpByNetwork(
+                $this->id,
+                $this->date,
+                $this->network,
+                $this->identity
+            );
         }
-
-        return $user;
+        throw new \BadMethodCallException('Укажите метод регистрации.');
     }
 }

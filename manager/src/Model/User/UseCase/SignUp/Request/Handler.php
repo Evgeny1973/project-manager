@@ -58,7 +58,7 @@ class Handler
             throw new \DomainException('Такой пользователь уже зарегистрирован.');
         }
 
-        $user = new User(
+        $user = User::signUpByEmail(
             Id::next(),
             new \DateTimeImmutable,
             new Email($email),

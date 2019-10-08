@@ -56,23 +56,29 @@ class User
      */
     private $networks;
 
-    public function __construct(Id $id, \DateTimeImmutable $date)
+    private function __construct(Id $id, \DateTimeImmutable $date)
     {
         $this->id = $id;
         $this->date = $date;
-        $this->status = self::STATUS_NEW;
         $this->networks = new ArrayCollection;
     }
 
-    public function signUpByEmail(Email $email, string $hash, string $token): void
+    public static function signUpByEmail(Id $id, \DateTimeImmutable $date, Email $email, string $hash, string $token): self
     {
-        if (!$this->isNew()) {
-            throw new \DomainException('Пользователь уже зарегистрирован.');
-        }
-        $this->email = $email;
-        $this->passwordhash = $hash;
-        $this->confirmToken = $token;
-        $this->status = self::STATUS_WAIT;
+        $user = new self($id, $date);
+        $user->email = $email;
+        $user->passwordhash = $hash;
+        $user->confirmToken = $token;
+        $user->status = self::STATUS_WAIT;
+        return $user;
+    }
+
+    public static function signUpByNetwork(Id $id, \DateTimeImmutable $date, string $network, string $identity): self
+    {
+        $user = new self($id, $date);
+        $user->attachNetwork($network, $identity);
+        $user->status = self::STATUS_ACTIVE;
+        return $user;
     }
 
     public function confirmSignUp(): void
@@ -82,15 +88,6 @@ class User
         }
         $this->status = self::STATUS_ACTIVE;
         $this->confirmToken = null;
-    }
-
-    public function signUpByNetwork(string $network, string $identity): void
-    {
-        if (!$this->isNew()) {
-            throw new \DomainException('Пользователь уже зарегистрирован.');
-        }
-        $this->attachNetwork($network, $identity);
-        $this->status = self::STATUS_ACTIVE;
     }
 
     public function requestPasswordReset(ResetToken $token, \DateTimeImmutable $date): void
