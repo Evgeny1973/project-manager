@@ -3,7 +3,16 @@
 namespace App\Model\User\Entity\User;
 
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * @ORM\Entity
+ * @ORM\HasLifecycleCallbacks
+ * @ORM\Table(name="user_users", uniqueConstraints={
+ * @ORM\UniqueConstraint(columns={"email"}),
+ * @ORM\UniqueConstraint(columns={"reset_token_token"})
+ * })
+ */
 class User
 {
     private const STATUS_WAIT = 'wait';
@@ -12,10 +21,13 @@ class User
 
     /**
      * @var Id
+     * @ORM\Column(type="user_user_id")
+     * @ORM\Id
      */
     private $id;
     /**
      * @var \DateTimeImmutable
+     * @ORM\Column(type="datetime_immutable")
      */
     private $date;
 
@@ -29,30 +41,37 @@ class User
 
     /**
      * @var Email
+     * @ORM\Column(type="user_user_email", nullable=true)
      */
     private $email;
 
     /**
-     * @var string
+     * @var string | null
+     * @ORM\Column(type="string", nullable=true, name="password_hash")
      */
-    private $passwordhash;
+    private $passwordHash;
 
     /**
      * @var string | null
+     * @ORM\Column(type="string", nullable=true, name="confirm_token")
      */
     private $confirmToken;
 
     /**
      * @var ResetToken | null
+     * @ORM\Embedded(class="ResetToken", columnPrefix="reset_token_")
      */
     private $resetToken;
+
     /**
      * @var string
+     * @ORM\Column(type="string", length=16)
      */
     private $status;
 
     /**
      * @var Role
+     * @ORM\Column(type="user_user_role")
      */
     private $role;
 
@@ -73,7 +92,7 @@ class User
     {
         $user = new self($id, $date);
         $user->email = $email;
-        $user->passwordhash = $hash;
+        $user->passwordHash = $hash;
         $user->confirmToken = $token;
         $user->status = self::STATUS_WAIT;
         return $user;
@@ -174,7 +193,7 @@ class User
      */
     public function getPasswordHash(): string
     {
-        return $this->passwordhash;
+        return $this->passwordHash;
     }
 
     /**
@@ -204,5 +223,15 @@ class User
     public function getRole(): Role
     {
         return $this->role;
+    }
+
+    /**
+     * @ORM\PostLoad
+     */
+    public function checkEmbeds()
+    {
+        if ($this->resetToken->isEmpty()) {
+            $this->resetToken = null;
+        }
     }
 }

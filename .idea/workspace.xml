@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php-docker-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Role/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Role/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/RoleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/evgeny.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/docker/development/bd/pg_stat_tmp/global.stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/docker/development/bd/postmaster.pid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/EmailType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/IdType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/RoleType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Id.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Id.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Network.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Network.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/ResetToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/ResetToken.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -313,7 +315,9 @@
       <workItem from="1570309189768" duration="1453000" />
       <workItem from="1570367731761" duration="12147000" />
       <workItem from="1570521189099" duration="597000" />
-      <workItem from="1570542591194" duration="8943000" />
+      <workItem from="1570542591194" duration="9449000" />
+      <workItem from="1570626941188" duration="1481000" />
+      <workItem from="1570631887556" duration="7237000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -469,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570559229130</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Model User adding roles">
+      <created>1570567938995</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1570567938995</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,6 +515,7 @@
     <MESSAGE value="User ready" />
     <MESSAGE value="Model User ready" />
     <MESSAGE value="Model User change to static" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model User change to static" />
+    <MESSAGE value="Model User adding roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model User adding roles" />
   </component>
 </project>
