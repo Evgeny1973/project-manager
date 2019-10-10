@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/evgeny.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/docker/development/bd/pg_stat_tmp/global.stat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/docker/development/bd/postmaster.pid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/EmailType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/IdType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/RoleType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Id.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Id.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/global/pg_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/pg_stat_tmp/global.stat" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/pg_stat_tmp/global.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/pg_wal/000000010000000000000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/postmaster.pid" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/postmaster.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Network.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Network.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/ResetToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/ResetToken.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -317,7 +312,10 @@
       <workItem from="1570521189099" duration="597000" />
       <workItem from="1570542591194" duration="9449000" />
       <workItem from="1570626941188" duration="1481000" />
-      <workItem from="1570631887556" duration="7237000" />
+      <workItem from="1570631887556" duration="7323000" />
+      <workItem from="1570686835695" duration="606000" />
+      <workItem from="1570726182046" duration="598000" />
+      <workItem from="1570741248466" duration="2068000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -480,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570567938995</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Model User doctrine annotations">
+      <created>1570660357462</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1570660357462</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,6 +521,7 @@
     <MESSAGE value="Model User ready" />
     <MESSAGE value="Model User change to static" />
     <MESSAGE value="Model User adding roles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model User adding roles" />
+    <MESSAGE value="Model User doctrine annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model User doctrine annotations" />
   </component>
 </project>
