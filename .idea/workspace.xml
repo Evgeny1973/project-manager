@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/global/pg_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/pg_stat_tmp/global.stat" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/pg_stat_tmp/global.stat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/pg_wal/000000010000000000000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/bd/postmaster.pid" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/bd/postmaster.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Network.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Network.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -315,7 +311,7 @@
       <workItem from="1570631887556" duration="7323000" />
       <workItem from="1570686835695" duration="606000" />
       <workItem from="1570726182046" duration="598000" />
-      <workItem from="1570741248466" duration="2068000" />
+      <workItem from="1570741248466" duration="2931000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -485,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570660357462</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Model User doctrine annotations">
+      <created>1570743607848</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1570743607848</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

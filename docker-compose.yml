@@ -30,7 +30,7 @@ services:
   manager-postgres:
     image: postgres:11.5-alpine
     volumes:
-      - ./manager/docker/development/bd:/var/lib/postgresql/data
+      - manager-postgres:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: app
       POSTGRES_PASSWORD: secret
