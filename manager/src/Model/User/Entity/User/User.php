@@ -32,14 +32,6 @@ class User
     private $date;
 
     /**
-     * @return \DateTimeImmutable
-     */
-    public function getDate(): \DateTimeImmutable
-    {
-        return $this->date;
-    }
-
-    /**
      * @var Email
      * @ORM\Column(type="user_user_email", nullable=true)
      */
@@ -182,7 +174,15 @@ class User
     }
 
     /**
-     * @return string
+     * @return \DateTimeImmutable
+     */
+    public function getDate(): \DateTimeImmutable
+    {
+        return $this->date;
+    }
+
+    /**
+     * @return Email
      */
     public function getEmail(): Email
     {
