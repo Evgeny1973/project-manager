@@ -32,7 +32,7 @@ class Handler
 
     public function handle(Command $command): void
     {
-        if (!$user = $this->users->findByConfirmToken($command->token)) {
+        if (!$user = $this->users->findByResetToken($command->token)) {
             throw new \DomainException('Некорректный или уже подтверждённый токен.');
         }
         $user->passwordReset(

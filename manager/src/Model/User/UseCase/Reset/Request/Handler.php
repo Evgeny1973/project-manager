@@ -42,7 +42,7 @@ class Handler
         $this->sender = $sender;
     }
 
-    private function handle(Command $command): void
+    public function handle(Command $command): void
     {
         $user = $this->users->getNyEmail(new Email($command->email));
 

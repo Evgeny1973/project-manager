@@ -2,26 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Auth/SignUpController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20191010215556.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/_flashes.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/auth/signup.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/home.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/mail.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/mail/user/signup.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Container/Model/User/Service/ResetTokenizerFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Auth/ResetController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/EntityNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Reset/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/auth/reset/request.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/auth/reset/reset.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/mail/user/reset.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/translations/exception.ru.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Service/ConfirmTokenSender.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Service/ConfirmTokenSender.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Service/PasswordHasher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Service/PasswordHasher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Confirm/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Confirm/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Flusher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Flusher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Service/ResetTokenSender.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Service/ResetTokenSender.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Reset/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Reset/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Reset/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Reset/Handler.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -251,20 +249,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request" />
-      <recent name="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth" />
-      <recent name="$PROJECT_DIR$/manager/src/Model/User/Entity/User" />
-      <recent name="$PROJECT_DIR$/manager" />
-      <recent name="$PROJECT_DIR$/manager/docker/production" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/docker/production" />
       <recent name="$PROJECT_DIR$/manager/docker/production/nginx" />
       <recent name="$PROJECT_DIR$/manager/docker/development" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/templates/app/auth/reset" />
+      <recent name="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request" />
+      <recent name="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth" />
+      <recent name="$PROJECT_DIR$/manager/src/Model/User/Entity/User" />
+      <recent name="$PROJECT_DIR$/manager" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -388,7 +387,8 @@
       <workItem from="1570774005792" duration="5313000" />
       <workItem from="1570781370241" duration="5302000" />
       <workItem from="1570814452163" duration="1912000" />
-      <workItem from="1570819664420" duration="5368000" />
+      <workItem from="1570819664420" duration="5664000" />
+      <workItem from="1570880083381" duration="10623000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -572,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570744535912</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="User email confirm">
+      <created>1570829842799</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1570829842799</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,6 +616,7 @@
     <MESSAGE value="Model User change to static" />
     <MESSAGE value="Model User adding roles" />
     <MESSAGE value="Model User doctrine annotations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model User doctrine annotations" />
+    <MESSAGE value="User email confirm" />
+    <option name="LAST_COMMIT_MESSAGE" value="User email confirm" />
   </component>
 </project>
