@@ -131,6 +131,7 @@
       <path value="$PROJECT_DIR$/manager/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/manager/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/manager/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/manager/vendor/finesse/swiftmailer-defaults-plugin" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

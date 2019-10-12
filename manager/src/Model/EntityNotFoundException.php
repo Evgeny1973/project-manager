@@ -4,7 +4,7 @@
 namespace App\Model;
 
 
-class EntityNotFoundException extends \Exception
+class EntityNotFoundException extends \DomainException
 {
 
 }

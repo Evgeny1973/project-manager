@@ -1,15 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Password Reset{% endblock %}
+{% block title %}Изменение пароля{% endblock %}
 
 {% block body %}
 
-    <h1>Password Reset</h1>
+    <h2>Введите новый пароль</h2>
 
     {{ form_start(form) }}
     {{ form_widget(form) }}
     <div class="form-group">
-        <button type="submit" class="btn btn-primary">Reset</button>
+        <button type="submit" class="btn btn-primary">Изменить</button>
     </div>
     {{ form_end(form) }}
 

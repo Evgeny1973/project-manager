@@ -5,7 +5,7 @@ namespace App\Model\User\Entity\User;
 
 
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\EntityNotFoundException;
+use App\Model\EntityNotFoundException;
 
 class UserRepository
 {
@@ -57,7 +57,7 @@ class UserRepository
         return $user;
     }
 
-    public function getNyEmail(Email $email): User
+    public function getByEmail(Email $email): User
     {
         /** @var User $user */
         if (!$user = $this->repo->findOneBy(['email' => $email->getValue()])) {

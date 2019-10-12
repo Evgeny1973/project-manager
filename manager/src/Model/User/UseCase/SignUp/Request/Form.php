@@ -21,7 +21,7 @@ class Form extends AbstractType
 
     public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefault([
+        $resolver->setDefaults([
             'data_class' => Command::class,
         ]);
     }
