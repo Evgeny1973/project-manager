@@ -132,6 +132,8 @@
       <path value="$PROJECT_DIR$/manager/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/manager/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/manager/vendor/finesse/swiftmailer-defaults-plugin" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
