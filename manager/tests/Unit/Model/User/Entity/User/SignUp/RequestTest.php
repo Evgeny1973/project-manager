@@ -14,7 +14,7 @@ class RequestTest extends TestCase
         $user = User::signUpByEmail(
             $id = Id::next(),
             $date = new \DateTimeImmutable(),
-            $email = new Email('vasya@yesy.com'),
+            $email = new Email('vasya@test.com'),
             $hash = 'hash',
             $token = 'token'
         );
