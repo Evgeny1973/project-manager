@@ -2,11 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manager/config/packages/knpu_oauth2_client.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/config/packages/test/security.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Auth/OAuth/FacebookController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Security/OAuth/FacebookAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/HomeTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/DataFixtures/AppFixtures.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/DataFixtures/UserFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/DataFixtures/UserFixture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Security/UserProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Security/UserProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/auth/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/auth/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -236,6 +251,14 @@
       <path value="$PROJECT_DIR$/manager/vendor/finesse/swiftmailer-defaults-plugin" />
       <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/manager/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/manager/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/manager/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/manager/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/manager/vendor/knpuniversity/oauth2-client-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/manager/vendor/league/oauth2-facebook" />
+      <path value="$PROJECT_DIR$/manager/vendor/league/oauth2-client" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/http-message" />
     </include_path>
   </component>
   <component name="ProjectId" id="1RH0bnn9uEzKpBoXjeZL1F2dTxy" />
@@ -245,24 +268,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/config/packages/test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/config/packages/test" />
+      <recent name="$PROJECT_DIR$/manager/docker/production" />
+      <recent name="$PROJECT_DIR$/manager/docker/production/nginx" />
+      <recent name="$PROJECT_DIR$/manager/docker/development" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/templates/app/auth" />
       <recent name="$PROJECT_DIR$/manager/src/Controller/Auth" />
       <recent name="$PROJECT_DIR$/manager/templates/app/auth/reset" />
       <recent name="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request" />
       <recent name="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/docker/production" />
-      <recent name="$PROJECT_DIR$/manager/docker/production/nginx" />
-      <recent name="$PROJECT_DIR$/manager/docker/development" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -400,7 +424,12 @@
       <workItem from="1570880083381" duration="19102000" />
       <workItem from="1570954361316" duration="16224000" />
       <workItem from="1571031328227" duration="4290000" />
-      <workItem from="1571085415040" duration="2456000" />
+      <workItem from="1571085415040" duration="2481000" />
+      <workItem from="1571126822714" duration="6163000" />
+      <workItem from="1571256509619" duration="593000" />
+      <workItem from="1571306826138" duration="788000" />
+      <workItem from="1571311810575" duration="7625000" />
+      <workItem from="1571342457005" duration="1613000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -612,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571003045830</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="User fully complited">
+      <created>1571088209237</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1571088209237</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

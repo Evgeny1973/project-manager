@@ -29,7 +29,13 @@
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/fig/link-util" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/finesse/swiftmailer-defaults-plugin" />
+      <excludeFolder url="file://$MODULE_DIR$/manager/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/manager/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/manager/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/jdorn/sql-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/manager/vendor/knpuniversity/oauth2-client-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/manager/vendor/league/oauth2-client" />
+      <excludeFolder url="file://$MODULE_DIR$/manager/vendor/league/oauth2-facebook" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/myclabs/deep-copy" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/nikic/php-parser" />
@@ -49,8 +55,10 @@
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/phpunit/phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/psr/cache" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/manager/vendor/psr/http-message" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/psr/link" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/manager/vendor/ralouphie/getallheaders" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/ramsey/uuid" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/sebastian/code-unit-reverse-lookup" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/sebastian/comparator" />
