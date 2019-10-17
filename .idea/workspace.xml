@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/config/packages/knpu_oauth2_client.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/config/packages/test/security.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Auth/OAuth/FacebookController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Security/OAuth/FacebookAuthenticator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/HomeTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Security/UserProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Security/UserProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/app/auth/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/auth/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -357,12 +339,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b4780c72" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@840703b5" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b4780c72" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@30d0ba04" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@840703b5" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@5b3d9b7e" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -429,7 +411,7 @@
       <workItem from="1571256509619" duration="593000" />
       <workItem from="1571306826138" duration="788000" />
       <workItem from="1571311810575" duration="7625000" />
-      <workItem from="1571342457005" duration="1613000" />
+      <workItem from="1571342457005" duration="2712000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -648,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571088209237</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="User login via facebook">
+      <created>1571344160112</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1571344160112</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -689,6 +678,7 @@
     <MESSAGE value="User email reset password" />
     <MESSAGE value="Local email server MailHog" />
     <MESSAGE value="User fully complited" />
-    <option name="LAST_COMMIT_MESSAGE" value="User fully complited" />
+    <MESSAGE value="User login via facebook" />
+    <option name="LAST_COMMIT_MESSAGE" value="User login via facebook" />
   </component>
 </project>
