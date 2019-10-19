@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/assets/css/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/ready" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/assets/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/manager/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/docker/development/nginx.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/nginx.docker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/docker/production/nginx.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/nginx.docker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/docker/production/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/nginx/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -426,7 +417,7 @@
       <workItem from="1571306826138" duration="788000" />
       <workItem from="1571311810575" duration="7625000" />
       <workItem from="1571342457005" duration="3429000" />
-      <workItem from="1571479293430" duration="9833000" />
+      <workItem from="1571479293430" duration="11900000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -666,7 +657,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571483653506</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Front scss/sass enabled">
+      <created>1571512457693</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1571512457693</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
