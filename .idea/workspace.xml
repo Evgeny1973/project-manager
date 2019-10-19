@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manager/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/auth.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/nginx.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/nginx.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/production/nginx.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/nginx.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/production/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/nginx/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/auth/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/auth/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/auth/reset/request.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/auth/reset/request.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/auth/reset/reset.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/auth/reset/reset.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/auth/signup.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/auth/signup.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -259,7 +266,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -341,17 +348,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@840703b5" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@840703b5" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@5b3d9b7e" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -417,7 +414,7 @@
       <workItem from="1571306826138" duration="788000" />
       <workItem from="1571311810575" duration="7625000" />
       <workItem from="1571342457005" duration="3429000" />
-      <workItem from="1571479293430" duration="11900000" />
+      <workItem from="1571479293430" duration="14188000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -664,7 +661,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571512457693</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="production dockerfiles correction">
+      <created>1571521313333</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1571521313333</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -708,6 +712,7 @@
     <MESSAGE value="User login via facebook" />
     <MESSAGE value="Front encore added" />
     <MESSAGE value="Front scss/sass enabled" />
-    <option name="LAST_COMMIT_MESSAGE" value="Front scss/sass enabled" />
+    <MESSAGE value="production dockerfiles correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="production dockerfiles correction" />
   </component>
 </project>
