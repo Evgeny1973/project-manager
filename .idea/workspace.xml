@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/assets/css/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/ready" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/assets/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/manager/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -240,6 +253,7 @@
       <path value="$PROJECT_DIR$/manager/vendor/league/oauth2-facebook" />
       <path value="$PROJECT_DIR$/manager/vendor/league/oauth2-client" />
       <path value="$PROJECT_DIR$/manager/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1RH0bnn9uEzKpBoXjeZL1F2dTxy" />
@@ -252,6 +266,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/config/packages/test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -411,7 +426,7 @@
       <workItem from="1571306826138" duration="788000" />
       <workItem from="1571311810575" duration="7625000" />
       <workItem from="1571342457005" duration="3429000" />
-      <workItem from="1571479293430" duration="1083000" />
+      <workItem from="1571479293430" duration="9833000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -644,7 +659,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571345407829</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Front encore added">
+      <created>1571483653506</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1571483653506</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -686,6 +708,8 @@
     <MESSAGE value="Local email server MailHog" />
     <MESSAGE value="User fully complited" />
     <MESSAGE value="User login via facebook" />
-    <option name="LAST_COMMIT_MESSAGE" value="User login via facebook" />
+    <MESSAGE value="Front encore added" />
+    <MESSAGE value="Front scss/sass enabled" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front scss/sass enabled" />
   </component>
 </project>
