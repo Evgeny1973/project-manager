@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/auth.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/assets/css/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/app/auth/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/auth/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/app/auth/reset/request.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/auth/reset/request.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/app/auth/reset/reset.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/auth/reset/reset.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/app/auth/signup.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/auth/signup.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -414,7 +408,8 @@
       <workItem from="1571306826138" duration="788000" />
       <workItem from="1571311810575" duration="7625000" />
       <workItem from="1571342457005" duration="3429000" />
-      <workItem from="1571479293430" duration="14188000" />
+      <workItem from="1571479293430" duration="14263000" />
+      <workItem from="1571601128866" duration="1813000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -668,7 +663,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571521313333</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Front CoreUI added">
+      <created>1571523501085</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1571523501085</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -688,7 +690,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="docker-compose" />
     <MESSAGE value="build-production" />
     <MESSAGE value="slim" />
     <MESSAGE value="Symfony" />
@@ -713,6 +714,7 @@
     <MESSAGE value="Front encore added" />
     <MESSAGE value="Front scss/sass enabled" />
     <MESSAGE value="production dockerfiles correction" />
-    <option name="LAST_COMMIT_MESSAGE" value="production dockerfiles correction" />
+    <MESSAGE value="Front CoreUI added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front CoreUI added" />
   </component>
 </project>
