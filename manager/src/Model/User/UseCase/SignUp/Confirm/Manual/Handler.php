@@ -1,10 +1,11 @@
 <?php
 
 
-namespace App\Model\User\UseCase\SignUp\Confirm;
+namespace App\Model\User\UseCase\SignUp\Confirm\Manual;
 
 
 use App\Model\Flusher;
+use App\Model\User\Entity\User\Id;
 use App\Model\User\Entity\User\UserRepository;
 
 class Handler
@@ -26,9 +27,8 @@ class Handler
 
     public function handle(Command $command)
     {
-        if (!$user = $this->users->findByConfirmToken($command->token)) {
-            throw new \DomainException('Некорректный или подтверждённый токен.');
-        }
+        $user = $this->users->get(new Id($command->id));
+
         $user->confirmSignUp();
         $this->flusher->flush();
     }

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Model\User\UseCase\SignUp\Confirm;
+namespace App\Model\User\UseCase\SignUp\Confirm\ByToken;
 
 
 class Command

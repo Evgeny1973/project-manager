@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/docker/production/redis.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Command/User/ConfirmCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Command/User/RoleCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Confirm/Manual/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Confirm/Manual/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/ShortView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Auth/SignUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Auth/SignUpController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Role/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Role/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Confirm/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Confirm/ByToken/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Confirm/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Confirm/ByToken/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +100,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="front" />
+        <entry key="$PROJECT_DIR$" value="Redis" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -267,21 +267,21 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Confirm/ByToken" />
+      <recent name="$PROJECT_DIR$/manager/templates/app/auth" />
+      <recent name="$PROJECT_DIR$/manager/src/Controller/Auth" />
+      <recent name="$PROJECT_DIR$/manager/templates/app/auth/reset" />
+      <recent name="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/config/packages/test" />
       <recent name="$PROJECT_DIR$/manager/docker/production" />
       <recent name="$PROJECT_DIR$/manager/docker/production/nginx" />
       <recent name="$PROJECT_DIR$/manager/docker/development" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/templates/app/auth" />
-      <recent name="$PROJECT_DIR$/manager/src/Controller/Auth" />
-      <recent name="$PROJECT_DIR$/manager/templates/app/auth/reset" />
-      <recent name="$PROJECT_DIR$/manager/src/Model/User/UseCase/Reset/Request" />
-      <recent name="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -416,7 +416,10 @@
       <workItem from="1571311810575" duration="7625000" />
       <workItem from="1571342457005" duration="3429000" />
       <workItem from="1571479293430" duration="14263000" />
-      <workItem from="1571601128866" duration="4716000" />
+      <workItem from="1571601128866" duration="5070000" />
+      <workItem from="1571764039269" duration="1200000" />
+      <workItem from="1571898564664" duration="1219000" />
+      <workItem from="1571934735107" duration="5999000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -684,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571602955539</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Redis">
+      <created>1571606765498</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1571606765498</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -704,7 +714,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="build-production" />
     <MESSAGE value="slim" />
     <MESSAGE value="Symfony" />
     <MESSAGE value="Symfony-environment" />
@@ -729,6 +738,7 @@
     <MESSAGE value="Front scss/sass enabled" />
     <MESSAGE value="production dockerfiles correction" />
     <MESSAGE value="Front CoreUI added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Front CoreUI added" />
+    <MESSAGE value="Redis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redis" />
   </component>
 </project>
