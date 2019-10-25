@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Профиль{% endblock %}
+{% block title %}Profile{% endblock %}
 
 {% block breadcrumbs %}
     <ol class="breadcrumb">
@@ -12,7 +12,7 @@
 {% block body %}
 
     <div class="card">
-        <div class="card-header">Профиль</div>
+        <div class="card-header">Profile</div>
         <div class="card-body">
             <table class="table table-bordered mb-0">
                 <tbody>
@@ -32,11 +32,11 @@
                 {% endif %}
                 <tr>
                     <th>Role</th>
-                    <td>{{ user.role }}</td>
+                    <td>{{ user_role(user.role) }}</td>
                 </tr>
                 <tr>
                     <th>Status</th>
-                    <td>{{ user.status }}</td>
+                    <td>{{ user_status(user.status) }}</td>
                 </tr>
                 </tbody>
             </table>
