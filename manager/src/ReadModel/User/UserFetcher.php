@@ -19,16 +19,24 @@ class UserFetcher
         $this->connection = $connection;
     }
 
+    /**
+     * @param string $token
+     * @return bool
+     */
     public function existsByResetToken(string $token): bool
     {
         return $this->connection->createQueryBuilder()
-            ->select('COUNT(*)')
-            ->from('user_users')
-            ->where('reset_token_token = :token')
-            ->setParameter(':token', $token)
-            ->execute()->fetchColumn(0) > 0;
+                ->select('COUNT(*)')
+                ->from('user_users')
+                ->where('reset_token_token = :token')
+                ->setParameter(':token', $token)
+                ->execute()->fetchColumn(0) > 0;
     }
 
+    /**
+     * @param string $email
+     * @return AuthView|null
+     */
     public function findForAuthByEmail(string $email): ?AuthView
     {
         $stmt = $this->connection->createQueryBuilder()
@@ -47,6 +55,12 @@ class UserFetcher
         $result = $stmt->fetch();
         return $result ?: null;
     }
+
+    /**
+     * @param string $network
+     * @param string $identity
+     * @return AuthView|null
+     */
     public function findForAuthByNetwork(string $network, string $identity): ?AuthView
     {
         $stmt = $this->connection->createQueryBuilder()
@@ -68,6 +82,10 @@ class UserFetcher
         return $result ?: null;
     }
 
+    /**
+     * @param string $email
+     * @return ShortView|null
+     */
     public function findByEmail(string $email): ?ShortView
     {
         $stmt = $this->connection->createQueryBuilder()
@@ -84,5 +102,40 @@ class UserFetcher
         $stmt->setFetchMode(FetchMode::CUSTOM_OBJECT, ShortView::class);
         $result = $stmt->fetch();
         return $result ?: null;
+    }
+
+    /**
+     * @param string $id
+     * @return DetailView|null
+     */
+    public function findDetail(string $id): ?DetailView
+    {
+        $stmt = $this->connection->createQueryBuilder()
+            ->select(
+                'id',
+                'date',
+                'email',
+                'role',
+                'status')
+            ->from('user_users')
+            ->where('id = :id')
+            ->setParameter(':id', $id)
+            ->execute();
+        $stmt->setFetchMode(FetchMode::CUSTOM_OBJECT, DetailView::class);
+
+        /** @var DetailView $view */
+        $view = $stmt->fetch();
+
+        $stmt = $this->connection->createQueryBuilder()
+            ->select('network', 'identity')
+            ->from('user_user_networks')
+            ->where('user_id = :id')
+            ->setParameter(':id', $id)
+            ->execute();
+        $stmt->setFetchMode(FetchMode::CUSTOM_OBJECT, NetworkView::class);
+
+        $view->networks = $stmt->fetchAll();
+
+        return $view;
     }
 }
