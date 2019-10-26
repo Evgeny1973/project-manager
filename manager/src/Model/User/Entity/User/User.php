@@ -50,6 +50,18 @@ class User
     private $confirmToken;
 
     /**
+     * @var Email | null
+     * @ORM\Column(type="user_user_email", name="new_email", nullable=true)
+     */
+    private $newEmail;
+
+    /**
+     * @var string | null
+     * @ORM\Column(type="string", name="new_email_token", nullable=true)
+     */
+    private $newEmailToken;
+
+    /**
      * @var ResetToken | null
      * @ORM\Embedded(class="ResetToken", columnPrefix="reset_token_")
      */
@@ -150,6 +162,31 @@ class User
         $this->role = $role;
     }
 
+    public function requestEmailChanging(Email $email, string $token): void
+    {
+        if (!$this->isActive()) {
+            throw new \DomainException('Пользователь не активирован.');
+        }
+        if ($this->email && $this->email->isEqual($email)) {
+            throw new \DomainException('Email такой же.');
+        }
+        $this->newEmail = $email;
+        $this->newEmailToken = $token;
+    }
+
+    public function confirmEmailChanging(string $token): void
+    {
+        if (!$this->newEmailToken) {
+            throw new \DomainException('Изменение email не запрошено.');
+        }
+        if ($this->newEmailToken !== $token) {
+            throw new \DomainException('Ошибочный код смены email.');
+        }
+        $this->email = $this->newEmail;
+        $this->newEmail = null;
+        $this->newEmailToken = null;
+    }
+
     public function isNew(): bool
     {
         return $this->status === self::STATUS_NEW;
@@ -166,7 +203,7 @@ class User
     }
 
     /**
-     * @return string
+     * @return Id
      */
     public function getId(): Id
     {
@@ -213,9 +250,28 @@ class User
         return $this->networks->toArray();
     }
 
+    /**
+     * @return ResetToken|null
+     */
     public function getResetToken(): ?ResetToken
     {
         return $this->resetToken;
+    }
+
+    /**
+     * @return Email|null
+     */
+    public function getNewEmail(): ?Email
+    {
+        return $this->newEmail;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getNewEmailToken(): ?string
+    {
+        return $this->newEmailToken;
     }
 
     /**
