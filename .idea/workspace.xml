@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Profile/EmailController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Service/NewEmailConfirmTokenSender.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Service/NewEmailConfirmTokenizer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Email/Confirm/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Email/Confirm/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Email/Request/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Email/Request/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Email/Request/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/profile/email.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/mail/user/email.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/Email/ConfirmTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/Email/RequestTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/assets/css/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/css/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Profile/ShowController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Email.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Service/ConfirmTokenSender.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Service/SignUpConfirmTokenSender.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Service/ConfirmTokinizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Service/SignUpConfirmTokinizer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/app/profile/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/profile/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Auth/SignUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Auth/SignUpController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -433,7 +414,7 @@
       <workItem from="1571985643816" duration="7283000" />
       <workItem from="1572014137712" duration="3966000" />
       <workItem from="1572030002131" duration="9137000" />
-      <workItem from="1572076207524" duration="8234000" />
+      <workItem from="1572076207524" duration="10478000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -729,7 +710,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572030363736</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="User change email">
+      <created>1572104585968</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1572104585968</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -749,7 +737,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Postgres" />
     <MESSAGE value="Posts" />
     <MESSAGE value="Model" />
     <MESSAGE value="Model User" />
@@ -774,6 +761,7 @@
     <MESSAGE value="Console Change role user/admin" />
     <MESSAGE value="Users profile" />
     <MESSAGE value="Users role" />
-    <option name="LAST_COMMIT_MESSAGE" value="Users role" />
+    <MESSAGE value="User change email" />
+    <option name="LAST_COMMIT_MESSAGE" value="User change email" />
   </component>
 </project>
