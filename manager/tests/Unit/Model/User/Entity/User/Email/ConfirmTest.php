@@ -33,7 +33,7 @@ class ConfirmTest extends TestCase
             $email = new Email('new@test.com'),
             'token'
         );
-        $this->expectExceptionMessage('Ошибкочный код смены email.');
+        $this->expectExceptionMessage('Ошибочный код смены email.');
         $user->confirmEmailChanging('incorrect-token');
     }
 }

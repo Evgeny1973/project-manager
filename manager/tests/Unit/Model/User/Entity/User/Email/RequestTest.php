@@ -25,7 +25,7 @@ class RequestTest extends TestCase
         $user = (new UserBuilder())
             ->viaEmail($email = new Email('new@test.com'))
             ->confirmed()->build();
-        $this->expectExceptionMessage('Email уже используется.');
+        $this->expectExceptionMessage('Email такой же.');
         $user->requestEmailChanging($email, 'token');
     }
 
