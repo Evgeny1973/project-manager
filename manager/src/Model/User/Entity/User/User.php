@@ -161,6 +161,21 @@ class User
         $this->networks->add(new Network($this, $network, $identity));
     }
 
+    public function detachNetwork(string $network, string $identity): void
+    {
+        foreach ($this->networks as $existing) {
+            if ($existing->isFor($network, $identity)) {
+                if (!$this->email && $this->networks->count() === 1) {
+                    throw new \DomainException('Нельзя отключать единственную сеть.');
+                }
+                $this->networks->removeElement($existing);
+                return;
+            }
+        }
+        throw new \DomainException('Сеть не привязана.');
+    }
+
+
     public function changeName(Name $name): void
     {
         $this->name = $name;

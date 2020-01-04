@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Profile/NameController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/profile/name.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Profile/OAuth/DetachController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Detach/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Detach/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/User/AuthView.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/AuthView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/User/DetailView.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/DetailView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Security/OAuth/FacebookAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Security/OAuth/FacebookAuthenticator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Security/UserIdentity.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Security/UserIdentity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Security/UserProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Security/UserProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/app/auth/signup.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/auth/signup.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Network.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Network.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/templates/app/profile/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/profile/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +267,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -433,7 +427,7 @@
       <workItem from="1578143448298" duration="3883000" />
       <workItem from="1578151497510" duration="2679000" />
       <workItem from="1578156327757" duration="7946000" />
-      <workItem from="1578169375999" duration="2174000" />
+      <workItem from="1578169375999" duration="7126000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -764,7 +758,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578157745989</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Display name at right corner">
+      <created>1578171918060</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1578171918060</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -784,7 +785,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="User registration" />
     <MESSAGE value="User registration via networks" />
     <MESSAGE value="User password reset" />
     <MESSAGE value="User ready" />
@@ -809,32 +809,35 @@
     <MESSAGE value="New User autologin" />
     <MESSAGE value="User can attach facebook" />
     <MESSAGE value="User can change name" />
-    <option name="LAST_COMMIT_MESSAGE" value="User can change name" />
+    <MESSAGE value="Display name at right corner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display name at right corner" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1578170396781">
+    <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1578172173292">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1578170396781" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578157745682">
+    <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1578172173292" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578171917189">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578157745682" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578171917189" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1578157712395">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1578157712395" />
-    <state x="330" y="186" width="697" height="373" key="NewPhpClassDialog" timestamp="1578158302947">
-      <screen x="0" y="27" width="1360" height="694" />
+    <state x="330" y="191" width="593" height="373" key="NewPhpClassDialog" timestamp="1578179600773">
+      <screen x="0" y="27" width="1360" height="715" />
     </state>
-    <state x="330" y="186" width="697" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1578158302947" />
-    <state x="169" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1578157716279">
-      <screen x="0" y="27" width="1360" height="694" />
+    <state x="330" y="186" width="777" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1578172134720" />
+    <state x="330" y="191" width="593" height="373" key="NewPhpClassDialog/0.27.1360.715@0.27.1360.715" timestamp="1578179600773" />
+    <state x="229" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1578174169844">
+      <screen x="0" y="27" width="1360" height="715" />
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1578157716279" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578157751105">
+    <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578171925640">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578157751105" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578171925640" />
   </component>
 </project>
