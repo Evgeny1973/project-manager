@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Name.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
+    <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="User can change name">
+      <change afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20200104165807.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Security/OAuth/FacebookAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Security/OAuth/FacebookAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/DataFixtures/UserFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/DataFixtures/UserFixture.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,12 +257,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/src/Controller/Profile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/src/Migrations" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -429,7 +420,8 @@
       <workItem from="1577562363455" duration="1207000" />
       <workItem from="1577739237566" duration="211000" />
       <workItem from="1578143448298" duration="3883000" />
-      <workItem from="1578151497510" duration="2520000" />
+      <workItem from="1578151497510" duration="2679000" />
+      <workItem from="1578156327757" duration="1381000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -746,7 +738,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572210756332</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="User can change name">
+      <created>1578154769582</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1578154769582</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -766,7 +765,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Model User" />
     <MESSAGE value="User registration" />
     <MESSAGE value="User registration via networks" />
     <MESSAGE value="User password reset" />
@@ -791,20 +789,33 @@
     <MESSAGE value="User change email" />
     <MESSAGE value="New User autologin" />
     <MESSAGE value="User can attach facebook" />
-    <option name="LAST_COMMIT_MESSAGE" value="User can attach facebook" />
+    <MESSAGE value="User can change name" />
+    <option name="LAST_COMMIT_MESSAGE" value="User can change name" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1578154033880">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1578154033880" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578157728309">
+      <screen x="0" y="27" width="1360" height="694" />
+    </state>
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578157728309" />
+    <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1578157712395">
+      <screen x="0" y="27" width="1360" height="694" />
+    </state>
+    <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1578157712395" />
     <state x="330" y="186" width="697" height="373" key="NewPhpClassDialog" timestamp="1578153997670">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="330" y="186" width="697" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1578153997670" />
-    <state x="169" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1578154611019">
+    <state x="169" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1578157716279">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1578154611019" />
+    <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1578157716279" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578154771786">
+      <screen x="0" y="27" width="1360" height="694" />
+    </state>
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578154771786" />
   </component>
 </project>
