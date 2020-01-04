@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="User can change name">
-      <change afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20200104165807.php" afterDir="false" />
+    <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Profile/NameController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/profile/name.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/DataFixtures/UserFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/DataFixtures/UserFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Network/Auth/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/User/AuthView.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/AuthView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/User/DetailView.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/DetailView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Security/OAuth/FacebookAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Security/OAuth/FacebookAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Security/UserIdentity.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Security/UserIdentity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Security/UserProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Security/UserProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/auth/signup.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/auth/signup.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/profile/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/profile/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -421,7 +432,8 @@
       <workItem from="1577739237566" duration="211000" />
       <workItem from="1578143448298" duration="3883000" />
       <workItem from="1578151497510" duration="2679000" />
-      <workItem from="1578156327757" duration="1381000" />
+      <workItem from="1578156327757" duration="7946000" />
+      <workItem from="1578169375999" duration="2174000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1569361707364</created>
@@ -745,7 +757,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578154769582</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="User can change name">
+      <created>1578157745989</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1578157745989</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -793,29 +812,29 @@
     <option name="LAST_COMMIT_MESSAGE" value="User can change name" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1578154033880">
+    <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1578170396781">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1578154033880" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578157728309">
+    <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1578170396781" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578157745682">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578157728309" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578157745682" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1578157712395">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1578157712395" />
-    <state x="330" y="186" width="697" height="373" key="NewPhpClassDialog" timestamp="1578153997670">
+    <state x="330" y="186" width="697" height="373" key="NewPhpClassDialog" timestamp="1578158302947">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="330" y="186" width="697" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1578153997670" />
+    <state x="330" y="186" width="697" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1578158302947" />
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1578157716279">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1578157716279" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578154771786">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578157751105">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578154771786" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578157751105" />
   </component>
 </project>

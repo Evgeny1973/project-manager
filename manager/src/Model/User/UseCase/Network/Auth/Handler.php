@@ -8,7 +8,7 @@ use App\Model\Flusher;
 use App\Model\User\Entity\User\Id;
 use App\Model\User\Entity\User\User;
 use App\Model\User\Entity\User\UserRepository;
-use App\Model\User\UseCase\Network\Auth\Command;
+use App\Model\User\Entity\User\Name;
 
 class Handler
 {
@@ -36,6 +36,10 @@ class Handler
         $user = User::signUpByNetwork(
             Id::next(),
             new \DateTimeImmutable(),
+            new Name(
+                $command->firstName,
+                $command->lastName
+            ),
             $command->network,
             $command->identity);
         $this->users->add($user);

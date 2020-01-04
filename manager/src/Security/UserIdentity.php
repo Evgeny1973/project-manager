@@ -30,16 +30,32 @@ class UserIdentity implements UserInterface, EquatableInterface
      * @var string
      */
     private $status;
+    /**
+     * @var string
+     */
+    private $display;
 
-    public function __construct(string $id, string $username, string $password, string $role, string $status)
+    public function __construct(string $id, string $username, string $password, string  $display, string $role, string $status)
     {
         $this->id = $id;
         $this->username = $username;
         $this->password = $password;
+        $this->display = $display;
         $this->role = $role;
         $this->status = $status;
     }
 
+    /**
+     * @return string
+     */
+    public function getDisplay(): string
+    {
+        return $this->display;
+    }
+
+    /**
+     * @return bool
+     */
     public function isActive(): bool
     {
         return $this->status === User::STATUS_ACTIVE;
