@@ -55,9 +55,16 @@ class FacebookAuthenticator extends SocialAuthenticator
     public function getUser($credentials, UserProviderInterface $userProvider): UserInterface
     {
         $facebookUser = $this->getFacebookClient()->fetchUserFromToken($credentials);
+
         $network = 'facebook';
+
         $id = $facebookUser->getId();
         $username = $network . ':' . $id;
+
+        $command = new Command($network, $id);
+        $command->firstName = $facebookUser->getFirstName();
+        $command->lastName = $facebookUser->getLasstName();
+
         try {
             return $userProvider->loadUserByUsername($username);
         } catch (UsernameNotFoundException $e) {
