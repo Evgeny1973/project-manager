@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/users/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +90,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="ChangeUserEmail" />
+        <entry key="$PROJECT_DIR$" value="User_attach_networks" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -428,14 +425,7 @@
       <workItem from="1578169375999" duration="8752000" />
       <workItem from="1578227485934" duration="596000" />
       <workItem from="1578313446992" duration="887000" />
-      <workItem from="1578322030737" duration="377000" />
-    </task>
-    <task id="LOCAL-00001" summary="docker-compose">
-      <created>1569361707364</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1569361707364</updated>
+      <workItem from="1578322030737" duration="1603000" />
     </task>
     <task id="LOCAL-00002" summary="docker-compose">
       <created>1569362455256</created>
@@ -773,7 +763,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578179649574</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="User can detach network">
+      <created>1578322429563</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1578322429565</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -793,7 +790,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="User password reset" />
     <MESSAGE value="User ready" />
     <MESSAGE value="Model User ready" />
     <MESSAGE value="Model User change to static" />
@@ -818,7 +814,8 @@
     <MESSAGE value="User can change name" />
     <MESSAGE value="Display name at right corner" />
     <MESSAGE value="User can remove own network" />
-    <option name="LAST_COMMIT_MESSAGE" value="User can remove own network" />
+    <MESSAGE value="User can detach network" />
+    <option name="LAST_COMMIT_MESSAGE" value="User can detach network" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1578172173292">
@@ -829,10 +826,10 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1360.694@0.27.1360.694" timestamp="1578322005946" />
-    <state x="245" y="70" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578179649382">
-      <screen x="0" y="27" width="1360" height="715" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578322428600">
+      <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578171917189" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578322428600" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1578157712395">
       <screen x="0" y="27" width="1360" height="694" />
@@ -848,10 +845,10 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1578157716279" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="99" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578179653732">
-      <screen x="0" y="27" width="1360" height="715" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578322434940">
+      <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578171925640" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578322434940" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
   </component>
 </project>
