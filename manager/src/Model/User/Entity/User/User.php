@@ -132,6 +132,12 @@ class User
         return $this->status === self::STATUS_BLOCKED;
     }
 
+    public function edit(Email $email, Name $name): void
+    {
+        $this->name = $name;
+        $this->email = $email;
+    }
+
     public static function signUpByEmail(Id $id, \DateTimeImmutable $date, Name $name, Email $email, string $hash, string $token): self
     {
         $user = new self($id, $date, $name);
