@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/users/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/Service/PasswordGenerator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Create/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Create/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Create/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/users/create.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/css/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Name.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/Name.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/templates/app/users/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/users/index.html.twig" afterDir="false" />
     </list>
@@ -93,7 +97,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="access_permissions" />
+        <entry key="$PROJECT_DIR$" value="show.users" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -430,14 +434,7 @@
       <workItem from="1578313446992" duration="887000" />
       <workItem from="1578322030737" duration="4066000" />
       <workItem from="1578508125279" duration="988000" />
-      <workItem from="1578510318946" duration="722000" />
-    </task>
-    <task id="LOCAL-00003" summary="build-production">
-      <created>1569432206943</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1569432206943</updated>
+      <workItem from="1578510318946" duration="5455000" />
     </task>
     <task id="LOCAL-00004" summary="build-production">
       <created>1569432814955</created>
@@ -775,7 +772,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578323852555</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Show users">
+      <created>1578511505148</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1578511505149</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -795,7 +799,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Model User ready" />
     <MESSAGE value="Model User change to static" />
     <MESSAGE value="Model User adding roles" />
     <MESSAGE value="Model User doctrine annotations" />
@@ -820,44 +823,45 @@
     <MESSAGE value="User can remove own network" />
     <MESSAGE value="User can detach network" />
     <MESSAGE value="Role Manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="Role Manager" />
+    <MESSAGE value="Show users" />
+    <option name="LAST_COMMIT_MESSAGE" value="Show users" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1360.694@0.27.1360.694" timestamp="1578326308176" />
-    <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1578172173292">
+    <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1578512670019">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1578172173292" />
+    <state x="488" y="92" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1578512670019" />
     <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578322005946">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1360.694@0.27.1360.694" timestamp="1578322005946" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578323852341">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578511504659">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578323852341" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578511504659" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1578157712395">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1578157712395" />
-    <state x="330" y="186" width="593" height="373" key="NewPhpClassDialog" timestamp="1578511461390">
+    <state x="330" y="186" width="593" height="373" key="NewPhpClassDialog" timestamp="1578515225342">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="330" y="186" width="777" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1578511461390" />
+    <state x="330" y="186" width="777" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1578515225342" />
     <state x="330" y="191" width="593" height="373" key="NewPhpClassDialog/0.27.1360.715@0.27.1360.715" timestamp="1578179600773" />
     <state x="229" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1578174169844">
       <screen x="0" y="27" width="1360" height="715" />
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1578157716279" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578323854181">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578511507295">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578323854181" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578511507295" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
   </component>
 </project>
