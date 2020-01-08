@@ -40,6 +40,11 @@ class Name
         return $this->first;
     }
 
+    public function getFull(): string
+    {
+        return $this->first . ' ' . $this->last;
+    }
+
     /**
      * @return string
      */
