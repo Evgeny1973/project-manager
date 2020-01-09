@@ -7,6 +7,8 @@ namespace App\Controller;
 use App\Model\User\Entity\User\User;
 use App\Model\User\UseCase\Create;
 use App\Model\User\UseCase\Edit;
+use App\Model\User\UseCase\Role;
+use App\Model\User\UseCase\SignUp\Confirm;
 use App\ReadModel\User\UserFetcher;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -66,7 +68,7 @@ class UsersController extends AbstractController
         }
         return $this->render('app/users/create.html.twig',
             ['form' => $form->createView()]
-            );
+        );
     }
 
     /**
@@ -96,6 +98,62 @@ class UsersController extends AbstractController
             'user' => $user,
             'form' => $form->createView(),
         ]);
+    }
+
+    /**
+     * @Route("/{id}/role", name="users.role")
+     * @param User $user
+     * @param Request $request
+     * @param Role\Handler $handler
+     * @return Response
+     */
+    public function role(User $user, Request $request, Role\Handler $handler): Response
+    {
+        if ($user->getId()->getValue() === $this->getUser()->getId()) {
+            $this->addFlash('error', 'Нельзя изменить себе роль.');
+            return $this->redirectToRoute('users.show', ['id' => $user->getId()]);
+        }
+
+        $command = Role\Command::fromUser($user);
+
+        $form = $this->createForm(Role\Form::class, $command);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            try {
+                $handler->handle($command);
+                return $this->redirectToRoute('users.show', ['id' => $user->getId()]);
+            } catch (\DomainException $e) {
+                $this->logger->error($e->getMessage(), ['exception' => $e]);
+                $this->addFlash('error', $e->getMessage());
+            }
+        }
+        return $this->render('app/users/role.html.twig', [
+            'user' => $user,
+            'form' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * @Route("/{id}/confirm", name="users.confirm", methods={"POST"})
+     * @param User $user
+     * @param Request $request
+     * @param Confirm\Manual\Handler $handler
+     * @return Response
+     */
+    public function confirm(User $user, Request $request, Confirm\Manual\Handler $handler): Response
+    {
+        if (!$this->isCsrfTokenValid('confirm', $request->request->get('token'))) {
+            return $this->redirectToRoute('users.show', ['id' => $user->getId()]);
+        }
+        $command = new Confirm\Manual\Command($user->getId()->getValue());
+        try {
+            $handler->handle($command);
+        } catch (\DomainException $e) {
+            $this->logger->error($e->getMessage(), ['exception' => $e]);
+            $this->addFlash('error', $e->getMessage());
+        }
+        return $this->redirectToRoute('users.show', ['id' => $user->getId()]);
     }
 
     /**

@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Edit/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Edit/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Edit/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/users/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Role/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/users/role.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Profile/ShowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Profile/ShowController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/Entity/User/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Role/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Role/Command.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/templates/app/users/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/users/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -433,14 +430,8 @@
       <workItem from="1578313446992" duration="887000" />
       <workItem from="1578322030737" duration="4066000" />
       <workItem from="1578508125279" duration="988000" />
-      <workItem from="1578510318946" duration="7847000" />
-    </task>
-    <task id="LOCAL-00005" summary="build-production">
-      <created>1569441127397</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1569441127397</updated>
+      <workItem from="1578510318946" duration="8008000" />
+      <workItem from="1578610205093" duration="2367000" />
     </task>
     <task id="LOCAL-00006" summary="build-production">
       <created>1569584820653</created>
@@ -778,7 +769,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578516304772</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Edit user">
+      <created>1578518830687</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1578518830687</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -798,7 +796,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Model User adding roles" />
     <MESSAGE value="Model User doctrine annotations" />
     <MESSAGE value="User email confirm" />
     <MESSAGE value="User email reset password" />
@@ -823,44 +820,45 @@
     <MESSAGE value="Role Manager" />
     <MESSAGE value="Show users" />
     <MESSAGE value="Create new user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create new user" />
+    <MESSAGE value="Edit user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit user" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1360.694@0.27.1360.694" timestamp="1578326308176" />
-    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1578517421060">
+    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1578610441752">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1578517421060" />
+    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1578610441752" />
     <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578322005946">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1360.694@0.27.1360.694" timestamp="1578322005946" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578518807722">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578518830495">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578518807722" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578518830495" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1578157712395">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1578157712395" />
-    <state x="330" y="186" width="593" height="373" key="NewPhpClassDialog" timestamp="1578517383728">
+    <state x="330" y="186" width="593" height="373" key="NewPhpClassDialog" timestamp="1578610405659">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="330" y="186" width="777" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1578517383728" />
+    <state x="330" y="186" width="777" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1578610405659" />
     <state x="330" y="191" width="593" height="373" key="NewPhpClassDialog/0.27.1360.715@0.27.1360.715" timestamp="1578179600773" />
     <state x="229" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1578174169844">
       <screen x="0" y="27" width="1360" height="715" />
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1578157716279" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578516306567">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578518835319">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578516306567" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578518835319" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
   </component>
 </project>
