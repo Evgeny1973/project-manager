@@ -3,18 +3,16 @@
 
 namespace App\ReadModel\User;
 
+use App\ReadModel\User\Filter\Filter;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\FetchMode;
-
 class UserFetcher
 {
     private $connection;
-
     public function __construct(Connection $connection)
     {
         $this->connection = $connection;
     }
-
     public function existsByResetToken(string $token): bool
     {
         return $this->connection->createQueryBuilder()
@@ -24,7 +22,6 @@ class UserFetcher
                 ->setParameter(':token', $token)
                 ->execute()->fetchColumn(0) > 0;
     }
-
     public function findForAuthByEmail(string $email): ?AuthView
     {
         $stmt = $this->connection->createQueryBuilder()
@@ -44,7 +41,6 @@ class UserFetcher
         $result = $stmt->fetch();
         return $result ?: null;
     }
-
     public function findForAuthByNetwork(string $network, string $identity): ?AuthView
     {
         $stmt = $this->connection->createQueryBuilder()
@@ -66,7 +62,6 @@ class UserFetcher
         $result = $stmt->fetch();
         return $result ?: null;
     }
-
     public function findByEmail(string $email): ?ShortView
     {
         $stmt = $this->connection->createQueryBuilder()
@@ -84,7 +79,6 @@ class UserFetcher
         $result = $stmt->fetch();
         return $result ?: null;
     }
-
     public function findBySignUpConfirmToken(string $token): ?ShortView
     {
         $stmt = $this->connection->createQueryBuilder()
@@ -102,7 +96,6 @@ class UserFetcher
         $result = $stmt->fetch();
         return $result ?: null;
     }
-
     public function findDetail(string $id): ?DetailView
     {
         $stmt = $this->connection->createQueryBuilder()
@@ -132,18 +125,20 @@ class UserFetcher
         $view->networks = $stmt->fetchAll();
         return $view;
     }
-
     public function getDetail(string $id): DetailView
     {
         if (!$detail = $this->findDetail($id)) {
-            throw new \LogicException('Пользователь не найден.');
+            throw new \LogicException('User is not found');
         }
         return $detail;
     }
-
-    public function all(): array
+    /**
+     * @param Filter $filter
+     * @return array[]
+     */
+    public function all(Filter $filter): array
     {
-        $stmt = $this->connection->createQueryBuilder()
+        $qb = $this->connection->createQueryBuilder()
             ->select(
                 'id',
                 'date',
@@ -153,8 +148,24 @@ class UserFetcher
                 'status'
             )
             ->from('user_users')
-            ->orderBy('date', 'desc')
-            ->execute();
+            ->orderBy('date', 'desc');
+        if ($filter->name) {
+            $qb->andWhere($qb->expr()->like('LOWER(CONCAT(name_first, \' \', name_last))', ':name'));
+            $qb->setParameter(':name', '%' . mb_strtolower($filter->name) . '%');
+        }
+        if ($filter->email) {
+            $qb->andWhere($qb->expr()->like('LOWER(email)', ':email'));
+            $qb->setParameter(':email', '%' . mb_strtolower($filter->email) . '%');
+        }
+        if ($filter->status) {
+            $qb->andWhere('status = :status');
+            $qb->setParameter(':status', $filter->status);
+        }
+        if ($filter->role) {
+            $qb->andWhere('role = :role');
+            $qb->setParameter(':role', $filter->role);
+        }
+        $stmt = $qb->execute();
         return $stmt->fetchAll(FetchMode::ASSOCIATIVE);
     }
 }
