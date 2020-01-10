@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/config/packages/knp_paginator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/translations/KnpPaginatorBundle.en.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/app/users/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/users/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -443,14 +431,7 @@
       <workItem from="1578508125279" duration="988000" />
       <workItem from="1578510318946" duration="8008000" />
       <workItem from="1578610205093" duration="6820000" />
-      <workItem from="1578663749537" duration="10737000" />
-    </task>
-    <task id="LOCAL-00009" summary="Symfony">
-      <created>1569701096822</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1569701096822</updated>
+      <workItem from="1578663749537" duration="13758000" />
     </task>
     <task id="LOCAL-00010" summary="Symfony-environment">
       <created>1569781321247</created>
@@ -788,7 +769,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578616957567</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Added pagination and sorting">
+      <created>1578689647624</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1578689647625</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -808,7 +796,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="User fully complited" />
     <MESSAGE value="User login via facebook" />
     <MESSAGE value="Front encore added" />
     <MESSAGE value="Front scss/sass enabled" />
@@ -833,7 +820,8 @@
     <MESSAGE value="Activate, block user" />
     <MESSAGE value="Activate, confirm, block user" />
     <MESSAGE value="Filter for userlist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Filter for userlist" />
+    <MESSAGE value="Added pagination and sorting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pagination and sorting" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
@@ -848,10 +836,10 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1360.694@0.27.1360.694" timestamp="1578322005946" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578616957339">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578689647111">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578616957339" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578689647111" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1578157712395">
       <screen x="0" y="27" width="1360" height="694" />
@@ -867,10 +855,10 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1578157716279" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578616960112">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578689652755">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578616960112" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578689652755" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="405" y="205" width="540" height="336" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578678122362">
       <screen x="0" y="27" width="1360" height="694" />
