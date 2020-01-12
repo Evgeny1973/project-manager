@@ -10,11 +10,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     /**
-     * @Route("/", name="home")
+     * @Route("/work", name="work")
      * @return Response
      */
     public function index(): Response
     {
-        return $this->render('app/home.html.twig');
+        return $this->redirectToRoute('work.members.groups');
     }
 }

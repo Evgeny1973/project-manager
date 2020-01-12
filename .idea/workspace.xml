@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Work/GroupFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20200112212139.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Members/GroupsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Members/GroupsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/HomeController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -437,14 +441,7 @@
       <workItem from="1578663749537" duration="15602000" />
       <workItem from="1578775741774" duration="5137000" />
       <workItem from="1578834418843" duration="11995000" />
-      <workItem from="1578862241277" duration="887000" />
-    </task>
-    <task id="LOCAL-00017" summary="User registration">
-      <created>1570196591313</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1570196591313</updated>
+      <workItem from="1578862241277" duration="2197000" />
     </task>
     <task id="LOCAL-00018" summary="User registration via networks">
       <created>1570309263117</created>
@@ -782,7 +779,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578862169912</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Work members group">
+      <created>1578863146917</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1578863146918</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -846,29 +850,29 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1578854268639" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578862169716">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578863146473">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578862169716" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578863146473" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1578157712395">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1578157712395" />
-    <state x="330" y="186" width="593" height="373" key="NewPhpClassDialog" timestamp="1578860593680">
+    <state x="330" y="186" width="593" height="373" key="NewPhpClassDialog" timestamp="1578863802519">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="330" y="186" width="777" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1578860593680" />
+    <state x="330" y="186" width="777" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1578863802519" />
     <state x="330" y="191" width="593" height="373" key="NewPhpClassDialog/0.27.1360.715@0.27.1360.715" timestamp="1578179600773" />
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1578862354151">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1578862354151" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578862171753">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578863149409">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578862171753" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578863149409" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="405" y="205" width="540" height="336" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578678122362">
       <screen x="0" y="27" width="1360" height="694" />
