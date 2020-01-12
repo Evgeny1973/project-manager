@@ -41,7 +41,7 @@ class GroupsController extends AbstractController
     {
         $groups = $fetcher->all();
 
-        return $this->render('app/work/members/groups.index.html.twig', ['groups' => $groups]);
+        return $this->render('app/work/members/groups/index.html.twig', ['groups' => $groups]);
     }
 
     /**
@@ -66,7 +66,7 @@ class GroupsController extends AbstractController
                 $this->addFlash('error', $e->getMessage());
             }
         }
-        $this->render('app/work/members/groups/create.html.twig',
+        return $this->render('app/work/members/groups/create.html.twig',
             ['form' => $form->createView()]);
     }
 
@@ -93,8 +93,8 @@ class GroupsController extends AbstractController
                 $this->addFlash('error', $e->getMessage());
             }
         }
-        $this->render('app/work/members/groups/edit.html.twig',
-            ['form' => $form->createView()]);
+        return $this->render('app/work/members/groups/edit.html.twig',
+            ['group' => $group, 'form' => $form->createView()]);
     }
 
     /**

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Controller\Work\Work;
+namespace App\DataFixtures\Work;
 
 use App\Model\Work\Entity\Members\Group\Group;
 use App\Model\Work\Entity\Members\Group\Id;
