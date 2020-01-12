@@ -14,12 +14,14 @@ use App\Model\User\UseCase\SignUp\Confirm;
 use App\ReadModel\User\UserFetcher;
 use App\ReadModel\User\Filter;
 use Psr\Log\LoggerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
+ * @IsGranted("ROLE_MANAGE_USERS")
  * @Route("/users", name="users")
  */
 class UsersController extends AbstractController
