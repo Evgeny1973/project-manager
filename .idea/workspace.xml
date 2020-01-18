@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/Email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/EmailType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/Id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/IdType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/Member.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/MemberRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/Name.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/Status.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/StatusType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Archive/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Archive/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Create/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Create/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Create/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Edit/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Edit/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Edit/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Move/Command.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Member/GroupFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Member/GroupFetcher.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,22 +275,22 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member" />
+      <recent name="$PROJECT_DIR$/manager/src/DataFixtures" />
+      <recent name="$PROJECT_DIR$/manager/templates/app/work/members/groups" />
+      <recent name="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members" />
+      <recent name="$PROJECT_DIR$/manager/src/ReadModel" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member" />
       <recent name="$PROJECT_DIR$/manager/config/packages/test" />
       <recent name="$PROJECT_DIR$/manager/docker/production" />
       <recent name="$PROJECT_DIR$/manager/docker/production/nginx" />
       <recent name="$PROJECT_DIR$/manager/docker/development" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/src/DataFixtures" />
-      <recent name="$PROJECT_DIR$/manager/templates/app/work/members/groups" />
-      <recent name="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members" />
-      <recent name="$PROJECT_DIR$/manager/src/ReadModel" />
-      <recent name="$PROJECT_DIR$/manager/src/Model/User/UseCase/Email" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -336,9 +337,7 @@
       <list>
         <item itemvalue="PHPUnit.RoleTest.testSuccess" />
         <item itemvalue="PHP Script.index.php" />
-        <item itemvalue="Makefile.manager-init" />
         <item itemvalue="PHPUnit.RoleTest.testSuccess" />
-        <item itemvalue="Makefile.manager-init" />
       </list>
     </recent_temporary>
   </component>
@@ -451,14 +450,12 @@
       <workItem from="1578865375852" duration="613000" />
       <workItem from="1579006773366" duration="1543000" />
       <workItem from="1579083194772" duration="1750000" />
-      <workItem from="1579279813490" duration="7825000" />
-    </task>
-    <task id="LOCAL-00021" summary="Model User ready">
-      <created>1570544097726</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1570544097727</updated>
+      <workItem from="1579279813490" duration="7953000" />
+      <workItem from="1579368850804" duration="1311000" />
+      <workItem from="1579371819923" duration="5376000" />
+      <workItem from="1579384680353" duration="141000" />
+      <workItem from="1579384870697" duration="46000" />
+      <workItem from="1579384984781" duration="639000" />
     </task>
     <task id="LOCAL-00022" summary="Model User change to static">
       <created>1570559229130</created>
@@ -796,11 +793,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578865980274</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Work members">
+      <created>1579294565364</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1579294565364</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.configurationType" implementationName="MAKEFILE_TARGET_RUN_CONFIGURATION" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -816,7 +823,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Redis" />
     <MESSAGE value="Console Change role user/admin" />
     <MESSAGE value="Users profile" />
     <MESSAGE value="Users role" />
@@ -841,48 +847,49 @@
     <MESSAGE value="getDetail() changed to get()" />
     <MESSAGE value="Changed security to annotation in UsersController" />
     <MESSAGE value="Work members group" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work members group" />
+    <MESSAGE value="Work members" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work members" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1360.694@0.27.1360.694" timestamp="1578326308176" />
-    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1579292477406">
+    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1579383868435">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1579292477406" />
-    <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578862204644">
+    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1579383868434" />
+    <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579371764048">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1360.694@0.27.1360.694" timestamp="1578862204644" />
+    <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1360.694@0.27.1360.694" timestamp="1579371764048" />
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578854268639">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1578854268639" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1578865979635">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1579294564970">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1578865979635" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1579294564970" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
-    <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1578157712395">
+    <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579384911123">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1578157712395" />
-    <state x="330" y="186" width="593" height="373" key="NewPhpClassDialog" timestamp="1579293774983">
+    <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1579384911123" />
+    <state x="330" y="186" width="841" height="373" key="NewPhpClassDialog" timestamp="1579385796157">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="330" y="186" width="777" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1579293774983" />
+    <state x="330" y="186" width="841" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1579385796157" />
     <state x="330" y="191" width="593" height="373" key="NewPhpClassDialog/0.27.1360.715@0.27.1360.715" timestamp="1578179600773" />
-    <state x="169" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1579084251565">
+    <state x="169" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1579384916628">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1579084251564" />
+    <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1579384916628" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1578865982448">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1579294567394">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1578865982448" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1579294567394" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="405" y="205" width="540" height="336" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578678122362">
       <screen x="0" y="27" width="1360" height="694" />
