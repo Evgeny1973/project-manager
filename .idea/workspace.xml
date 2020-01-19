@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/members/create.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/members/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/members/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/members/member/status.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/members/move.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/members/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Members/MembersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/HomeController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -455,14 +449,7 @@
       <workItem from="1579384680353" duration="141000" />
       <workItem from="1579384870697" duration="46000" />
       <workItem from="1579384984781" duration="688000" />
-      <workItem from="1579450876460" duration="6993000" />
-    </task>
-    <task id="LOCAL-00025" summary="Model User doctrine annotations">
-      <created>1570743607848</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1570743607848</updated>
+      <workItem from="1579450876460" duration="10508000" />
     </task>
     <task id="LOCAL-00026" summary="Model User doctrine annotations">
       <created>1570744535912</created>
@@ -800,7 +787,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579462720635</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Added templates for members">
+      <created>1579463918566</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1579463918566</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -823,7 +817,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Users role" />
     <MESSAGE value="User change email" />
     <MESSAGE value="New User autologin" />
     <MESSAGE value="User can attach facebook" />
@@ -848,17 +841,18 @@
     <MESSAGE value="Work members" />
     <MESSAGE value="Work with member (create, delete...)" />
     <MESSAGE value="Added status widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added status widget" />
+    <MESSAGE value="Added templates for members" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added templates for members" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1360.694@0.27.1360.694" timestamp="1578326308176" />
-    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1579462378873">
+    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1579465305170">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1579462378873" />
+    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1579465305170" />
     <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579371764048">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
@@ -867,29 +861,29 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1578854268639" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1579462720429">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1579463918360">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1579462720429" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1579463918360" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579384911123">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1579384911123" />
-    <state x="330" y="186" width="865" height="373" key="NewPhpClassDialog" timestamp="1579462085482">
+    <state x="330" y="186" width="865" height="373" key="NewPhpClassDialog" timestamp="1579464751774">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="330" y="186" width="865" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1579462085482" />
+    <state x="330" y="186" width="865" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1579464751774" />
     <state x="330" y="191" width="593" height="373" key="NewPhpClassDialog/0.27.1360.715@0.27.1360.715" timestamp="1578179600773" />
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1579460689930">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1579460689930" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1579462722616">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1579463920470">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1579462722616" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1579463920470" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="405" y="205" width="540" height="336" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578678122362">
       <screen x="0" y="27" width="1360" height="694" />

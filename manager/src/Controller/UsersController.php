@@ -13,6 +13,7 @@ use App\Model\User\UseCase\Block;
 use App\Model\User\UseCase\SignUp\Confirm;
 use App\ReadModel\User\UserFetcher;
 use App\ReadModel\User\Filter;
+use App\ReadModel\Work\Members\Member\MemberFetcher;
 use Psr\Log\LoggerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Component\HttpFoundation\Request;
@@ -57,7 +58,7 @@ class UsersController extends AbstractController
             self::PER_PAGE,
             $request->query->get('sort', 'date'),
             $request->query->get('direction', 'desc')
-            );
+        );
 
         return $this->render('app/users/index.html.twig', [
             'pagination' => $pagination,
@@ -220,7 +221,7 @@ class UsersController extends AbstractController
             $this->addFlash('error', 'Нельзя заблокировать себя.');
             return $this->redirectToRoute('users.show', ['id' => $user->getId()]);
         }
-        
+
         if (!$this->isCsrfTokenValid('block', $request->request->get('token'))) {
             return $this->redirectToRoute('users.show', ['id' => $user->getId()]);
         }
@@ -240,10 +241,13 @@ class UsersController extends AbstractController
     /**
      * @Route("/{id}", name=".show")
      * @param User $user
+     * @param MemberFetcher $members
      * @return Response
      */
-    public function show(User $user): Response
+    public function show(User $user, MemberFetcher $members): Response
     {
-        return $this->render('app/users/show.html.twig', ['user' => $user]);
+        $member = $members->find($user->getId()->getValue());
+
+        return $this->render('app/users/show.html.twig', ['user' => $user, 'member' => $member]);
     }
 }
