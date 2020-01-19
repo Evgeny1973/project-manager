@@ -5,7 +5,6 @@ namespace App\Model\Work\Entity\Members\Member;
 
 
 use App\Model\EntityNotFoundException;
-use App\ReadModel\NotFoundException;
 use Doctrine\ORM\EntityManagerInterface;
 
 class MemberRepository

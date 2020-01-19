@@ -73,7 +73,7 @@ class Member
         $this->status = Status::archived();
     }
 
-    public function reinstance(): void
+    public function reinstate(): void
     {
         if ($this->status->isActive()) {
             throw new \DomainException('Member уже активный.');

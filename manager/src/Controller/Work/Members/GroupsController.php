@@ -8,7 +8,7 @@ use App\Model\Work\Entity\Members\Group\Group;
 use App\Model\Work\UseCase\Members\Create;
 use App\Model\Work\UseCase\Members\Edit;
 use App\Model\Work\UseCase\Members\Remove;
-use App\ReadModel\Work\Member\GroupFetcher;
+use App\ReadModel\Work\Members\GroupFetcher;
 use Psr\Log\LoggerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

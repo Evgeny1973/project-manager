@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\ReadModel\Work\Member;
+namespace App\ReadModel\Work\Members;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\FetchMode;
