@@ -22,7 +22,7 @@ class Member
 
     /**
      * @var Group
-     * @ORM\ManyToOne(targetEntity="App\Model\Work\Entity\Members\Group\Group)
+     * @ORM\ManyToOne(targetEntity="App\Model\Work\Entity\Members\Group\Group")
      * @ORM\JoinColumn(name="group_id", referencedColumnName="id", nullable=false)
      */
     private $group;
