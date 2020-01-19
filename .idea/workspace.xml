@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Move/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Move/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Reinstate/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Reinstate/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Members/Member/Filter/Filter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Members/Member/Filter/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Members/Member/MemberFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/docker/development/php-cli.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/php-cli.docker" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/docker/development/php-fpm.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/php-fpm.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Members/GroupsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Members/GroupsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/Member.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/Member.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/MemberRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/MemberRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Create/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Create/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Move/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member/Move/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Member/GroupFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Members/GroupFetcher.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -463,7 +449,7 @@
       <workItem from="1579384680353" duration="141000" />
       <workItem from="1579384870697" duration="46000" />
       <workItem from="1579384984781" duration="688000" />
-      <workItem from="1579450876460" duration="3914000" />
+      <workItem from="1579450876460" duration="4565000" />
     </task>
     <task id="LOCAL-00023" summary="Model User adding roles">
       <created>1570567938995</created>
@@ -875,10 +861,10 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1578854268639" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1579385836741">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1579460810729">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1579385836741" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1579460810729" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579384911123">
       <screen x="0" y="27" width="1360" height="694" />
