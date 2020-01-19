@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Members/MembersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/DataFixtures/Work/GroupFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/DataFixtures/Work/Members/GroupFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/Member.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/Member.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,19 +270,19 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member" />
-      <recent name="$PROJECT_DIR$/manager/src/DataFixtures" />
-      <recent name="$PROJECT_DIR$/manager/templates/app/work/members/groups" />
-      <recent name="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members" />
-      <recent name="$PROJECT_DIR$/manager/src/ReadModel" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member" />
       <recent name="$PROJECT_DIR$/manager/config/packages/test" />
       <recent name="$PROJECT_DIR$/manager/docker/production" />
       <recent name="$PROJECT_DIR$/manager/docker/production/nginx" />
       <recent name="$PROJECT_DIR$/manager/docker/development" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/src/DataFixtures/Work/Members" />
+      <recent name="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Member" />
+      <recent name="$PROJECT_DIR$/manager/src/DataFixtures" />
+      <recent name="$PROJECT_DIR$/manager/templates/app/work/members/groups" />
+      <recent name="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -449,14 +448,7 @@
       <workItem from="1579384680353" duration="141000" />
       <workItem from="1579384870697" duration="46000" />
       <workItem from="1579384984781" duration="688000" />
-      <workItem from="1579450876460" duration="10508000" />
-    </task>
-    <task id="LOCAL-00026" summary="Model User doctrine annotations">
-      <created>1570744535912</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1570744535912</updated>
+      <workItem from="1579450876460" duration="10933000" />
     </task>
     <task id="LOCAL-00027" summary="User email confirm">
       <created>1570829842799</created>
@@ -794,7 +786,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579463918566</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Members controller">
+      <created>1579467773966</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1579467773966</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -817,7 +816,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="User change email" />
     <MESSAGE value="New User autologin" />
     <MESSAGE value="User can attach facebook" />
     <MESSAGE value="User can change name" />
@@ -842,7 +840,8 @@
     <MESSAGE value="Work with member (create, delete...)" />
     <MESSAGE value="Added status widget" />
     <MESSAGE value="Added templates for members" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added templates for members" />
+    <MESSAGE value="Members controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Members controller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
@@ -861,10 +860,10 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1578854268639" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1579463918360">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1579467773796">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1579463918360" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1579467773796" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579384911123">
       <screen x="0" y="27" width="1360" height="694" />
@@ -880,10 +879,10 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1579460689930" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1579463920470">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1579467775832">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1579463920470" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1579467775832" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="405" y="205" width="540" height="336" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578678122362">
       <screen x="0" y="27" width="1360" height="694" />
