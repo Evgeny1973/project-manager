@@ -18,12 +18,6 @@ class Command
      * @var string
      * @Assert\NotBlank()
      */
-    public $group;
-
-    /**
-     * @var string
-     * @Assert\NotBlank()
-     */
     public $firstName;
 
     /**
