@@ -91,7 +91,7 @@ class MembersController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             try {
                 $handler->handle($command);
-                $this->redirectToRoute('work.members.show', ['id' => $user->getId()]);
+                return $this->redirectToRoute('work.members.show', ['id' => $user->getId()]);
             } catch (\DomainException $e) {
                 $this->logger->error($e->getMessage(), ['exception' => $e]);
                 $this->addFlash('error', $e->getMessage());
