@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Model\Work\UseCase\Members\Remove;
+namespace App\Model\Work\UseCase\Members\Group\Remove;
 
 
 use Symfony\Component\Validator\Constraints as Assert;

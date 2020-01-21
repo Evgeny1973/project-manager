@@ -5,9 +5,9 @@ namespace App\Controller\Work\Members;
 
 
 use App\Model\Work\Entity\Members\Group\Group;
-use App\Model\Work\UseCase\Members\Create;
-use App\Model\Work\UseCase\Members\Edit;
-use App\Model\Work\UseCase\Members\Remove;
+use App\Model\Work\UseCase\Members\Group\Create;
+use App\Model\Work\UseCase\Members\Group\Edit;
+use App\Model\Work\UseCase\Members\Group\Remove;
 use App\ReadModel\Work\Members\GroupFetcher;
 use Psr\Log\LoggerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;

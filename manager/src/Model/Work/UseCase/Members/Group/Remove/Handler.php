@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Model\Work\UseCase\Members\Create;
+namespace App\Model\Work\UseCase\Members\Group\Remove;
 
 
 use App\Model\Flusher;
@@ -28,11 +28,8 @@ class Handler
 
     public function handle(Command $command): void
     {
-        $group = new Group(
-            Id::next(),
-            $command->name
-        );
-        $this->groups->add($group);
+        $group = $this->groups->get(new Id($command->id));
+        $this->groups->remove($group);
         $this->flusher->flush();
     }
 }

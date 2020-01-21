@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Model\Work\UseCase\Members\Edit;
+namespace App\Model\Work\UseCase\Members\Group\Edit;
 
 
 use Symfony\Component\Form\AbstractType;
