@@ -21,7 +21,8 @@
             <thead>
             <tr>
                 <th>Name</th>
-                <th></th>
+                <th>Members</th>
+                <th>Edit/Delete</th>
             </tr>
             </thead>
             <tbody>
@@ -29,6 +30,7 @@
             {% for group in groups %}
                 <tr>
                     <td>{{ group.name }}</td>
+                    <td>{{ group.members }}</td>
                     <td>
                         <div class="d-flex flex-row">
                             <a href="{{ path('work.members.groups.edit', {'id': group.id}) }}" class="btn btn-sm btn-primary mr-1"><span class="fa fa-pencil"></span></a>
