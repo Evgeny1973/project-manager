@@ -73,7 +73,7 @@ class MemberFetcher
             throw new \UnexpectedValueException('Cannot sort by ' . $sort);
         }
 
-        $qb->orderBy('"' . $sort . '"', $direction === 'desc' ? 'desc' : 'asc');
+        $qb->orderBy($sort, $direction === 'desc' ? 'desc' : 'asc');
 
         return $this->paginator->paginate($qb, $page, $size);
     }

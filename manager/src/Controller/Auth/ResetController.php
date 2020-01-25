@@ -42,7 +42,7 @@ class ResetController extends AbstractController
                 return $this->redirectToRoute('home');
             } catch (\DomainException $e) {
                 $this->addFlash('error', $e->getMessage());
-                $this->logger->error($e->getMessage(), ['exception' => $e]);
+                $this->logger->warning($e->getMessage(), ['exception' => $e]);
             }
         }
         return $this->render('app/auth/reset/request.html.twig', [
@@ -75,7 +75,7 @@ class ResetController extends AbstractController
                 $this->addFlash('success', 'Пароль успешно изменён.');
                 return $this->redirectToRoute('home');
             } catch (\DomainException $e) {
-                $this->logger->error($e->getMessage(), ['exception' => $e]);
+                $this->logger->warning($e->getMessage(), ['exception' => $e]);
                 $this->addFlash('error', $e->getMessage());
             }
         }

@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/config/packages/knp_menu.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/override/menu.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Menu/SidebarMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Menu/SidebarMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Auth/ResetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Auth/ResetController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Profile/OAuth/DetachController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Profile/OAuth/DetachController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Members/Member/MemberFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Members/Member/MemberFetcher.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +92,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="work.members" />
+        <entry key="$PROJECT_DIR$" value="left.menu" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -457,14 +456,7 @@
       <workItem from="1579468952546" duration="567000" />
       <workItem from="1579606501207" duration="1629000" />
       <workItem from="1579633625000" duration="4957000" />
-      <workItem from="1579941758429" duration="3743000" />
-    </task>
-    <task id="LOCAL-00039" summary="Redis">
-      <created>1571606765498</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1571606765498</updated>
+      <workItem from="1579941758429" duration="5004000" />
     </task>
     <task id="LOCAL-00040" summary="Console Change role user/admin">
       <created>1571950942529</created>
@@ -802,7 +794,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579953414643</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="left menu">
+      <created>1579957684106</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1579957684106</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -825,7 +824,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Role Manager" />
     <MESSAGE value="Show users" />
     <MESSAGE value="Create new user" />
     <MESSAGE value="Edit user" />
@@ -850,7 +848,8 @@
     <MESSAGE value="Group members link" />
     <MESSAGE value="Add menu tabs" />
     <MESSAGE value="Add knp menu bundle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add knp menu bundle" />
+    <MESSAGE value="left menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="left menu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
@@ -869,10 +868,10 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1578854268639" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1579953414329">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1579981328007">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1579953414329" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1579981328007" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579638782154">
       <screen x="0" y="27" width="1360" height="694" />
@@ -888,11 +887,19 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1579460689930" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1579953416372">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1579957685629">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1579953416372" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1579957685629" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
+    <state x="100" y="37" width="868" height="632" key="find.popup" timestamp="1579981302269">
+      <screen x="0" y="27" width="1360" height="694" />
+    </state>
+    <state x="100" y="37" width="868" height="632" key="find.popup/0.27.1360.694@0.27.1360.694" timestamp="1579981302269" />
+    <state x="343" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1579980921013">
+      <screen x="0" y="27" width="1360" height="694" />
+    </state>
+    <state x="343" y="42" width="672" height="678" key="search.everywhere.popup/0.27.1360.694@0.27.1360.694" timestamp="1579980921013" />
     <state x="405" y="205" width="540" height="336" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578678122362">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
