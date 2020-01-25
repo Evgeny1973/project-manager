@@ -3,7 +3,7 @@
 
 namespace App\Controller;
 
-
+use App\Annotation\Guid;
 use App\Model\User\Entity\User\User;
 use App\Model\User\UseCase\Create;
 use App\Model\User\UseCase\Edit;
@@ -239,7 +239,7 @@ class UsersController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name=".show")
+     * @Route("/{id}", name=".show", requirements={"id"=Guid::PATTERN})
      * @param User $user
      * @param MemberFetcher $members
      * @return Response
