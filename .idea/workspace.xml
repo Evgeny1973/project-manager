@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Project/Edit/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Project/Edit/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Project/Edit/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Project/Reinstate/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Project/Reinstate/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -456,14 +455,7 @@
       <workItem from="1579606501207" duration="1629000" />
       <workItem from="1579633625000" duration="4957000" />
       <workItem from="1579941758429" duration="9683000" />
-      <workItem from="1580055729896" duration="9639000" />
-    </task>
-    <task id="LOCAL-00052" summary="Show users">
-      <created>1578511505148</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1578511505149</updated>
+      <workItem from="1580055729896" duration="10589000" />
     </task>
     <task id="LOCAL-00053" summary="Create new user">
       <created>1578516304772</created>
@@ -801,7 +793,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580070855330</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="UseCase Edit project">
+      <created>1580071734955</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1580071734955</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -824,7 +823,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UserFetcher getDetail changed" />
     <MESSAGE value="getDetail() changed to get()" />
     <MESSAGE value="Changed security to annotation in UsersController" />
     <MESSAGE value="Work members group" />
@@ -849,17 +847,18 @@
     <MESSAGE value="Project entity" />
     <MESSAGE value="UseCase Archive project" />
     <MESSAGE value="UseCase Create project" />
-    <option name="LAST_COMMIT_MESSAGE" value="UseCase Create project" />
+    <MESSAGE value="UseCase Edit project" />
+    <option name="LAST_COMMIT_MESSAGE" value="UseCase Edit project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1360.694@0.27.1360.694" timestamp="1578326308176" />
-    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1580071502053">
+    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1580072476186">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1580071502053" />
+    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1580072476186" />
     <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579371764048">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
@@ -868,29 +867,29 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1580070855187">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1580071734787">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1580070855187" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1580071734787" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579638782154">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1579638782154" />
-    <state x="330" y="186" width="857" height="373" key="NewPhpClassDialog" timestamp="1580071427913">
+    <state x="330" y="186" width="873" height="373" key="NewPhpClassDialog" timestamp="1580072420608">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="330" y="186" width="857" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1580071427913" />
+    <state x="330" y="186" width="873" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1580072420608" />
     <state x="330" y="191" width="593" height="373" key="NewPhpClassDialog/0.27.1360.715@0.27.1360.715" timestamp="1578179600773" />
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1579460689930">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1579460689930" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1580070856806">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1580071736427">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1580070856806" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1580071736427" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="100" y="37" width="868" height="632" key="find.popup" timestamp="1579981302269">
       <screen x="0" y="27" width="1360" height="694" />
