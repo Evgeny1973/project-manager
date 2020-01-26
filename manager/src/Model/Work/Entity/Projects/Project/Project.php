@@ -49,4 +49,64 @@ class Project
         $this->name = $name;
         $this->sort = $sort;
     }
+
+    public function archive(): void
+    {
+        if ($this->isArchived()) {
+            throw new \DomainException('Проект уже в архиве.');
+        }
+        $this->status = Status::archived();
+    }
+
+    public function reinstate(): void
+    {
+        if ($this->isActive()) {
+            throw new \DomainException('Проект уже активен.');
+        }
+        $this->status = Status::active();
+    }
+
+    public function isArchived(): bool
+    {
+        return $this->status->isArchived();
+    }
+
+    public function isActive(): bool
+    {
+        return $this->status->isActive();
+    }
+
+    /**
+     * @return Id
+     */
+    public function getId(): Id
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSort(): int
+    {
+        return $this->sort;
+    }
+
+    /**
+     * @return Status
+     */
+    public function getStatus(): Status
+    {
+        return $this->status;
+    }
+
+
 }
