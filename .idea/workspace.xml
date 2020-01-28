@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/ProjectsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20200127213238.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/Filter/Filter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/Filter/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/ProjectFetcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/ProjectController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/SettingsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Menu/Work/ProjectMenu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Widget/Work/Projects/Project/StatusWidget.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/create.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/_tabs.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/settings/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/settings/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/status.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/ProjectsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Menu/SidebarMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Menu/SidebarMenu.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +283,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -460,14 +471,7 @@
       <workItem from="1579941758429" duration="9683000" />
       <workItem from="1580055729896" duration="11339000" />
       <workItem from="1580210080188" duration="1805000" />
-      <workItem from="1580227315192" duration="2268000" />
-    </task>
-    <task id="LOCAL-00056" summary="Activate, confirm, block user">
-      <created>1578614993525</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1578614993525</updated>
+      <workItem from="1580227315192" duration="8076000" />
     </task>
     <task id="LOCAL-00057" summary="Filter for userlist">
       <created>1578616957567</created>
@@ -805,7 +809,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580073308173</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Projects fetcher, filter, form">
+      <created>1580230085482</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1580230085489</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -828,7 +839,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Work with member (create, delete...)" />
     <MESSAGE value="Added status widget" />
     <MESSAGE value="Added templates for members" />
     <MESSAGE value="Members controller" />
@@ -853,17 +863,18 @@
     <MESSAGE value="UseCase Reinstate project" />
     <MESSAGE value="UseCase Remove project" />
     <MESSAGE value="Create projects fixtures" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create projects fixtures" />
+    <MESSAGE value="Projects fetcher, filter, form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Projects fetcher, filter, form" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1360.694@0.27.1360.694" timestamp="1578326308176" />
-    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1580229580909">
+    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1580242739577">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1580229580909" />
+    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1580242739577" />
     <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579371764048">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
@@ -872,29 +883,29 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1580073308048">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1580230085044">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1580073308048" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1580230085044" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579638782154">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1579638782154" />
-    <state x="330" y="186" width="873" height="373" key="NewPhpClassDialog" timestamp="1580229560742">
+    <state x="330" y="186" width="873" height="373" key="NewPhpClassDialog" timestamp="1580245906119">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="330" y="186" width="873" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1580229560742" />
+    <state x="330" y="186" width="873" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1580245906119" />
     <state x="330" y="191" width="593" height="373" key="NewPhpClassDialog/0.27.1360.715@0.27.1360.715" timestamp="1578179600773" />
-    <state x="169" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1579460689930">
+    <state x="169" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1580231827687">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1579460689930" />
+    <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1580231827687" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1580073309868">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1580230087609">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1580073309868" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1580230087609" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="100" y="37" width="868" height="632" key="find.popup" timestamp="1579981302269">
       <screen x="0" y="27" width="1360" height="694" />
