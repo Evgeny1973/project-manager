@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/ProjectController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/SettingsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Menu/Work/ProjectMenu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Widget/Work/Projects/Project/StatusWidget.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/create.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/_tabs.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/settings/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/settings/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/status.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/widget/work/projects/project/status.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/ProjectsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Menu/SidebarMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Menu/SidebarMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Widget/Work/Projects/Project/StatusWidget.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Widget/Work/Projects/Project/StatusWidget.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -471,14 +458,8 @@
       <workItem from="1579941758429" duration="9683000" />
       <workItem from="1580055729896" duration="11339000" />
       <workItem from="1580210080188" duration="1805000" />
-      <workItem from="1580227315192" duration="8076000" />
-    </task>
-    <task id="LOCAL-00057" summary="Filter for userlist">
-      <created>1578616957567</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1578616957567</updated>
+      <workItem from="1580227315192" duration="8641000" />
+      <workItem from="1580288093269" duration="1234000" />
     </task>
     <task id="LOCAL-00058" summary="Added pagination and sorting">
       <created>1578689647624</created>
@@ -816,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580230085489</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="Projects">
+      <created>1580245988675</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1580245988675</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -839,7 +827,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added status widget" />
     <MESSAGE value="Added templates for members" />
     <MESSAGE value="Members controller" />
     <MESSAGE value="Members migration" />
@@ -864,7 +851,8 @@
     <MESSAGE value="UseCase Remove project" />
     <MESSAGE value="Create projects fixtures" />
     <MESSAGE value="Projects fetcher, filter, form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Projects fetcher, filter, form" />
+    <MESSAGE value="Projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Projects" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
@@ -883,10 +871,10 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1580230085044">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1580245988448">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1580230085044" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1580245988448" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579638782154">
       <screen x="0" y="27" width="1360" height="694" />
@@ -902,10 +890,10 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1580231827687" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1580230087609">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1580245990353">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1580230087609" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1580245990353" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="100" y="37" width="868" height="632" key="find.popup" timestamp="1579981302269">
       <screen x="0" y="27" width="1360" height="694" />

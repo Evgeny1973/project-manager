@@ -38,7 +38,7 @@ class ProjectsController extends AbstractController
      */
     public function index(Request $request, ProjectFetcher $fetcher): Response
     {
-        $filter = new Filter\Filter;
+        $filter = new Filter\Filter();
 
         $form = $this->createForm(Filter\Form::class, $filter);
         $form->handleRequest($request);
@@ -51,11 +51,19 @@ class ProjectsController extends AbstractController
             $request->query->get('direction', 'asc')
         );
 
-        return $this->render('app/work/projects/index.html.twig',
-            ['pagination' => $pagination,
-            'form' => $form->createView()]);
+        return $this->render('app/work/projects/index.html.twig', [
+            'pagination' => $pagination,
+            'form' => $form->createView(),
+        ]);
     }
 
+    /**
+     * @Route("create", name=".create")
+     * @param Request $request
+     * @param ProjectFetcher $projects
+     * @param Create\Handler $handler
+     * @return Response
+     */
     public function create(Request $request, ProjectFetcher $projects, Create\Handler $handler): Response
     {
         $this->denyAccessUnlessGranted('ROLE_WORK_MANAGE_PROJECTS');

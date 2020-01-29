@@ -12,7 +12,7 @@ class StatusWidget extends AbstractExtension
 {
     public function getFunctions(): array
     {
-        return [new TwigFunction('project_status', ['this', 'status'], ['needs_environment' => true, 'is_safe' => ['html']])];
+        return [new TwigFunction('project_status', [$this, 'status'], ['needs_environment' => true, 'is_safe' => ['html']])];
     }
 
     public function status(Environment $twig, string $status): string
