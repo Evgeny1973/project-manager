@@ -9,7 +9,7 @@ use function foo\func;
 
 /**
  * @ORM\Entity()
- * @ORM\Table(name="work_project_roles")
+ * @ORM\Table(name="work_projects_roles")
  */
 class Role
 {

@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/copy.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/create.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20200201212050.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20200201213206.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/RolesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/RolesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Migrations/Version20200131220559.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20200131220559.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Role/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Role/Role.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -471,14 +471,7 @@
       <workItem from="1580467046268" duration="595000" />
       <workItem from="1580502303457" duration="6555000" />
       <workItem from="1580532615977" duration="8658000" />
-      <workItem from="1580586722858" duration="3158000" />
-    </task>
-    <task id="LOCAL-00084" summary="Protect removing non-empty group">
-      <created>1579640217051</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1579640217051</updated>
+      <workItem from="1580586722858" duration="4703000" />
     </task>
     <task id="LOCAL-00085" summary="Group members link">
       <created>1579640731776</created>
@@ -816,7 +809,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580591052434</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="Roles templates">
+      <created>1580591309981</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1580591309981</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -839,7 +839,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UseCase Remove project" />
     <MESSAGE value="Create projects fixtures" />
     <MESSAGE value="Projects fetcher, filter, form" />
     <MESSAGE value="Projects" />
@@ -864,7 +863,8 @@
     <MESSAGE value="Roles controller Copy" />
     <MESSAGE value="Roles controller Delete" />
     <MESSAGE value="Roles controller Show" />
-    <option name="LAST_COMMIT_MESSAGE" value="Roles controller Show" />
+    <MESSAGE value="Roles templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Roles templates" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
@@ -887,10 +887,10 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1580591052268">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1580591309765">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1580591052268" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1580591309765" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
       <screen x="0" y="27" width="1360" height="694" />
@@ -926,10 +926,10 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1580231827687" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1580591054477">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1580591311609">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1580591054477" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1580591311609" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580590059578">
       <screen x="0" y="27" width="1360" height="694" />

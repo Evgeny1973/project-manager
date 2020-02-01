@@ -18,8 +18,8 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/work/projects/roles", name="work.project.roles")
- * @IsGranted("ROLE_WORK_MANGE_PROJECTS")
+ * @Route("/work/projects/roles", name="work.projects.roles")
+ * @IsGranted("ROLE_WORK_MANAGE_PROJECTS")
  */
 class RolesController extends AbstractController
 {
