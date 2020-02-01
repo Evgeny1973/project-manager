@@ -46,4 +46,26 @@ class RolesController extends AbstractController
 
         return $this->render('app/work/projects/roles/index.html.twig', ['roles' => $roles, 'permissions' => $permissions]);
     }
+
+    public function create(Request $request, Create\Handler $handler): Response
+    {
+        $command = new Create\Command;
+
+        $form = $this->createForm(Create\Form::class, $command);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            try {
+                $handler->handle($command);
+                return $this->redirectToRoute('work.projects.roles');
+            } catch (\DomainException $e) {
+                $this->logger->warning($e->getMessage(), ['exception' => $e]);
+                $this->addFlash('error', $e->getMessage());
+            }
+        }
+        return $this->render('app/work/projects/roles/create.html.twig',
+            ['form' => $form->createView()]);
+    }
+
+
 }
