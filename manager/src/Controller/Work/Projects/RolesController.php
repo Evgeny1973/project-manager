@@ -47,6 +47,12 @@ class RolesController extends AbstractController
         return $this->render('app/work/projects/roles/index.html.twig', ['roles' => $roles, 'permissions' => $permissions]);
     }
 
+    /**
+     * @Route("/create", name=".create")
+     * @param Request $request
+     * @param Create\Handler $handler
+     * @return Response
+     */
     public function create(Request $request, Create\Handler $handler): Response
     {
         $command = new Create\Command;
@@ -67,6 +73,13 @@ class RolesController extends AbstractController
             ['form' => $form->createView()]);
     }
 
+    /**
+     * @Route("/{id}/edit", name=".edit")
+     * @param Role $role
+     * @param Request $request
+     * @param Edit\Handler $handler
+     * @return Response
+     */
     public function edit(Role $role, Request $request, Edit\Handler $handler): Response
     {
         $command = Edit\Command::fromRole($role);
