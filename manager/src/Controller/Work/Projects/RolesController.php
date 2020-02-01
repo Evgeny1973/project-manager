@@ -101,4 +101,33 @@ class RolesController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
+
+    /**
+     * @Route("/{id}/copy", name=".copy")
+     * @param Role $role
+     * @param Request $request
+     * @param Copy\Handler $handler
+     * @return Response
+     */
+    public function copy(Role $role, Request $request, Copy\Handler $handler): Response
+    {
+        $command = new Copy\Command($role->getId()->getValue());
+
+        $form = $this->createForm(Copy\Form::class, $command);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            try {
+                $handler->handle($command);
+                $this->redirectToRoute('work.projects.roles');
+            } catch (\DomainException $e) {
+                $this->logger->warning($e->getMessage(), ['exception' => $e]);
+                $this->addFlash('error', $e->getMessage());
+            }
+        }
+        return $this->render('app/work/projects/roles/copy.html.twig', [
+            'role' => $role,
+            'form' => $form->createView(),
+        ]);
+    }
 }
