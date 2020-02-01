@@ -162,6 +162,6 @@ class RolesController extends AbstractController
      */
     public function show(Role $role): Response
     {
-        $this->render('app/work/projects/roles/show.html.twig', ['role' => $role]);
+        return $this->render('app/work/projects/roles/show.html.twig', ['role' => $role]);
     }
 }
