@@ -17,7 +17,6 @@
       <path value="$PROJECT_DIR$/manager/vendor/ocramius/package-versions" />
       <path value="$PROJECT_DIR$/manager/vendor/easycorp/easy-log-handler" />
       <path value="$PROJECT_DIR$/manager/vendor/doctrine/annotations" />
-      <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-cache-bundle" />
       <path value="$PROJECT_DIR$/manager/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-bundle" />
       <path value="$PROJECT_DIR$/manager/vendor/doctrine/collections" />
