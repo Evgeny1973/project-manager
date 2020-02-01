@@ -130,4 +130,28 @@ class RolesController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
+
+    /**
+     * @Route("/{id}/delete", name=".delete", methods={"POST"})
+     * @param Role $role
+     * @param Request $request
+     * @param Remove\Handler $handler
+     * @return Response
+     */
+    public function delete(Role $role, Request $request, Remove\Handler $handler): Response
+    {
+        if (!$this->isCsrfTokenValid('delete', $request->request->get('token'))) {
+            return $this->redirectToRoute('work.projects.roles.show', ['id' => $role->getId()]);
+        }
+
+        $command = new Remove\Command($role->getId()->getValue());
+
+        try {
+            $handler->handle($command);
+        } catch (\DomainException $e) {
+            $this->logger->warning($e->getMessage(), ['exception' => $e]);
+            $this->addFlash('error', $e->getMessage());
+        }
+        return $this->redirectToRoute('work.projects.roles');
+    }
 }
