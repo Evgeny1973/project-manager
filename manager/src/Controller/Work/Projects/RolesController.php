@@ -154,4 +154,14 @@ class RolesController extends AbstractController
         }
         return $this->redirectToRoute('work.projects.roles');
     }
+
+    /**
+     * @Route("/{id}", name=".show")
+     * @param Role $role
+     * @return Response
+     */
+    public function show(Role $role): Response
+    {
+        $this->render('app/work/projects/roles/show.html.twig', ['role' => $role]);
+    }
 }
