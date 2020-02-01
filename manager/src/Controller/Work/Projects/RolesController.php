@@ -67,5 +67,25 @@ class RolesController extends AbstractController
             ['form' => $form->createView()]);
     }
 
+    public function edit(Role $role, Request $request, Edit\Handler $handler): Response
+    {
+        $command = Edit\Command::fromRole($role);
 
+        $form = $this->createForm(Edit\Form::class, $command);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            try {
+                $handler->handle($command);
+                $this->redirectToRoute('work.projects.roles.show', ['id' => $role->getId()]);
+            } catch (\DomainException $e) {
+                $this->logger->warning($e->getMessage(), ['exception' => $e]);
+                $this->addFlash('error', $e->getMessage());
+            }
+        }
+        return $this->render('app/work/projects/roles/edit.html.twig', [
+            'role' => $role,
+            'form' => $form->createView(),
+        ]);
+    }
 }
