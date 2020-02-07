@@ -3,6 +3,9 @@
 
 namespace App\Model\Work\Entity\Projects\Project;
 
+use App\Model\Work\Entity\Members\Member\Id as MemberId;
+use App\Model\Work\Entity\Members\Member\Member;
+use App\Model\Work\Entity\Projects\Role\Role;
 use App\Model\Work\Entity\Projects\Project\Department\Department;
 use App\Model\Work\Entity\Projects\Project\Department\Id as DepartmentId;
 use Doctrine\Common\Collections\ArrayCollection;
