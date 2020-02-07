@@ -18,12 +18,14 @@ class Department
      * @ORM\JoinColumn(name="project_id", referencedColumnName="id", nullable=false)
      */
     private $project;
+
     /**
      * @var Id
      * @ORM\Column(type="work_projects_project_department_id")
      * @ORM\Id
      */
     private $id;
+
     /**
      * @var string
      * @ORM\Column(type="string")
