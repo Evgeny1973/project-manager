@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Project/Membership/Edit/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Project/Membership/Edit/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Project/Membership/Edit/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Project/Department/Department.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Project/Department/Department.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Project/Membership.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Project/Membership.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -475,13 +472,8 @@
       <workItem from="1580847340179" duration="1079000" />
       <workItem from="1581072953003" duration="4128000" />
       <workItem from="1581081828452" duration="19941000" />
-    </task>
-    <task id="LOCAL-00092" summary="add Guid pattern for annotations {id}">
-      <created>1579982718153</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1579982718153</updated>
+      <workItem from="1581110317856" duration="43000" />
+      <workItem from="1581157048892" duration="3286000" />
     </task>
     <task id="LOCAL-00093" summary="Update User Fixtures">
       <created>1579983315537</created>
@@ -819,7 +811,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581106781061</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="UseCase Membership edit">
+      <created>1581110345246</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1581110345246</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -842,7 +841,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Department remove usecase" />
     <MESSAGE value="Department datafixture" />
     <MESSAGE value="Department controller" />
     <MESSAGE value="Department templates" />
@@ -867,7 +865,8 @@
     <MESSAGE value="Edit Project entity" />
     <MESSAGE value="Add Department fetcher" />
     <MESSAGE value="UseCase Membership add" />
-    <option name="LAST_COMMIT_MESSAGE" value="UseCase Membership add" />
+    <MESSAGE value="UseCase Membership edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UseCase Membership edit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
@@ -890,10 +889,10 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1581106780915">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1581110344540">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581106780915" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581110344540" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
       <screen x="0" y="27" width="1360" height="694" />
@@ -929,10 +928,10 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1580231827687" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581106782826">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581110348845">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581106782826" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581110348845" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580590059578">
       <screen x="0" y="27" width="1360" height="694" />

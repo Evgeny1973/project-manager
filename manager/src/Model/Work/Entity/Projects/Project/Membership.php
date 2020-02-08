@@ -13,8 +13,10 @@ use Doctrine\ORM\Mapping as ORM;
 use Ramsey\Uuid\Uuid;
 
 /**
- * @ORM\Entity()
- * @ORM\Table(name="work_projects_project_memberships", uniqueConstraints={@ORM\UniqueConstraint(columns={"project_id", "member_id"}})
+ * @ORM\Entity
+ * @ORM\Table(name="work_projects_project_memberships", uniqueConstraints={
+ *     @ORM\UniqueConstraint(columns={"project_id", "member_id"})
+ * })
  */
 class Membership
 {
@@ -34,7 +36,7 @@ class Membership
 
     /**
      * @var Member
-     * @ORM\ManyToOne(targetEntity=""App\Model\Work\Entity\Members\Member\Member")
+     * @ORM\ManyToOne(targetEntity="App\Model\Work\Entity\Members\Member\Member")
      * @ORM\JoinColumn(name="member_id", referencedColumnName="id", nullable=false)
      */
     private $member;
@@ -42,14 +44,19 @@ class Membership
     /**
      * @var ArrayCollection | Department[]
      * @ORM\ManyToMany(targetEntity="App\Model\Work\Entity\Projects\Project\Department\Department")
-     * @ORM\JoinTable(name="work_projects_project_membership_departments", joinColumns={@ORM\JoinColumn(name="membership_id", referencedColumnName="id")}, inverseJoinColumns={@ORM\JoinColumn(name="department_id", referencedColumnName="id")})
+     * @ORM\JoinTable(name="work_projects_project_membership_departments",
+     *     joinColumns={@ORM\JoinColumn(name="membership_id", referencedColumnName="id")},
+     *     inverseJoinColumns={@ORM\JoinColumn(name="department_id",
+     *     referencedColumnName="id")})
      */
     private $departments;
 
     /**
      * @var ArrayCollection | Role[]
      * @ORM\ManyToMany(targetEntity="App\Model\Work\Entity\Projects\Role\Role")
-     * @ORM\JoinTable(name="work_projects_project_membership_roles", joinColumns={@ORM\JoinColumn(name="membership_id", referencedColumnName="id")}, inverseJoinColumns={@ORM\JoinColumn(name="role_id", referencedColumnName="id")})
+     * @ORM\JoinTable(name="work_projects_project_membership_roles",
+     *     joinColumns={@ORM\JoinColumn(name="membership_id", referencedColumnName="id")},
+     *     inverseJoinColumns={@ORM\JoinColumn(name="role_id", referencedColumnName="id")})
      */
     private $roles;
 
