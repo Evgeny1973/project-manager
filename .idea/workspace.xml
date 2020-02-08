@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/DataFixtures/Work/Projects/ProjectFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/DataFixtures/Work/Projects/ProjectFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/DepartmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/DepartmentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/Id.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member/Id.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Project/Membership.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Project/Membership.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/DepartmentFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/DepartmentFetcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/project/settings/departments/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/settings/departments/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -474,14 +478,7 @@
       <workItem from="1581081828452" duration="19941000" />
       <workItem from="1581110317856" duration="43000" />
       <workItem from="1581157048892" duration="3550000" />
-      <workItem from="1581160826854" duration="8530000" />
-    </task>
-    <task id="LOCAL-00098" summary="Project entity">
-      <created>1580067662436</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1580067662437</updated>
+      <workItem from="1581160826854" duration="12988000" />
     </task>
     <task id="LOCAL-00099" summary="UseCase Archive project">
       <created>1580068072314</created>
@@ -819,7 +816,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581168880224</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="Fix error in ProjectFixture">
+      <created>1581170762425</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1581170762425</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -842,7 +846,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Project settings menu and tabs" />
     <MESSAGE value="Roles Id IdType" />
     <MESSAGE value="Role entity" />
     <MESSAGE value="Role fixtures" />
@@ -867,7 +870,8 @@
     <MESSAGE value="UseCase Membership remove" />
     <MESSAGE value="Added membership fixtures" />
     <MESSAGE value="Added cant remove role with members" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added cant remove role with members" />
+    <MESSAGE value="Fix error in ProjectFixture" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix error in ProjectFixture" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
@@ -890,10 +894,10 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1581168879998">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1581170762260">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581168879998" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581170762260" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
       <screen x="0" y="27" width="1360" height="694" />
@@ -929,23 +933,23 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1581160796843" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581168885058">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581170764083">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581168885058" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581170764083" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580590059578">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1360.694@0.27.1360.694" timestamp="1580590059578" />
-    <state x="100" y="37" width="868" height="632" key="find.popup" timestamp="1579981302269">
+    <state x="100" y="37" width="868" height="632" key="find.popup" timestamp="1581179116079">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="100" y="37" width="868" height="632" key="find.popup/0.27.1360.694@0.27.1360.694" timestamp="1579981302269" />
-    <state x="343" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1579980921013">
+    <state x="100" y="37" width="868" height="632" key="find.popup/0.27.1360.694@0.27.1360.694" timestamp="1581179116079" />
+    <state x="343" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1581178445402">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="343" y="42" width="672" height="678" key="search.everywhere.popup/0.27.1360.694@0.27.1360.694" timestamp="1579980921013" />
+    <state x="343" y="42" width="672" height="678" key="search.everywhere.popup/0.27.1360.694@0.27.1360.694" timestamp="1581178445402" />
     <state x="405" y="205" width="540" height="336" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578678122362">
       <screen x="0" y="27" width="1360" height="694" />
     </state>

@@ -131,6 +131,16 @@ class Membership
         return $this->member->getId()->isEqual($id);
     }
 
+    public function isForDepartment(DepartmentId $id): bool
+    {
+        foreach ($this->departments as $department) {
+            if ($department->getId()->isEqual($id)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public function isGranted(string $permission): bool
     {
         foreach ($this->roles as $role) {
