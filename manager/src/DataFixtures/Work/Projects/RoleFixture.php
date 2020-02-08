@@ -12,6 +12,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 
 class RoleFixture extends Fixture
 {
+    public const REFERENCE_MANAGER = 'work_project_role_manager';
 
     /**
      * @inheritDoc
@@ -26,6 +27,7 @@ class RoleFixture extends Fixture
         ]);
 
         $manager->persist($manage);
+        $this->setReference(self::REFERENCE_MANAGER, $manage);
         $manager->flush();
     }
 
