@@ -26,7 +26,7 @@ class ProjectFixture extends Fixture implements DependentFixtureInterface
         $active = $this->createProject('First Project', 1);
         $active->addDepartment($development = DepartmentId::next(), 'Development');
         $active->addDepartment(DepartmentId::next(), 'Marketing');
-        $active->addMember($admin, ['development'], ['manage']);
+        $active->addMember($admin, [$development], [$manage]);
         $manager->persist($active);
 
         $active = $this->createProject('Second Project', 2);
