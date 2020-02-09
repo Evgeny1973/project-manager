@@ -44,7 +44,7 @@ class Form extends AbstractType
         }
 
         $builder
-            ->add('name', ChoiceType::class, ['choices' => $members])
+            ->add('member', ChoiceType::class, ['choices' => $members])
             ->add('departments', ChoiceType::class, [
                 'choices' => array_flip($this->departments->listOfProject($options['project'])),
                 'expanded' => true, 'multiple' => true,])
