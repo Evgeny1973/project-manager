@@ -23,6 +23,7 @@
                 <div class="col-md-2">{{ form_widget(form.name) }}</div>
                 <div class="col-md-2">{{ form_widget(form.email) }}</div>
                 <div class="col-md-2">{{ form_widget(form.group) }}</div>
+                <th>Projects</th>
                 <div class="col-md-2">{{ form_widget(form.status) }}</div>
                 <div class="col-md-2">
                     <button type="submit" class="btn btn-primary">Filter</button>
@@ -50,6 +51,7 @@
                     <td><a href="{{ path('work.members.show', {'id': member.id}) }}">{{ member.name }}</a></td>
                     <td>{{ member.email }}</td>
                     <td>{{ member.group }}</td>
+                    <td>{{ member.memberships_count }}</td>
                     <td>{{ member_status(member.status) }}</td>
                 </tr>
             {% endfor %}
