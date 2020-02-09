@@ -475,14 +475,8 @@
       <workItem from="1581110317856" duration="43000" />
       <workItem from="1581157048892" duration="3550000" />
       <workItem from="1581160826854" duration="15172000" />
-      <workItem from="1581192754127" duration="3678000" />
-    </task>
-    <task id="LOCAL-00102" summary="UseCase Reinstate project">
-      <created>1580072676295</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1580072676295</updated>
+      <workItem from="1581192754127" duration="3712000" />
+      <workItem from="1581242202139" duration="4082000" />
     </task>
     <task id="LOCAL-00103" summary="UseCase Remove project">
       <created>1580072964212</created>
@@ -820,7 +814,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581181553443</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="Memberships controller">
+      <created>1581197072643</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1581197072644</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -843,7 +844,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Role UseCase Copy" />
     <MESSAGE value="Role UseCase Create" />
     <MESSAGE value="Role UseCase Edit" />
     <MESSAGE value="composer.json updated!!" />
@@ -868,7 +868,8 @@
     <MESSAGE value="Count members in department" />
     <MESSAGE value="Count members in roles" />
     <MESSAGE value="Members controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Members controller" />
+    <MESSAGE value="Memberships controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Memberships controller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
@@ -891,10 +892,10 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1581181553275">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1581197071847">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581181553275" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581197071847" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
       <screen x="0" y="27" width="1360" height="694" />
@@ -930,10 +931,10 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1581160796843" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581181554997">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581197078157">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581181554997" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581197078157" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580590059578">
       <screen x="0" y="27" width="1360" height="694" />

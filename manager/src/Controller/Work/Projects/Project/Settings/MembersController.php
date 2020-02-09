@@ -3,7 +3,7 @@
 
 namespace App\Controller\Work\Projects\Project\Settings;
 
-
+use App\Annotation\Guid;
 use App\Model\Work\Entity\Members\Member\Id;
 use App\Model\Work\Entity\Projects\Project\Project;
 use App\Model\Work\UseCase\Projects\Project\Membership;
@@ -76,6 +76,14 @@ class MembersController extends AbstractController
             ['project' => $project, 'form' => $form->createView()]);
     }
 
+    /**
+     * @Route("/{member_id}/edit", name=".edit")
+     * @param Project $project
+     * @param string $member_id
+     * @param Request $request
+     * @param Membership\Edit\Handler $handler
+     * @return Response
+     */
     public function edit(Project $project, string $member_id, Request $request, Membership\Edit\Handler $handler): Response
     {
         $membership = $project->getMembership(new Id($member_id));
@@ -98,5 +106,43 @@ class MembersController extends AbstractController
             ['project' => $project,
                 'membership' => $membership,
                 'form' => $form->createView()]);
+    }
+
+    /**
+     * @Route("/{member_id}/revoke", name=".revoke", methods={"POST"})
+     * @param Project $project
+     * @param string $member_id
+     * @param Request $request
+     * @param Membership\Remove\Handler $handler
+     * @return Response
+     */
+    public function revoke(Project $project, string $member_id, Request $request, Membership\Remove\Handler $handler): Response
+    {
+        if (!$this->isCsrfTokenValid('revoke', $request->request->get('token'))) {
+            return $this->render('work.projects.project.settings.departments',
+                ['project_id' => $project->getId()]);
+        }
+
+        $command = new Membership\Remove\Command($project->getId()->getValue(), $member_id);
+
+        try {
+            $handler->handle($command);
+        } catch (\DomainException $e) {
+            $this->logger->warning($e->getMessage(), ['exception' => $e]);
+            $this->addFlash('error', $e->getMessage());
+        }
+
+        return $this->redirectToRoute('work.projects.project.settings.members', ['project_id' => $project->getId()]);
+    }
+
+    /**
+     * @Route("/{member_id", name=".show", requirements={"membet_id"=Guid::PATTERN})
+     * @param Project $project
+     * @return Response
+     */
+    public function show(Project $project): Response
+    {
+        return $this->redirectToRoute('work.projects.project.settings.members',
+            ['project_id' => $project->getId()]);
     }
 }
