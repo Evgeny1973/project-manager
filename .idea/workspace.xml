@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manager/src/Security/Voter/Work/ProjectAccess.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/ProjectsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/Filter/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/Filter/Filter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/ProjectFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/ProjectFetcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/DepartmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/DepartmentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/MembersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/MembersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/SettingsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Project/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Project/Project.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -478,14 +481,8 @@
       <workItem from="1581157048892" duration="3550000" />
       <workItem from="1581160826854" duration="15172000" />
       <workItem from="1581192754127" duration="3712000" />
-      <workItem from="1581242202139" duration="6807000" />
-    </task>
-    <task id="LOCAL-00106" summary="Projects">
-      <created>1580245988675</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1580245988675</updated>
+      <workItem from="1581242202139" duration="11557000" />
+      <workItem from="1581270776612" duration="1232000" />
     </task>
     <task id="LOCAL-00107" summary="Department entity">
       <created>1580407932345</created>
@@ -823,7 +820,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581260432258</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="member see only own projects">
+      <created>1581263134870</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1581263134870</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -846,7 +850,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Role UseCase Create" />
     <MESSAGE value="Role UseCase Edit" />
     <MESSAGE value="composer.json updated!!" />
     <MESSAGE value="Roles controller" />
@@ -871,7 +874,8 @@
     <MESSAGE value="Count members in roles" />
     <MESSAGE value="Members controller" />
     <MESSAGE value="Memberships controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Memberships controller" />
+    <MESSAGE value="member see only own projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="member see only own projects" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
@@ -894,10 +898,10 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1581263098801">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1581263134631">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581263098801" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581263134631" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
       <screen x="0" y="27" width="1360" height="694" />
@@ -923,20 +927,20 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state width="1314" height="159" key="GridCell.Tab.0.right/0.27.1360.694@0.27.1360.694" timestamp="1580421390216" />
-    <state x="330" y="186" width="937" height="373" key="NewPhpClassDialog" timestamp="1581180387791">
+    <state x="330" y="186" width="937" height="373" key="NewPhpClassDialog" timestamp="1581264153556">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="330" y="186" width="937" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1581180387791" />
+    <state x="330" y="186" width="937" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1581264153556" />
     <state x="330" y="191" width="593" height="373" key="NewPhpClassDialog/0.27.1360.715@0.27.1360.715" timestamp="1578179600773" />
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1581160796843">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1581160796843" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581260433700">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581263136334">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581260433700" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581263136334" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580590059578">
       <screen x="0" y="27" width="1360" height="694" />

@@ -3,6 +3,7 @@
 
 namespace App\Controller\Work\Projects\Project;
 
+use App\Security\Voter\Work\ProjectAccess;
 use App\Annotation\Guid;
 use App\Model\Work\Entity\Projects\Project\Project;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -21,6 +22,8 @@ class ProjectController extends AbstractController
      */
     public function show(Project $project): Response
     {
+        $this->denyAccessUnlessGranted(ProjectAccess::VIEW, $project);
+
         return $this->render('app/work/projects/project/show.html.twig', ['project' => $project]);
     }
 }
