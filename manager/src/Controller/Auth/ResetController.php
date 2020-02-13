@@ -3,8 +3,8 @@
 
 namespace App\Controller\Auth;
 
+use App\Controller\Work\ErrorHandler;
 use App\ReadModel\User\UserFetcher;
-use Psr\Log\LoggerInterface;
 use App\Model\User\UseCase\Reset;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -14,13 +14,13 @@ use Symfony\Component\Routing\Annotation\Route;
 class ResetController extends AbstractController
 {
     /**
-     * @var LoggerInterface
+     * @var ErrorHandler
      */
-    private $logger;
+    private $errors;
 
-    public function __construct(LoggerInterface $logger)
+    public function __construct(ErrorHandler $errors)
     {
-        $this->logger = $logger;
+        $this->errors = $errors;
     }
 
     /**
@@ -41,8 +41,8 @@ class ResetController extends AbstractController
                 $this->addFlash('success', 'Проверьте вашу почту.');
                 return $this->redirectToRoute('home');
             } catch (\DomainException $e) {
+                $this->errors->handle($e);
                 $this->addFlash('error', $e->getMessage());
-                $this->logger->warning($e->getMessage(), ['exception' => $e]);
             }
         }
         return $this->render('app/auth/reset/request.html.twig', [
@@ -75,7 +75,7 @@ class ResetController extends AbstractController
                 $this->addFlash('success', 'Пароль успешно изменён.');
                 return $this->redirectToRoute('home');
             } catch (\DomainException $e) {
-                $this->logger->warning($e->getMessage(), ['exception' => $e]);
+                $this->errors->handle($e);;
                 $this->addFlash('error', $e->getMessage());
             }
         }

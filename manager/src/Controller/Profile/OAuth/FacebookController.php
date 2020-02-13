@@ -3,6 +3,7 @@
 
 namespace App\Controller\Profile\OAuth;
 
+use App\Controller\Work\ErrorHandler;
 use App\Model\User\UseCase\Network\Attach\Command;
 use App\Model\User\UseCase\Network\Attach\Handler;
 use KnpU\OAuth2ClientBundle\Client\ClientRegistry;
@@ -15,10 +16,14 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class FacebookController extends AbstractController
 {
-    private $logger;
-    public function __construct(LoggerInterface $logger)
+    /**
+     * @var ErrorHandler
+     */
+    private $errors;
+
+    public function __construct(ErrorHandler $errors)
     {
-        $this->logger = $logger;
+        $this->errors = $errors;
     }
     /**
      * @Route("/attach", name="profile.oauth.facebook")
@@ -50,7 +55,7 @@ class FacebookController extends AbstractController
             $this->addFlash('success', 'Facebook привязан.');
             return $this->redirectToRoute('profile');
         } catch (\DomainException $e) {
-            $this->logger->warning($e->getMessage(), ['exception' => $e]);
+            $this->errors->handle($e);
             $this->addFlash('error', $e->getMessage());
             return $this->redirectToRoute('profile');
         }

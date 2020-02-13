@@ -4,8 +4,8 @@
 namespace App\Controller\Profile;
 
 
+use App\Controller\Work\ErrorHandler;
 use App\Model\User\UseCase\Email;
-use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,13 +17,13 @@ use Symfony\Component\Routing\Annotation\Route;
 class EmailController extends AbstractController
 {
     /**
-     * @var LoggerInterface
+     * @var ErrorHandler
      */
-    private $logger;
+    private $errors;
 
-    public function __construct(LoggerInterface $logger)
+    public function __construct(ErrorHandler $errors)
     {
-        $this->logger = $logger;
+        $this->errors = $errors;
     }
 
     /**
@@ -44,7 +44,7 @@ class EmailController extends AbstractController
                 $this->addFlash('success', 'Проверьте почту.');
                 return $this->redirectToRoute('profile');
             } catch (\DomainException $e) {
-                $this->logger->warning($e->getMessage(), ['exception' => $e]);
+                $this->errors->handle($e);
                 $this->addFlash('error', $e->getMessage());
             }
         }
@@ -66,7 +66,7 @@ class EmailController extends AbstractController
             $this->addFlash('success', 'Email изменён.');
             return $this->redirectToRoute('profile');
         } catch (\DomainException $e) {
-            $this->logger->warning($e->getMessage(), ['exception' => $e]);
+            $this->errors->handle($e);
             $this->addFlash('error', $e->getMessage());
             return $this->redirectToRoute('profile');
         }
