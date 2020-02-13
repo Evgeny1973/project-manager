@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/ErrorHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Auth/ResetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Auth/ResetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Auth/SignUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Auth/SignUpController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Profile/EmailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Profile/EmailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Profile/NameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Profile/NameController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Profile/OAuth/DetachController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Profile/OAuth/DetachController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Profile/OAuth/FacebookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Profile/OAuth/FacebookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Members/GroupsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Members/GroupsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Members/MembersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Members/MembersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/DepartmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/DepartmentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/MembersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/MembersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/Settings/SettingsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/ProjectsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/RolesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/RolesController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -487,13 +486,7 @@
       <workItem from="1581270776612" duration="6275000" />
       <workItem from="1581416732898" duration="1207000" />
       <workItem from="1581611617822" duration="3282000" />
-    </task>
-    <task id="LOCAL-00109" summary="Department edit usecase">
-      <created>1580408213999</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1580408213999</updated>
+      <workItem from="1581617128226" duration="1295000" />
     </task>
     <task id="LOCAL-00110" summary="Department remove usecase">
       <created>1580408319133</created>
@@ -831,7 +824,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581281349150</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="add errors handler">
+      <created>1581617171691</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1581617171708</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -854,7 +854,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Roles controller" />
     <MESSAGE value="Roles controller Create" />
     <MESSAGE value="Roles controller Edit" />
     <MESSAGE value="Roles controller Copy" />
@@ -879,7 +878,8 @@
     <MESSAGE value="member see only own projects" />
     <MESSAGE value="add voter for project access" />
     <MESSAGE value="add display membership in groups" />
-    <option name="LAST_COMMIT_MESSAGE" value="add display membership in groups" />
+    <MESSAGE value="add errors handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="add errors handler" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
@@ -902,10 +902,10 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1581281348870">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1581617171010">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581281348870" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581617171010" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
       <screen x="0" y="27" width="1360" height="694" />
@@ -941,19 +941,19 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1581617106201" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581281350798">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581617292839">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581281350798" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581617292839" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580590059578">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1360.694@0.27.1360.694" timestamp="1580590059578" />
-    <state x="100" y="37" width="868" height="632" key="find.popup" timestamp="1581179116079">
+    <state x="100" y="37" width="923" height="632" key="find.popup" timestamp="1581622006217">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="100" y="37" width="868" height="632" key="find.popup/0.27.1360.694@0.27.1360.694" timestamp="1581179116079" />
+    <state x="100" y="37" width="923" height="632" key="find.popup/0.27.1360.694@0.27.1360.694" timestamp="1581622006217" />
     <state x="343" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1581178445402">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
