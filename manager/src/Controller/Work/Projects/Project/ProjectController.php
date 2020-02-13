@@ -3,7 +3,7 @@
 
 namespace App\Controller\Work\Projects\Project;
 
-use App\Security\Voter\Work\ProjectAccess;
+use App\Security\Voter\Work\Projects\ProjectAccess;
 use App\Annotation\Guid;
 use App\Model\Work\Entity\Projects\Project\Project;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

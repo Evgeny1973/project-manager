@@ -4,7 +4,7 @@
 namespace App\Controller\Work\Projects\Project\Settings;
 
 use App\Controller\Work\ErrorHandler;
-use App\Security\Voter\Work\ProjectAccess;
+use App\Security\Voter\Work\Projects\ProjectAccess;
 use App\Annotation\Guid;
 use App\Model\Work\Entity\Members\Member\Id;
 use App\Model\Work\Entity\Projects\Project\Project;

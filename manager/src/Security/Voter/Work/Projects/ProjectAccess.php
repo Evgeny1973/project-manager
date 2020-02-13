@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Security\Voter\Work;
+namespace App\Security\Voter\Work\Projects;
 
 
 use App\Model\Work\Entity\Members\Member\Id;
