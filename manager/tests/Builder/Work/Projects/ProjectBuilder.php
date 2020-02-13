@@ -18,7 +18,7 @@ class ProjectBuilder
         $this->sort = 1;
     }
 
-    private function build(): Project
+    public function build(): Project
     {
         return new Project(
             Id::next(),
