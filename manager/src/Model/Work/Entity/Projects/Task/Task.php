@@ -6,6 +6,7 @@ namespace App\Model\Work\Entity\Projects\Task;
 
 use App\Model\Work\Entity\Members\Member\Member;
 use App\Model\Work\Entity\Projects\Project\Project;
+use phpDocumentor\Reflection\Types\Null_;
 
 class Task
 {
@@ -28,6 +29,11 @@ class Task
      * @var \DateTimeImmutable
      */
     private $date;
+
+    /**
+     * @var \DateTimeImmutable|Null
+     */
+    private $planDate;
 
     /**
      * @var Type
@@ -82,6 +88,11 @@ class Task
         $this->content = $content;
     }
 
+    public function plan(?\DateTimeImmutable $date): void
+    {
+        $this->planDate = $date;
+    }
+
     /**
      * @return Id
      */
@@ -112,6 +123,14 @@ class Task
     public function getDate(): \DateTimeImmutable
     {
         return $this->date;
+    }
+
+    /**
+     * @return \DateTimeImmutable|Null
+     */
+    public function getPlanDate(): ?\DateTimeImmutable
+    {
+        return $this->planDate;
     }
 
     /**
