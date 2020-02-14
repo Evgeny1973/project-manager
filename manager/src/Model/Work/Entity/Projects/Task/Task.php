@@ -144,6 +144,9 @@ class Task
             throw new \DomainException('Сейчас такой же статус.');
         }
         $this->status = $status;
+        if ($status->isDone() && $this->progress !== 100) {
+            $this->changeProgress(100);
+        }
     }
 
     public function changeProgress(int $progress): void

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/Executor/AssignTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/Executor/RevokeTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/ChangeStatusTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/ChangeStatusTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -483,14 +482,7 @@
       <workItem from="1581416732898" duration="1207000" />
       <workItem from="1581611617822" duration="3282000" />
       <workItem from="1581617128226" duration="7262000" />
-      <workItem from="1581672948128" duration="9988000" />
-    </task>
-    <task id="LOCAL-00124" summary="Roles controller">
-      <created>1580542538931</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1580542538931</updated>
+      <workItem from="1581672948128" duration="10461000" />
     </task>
     <task id="LOCAL-00125" summary="Roles controller">
       <created>1580559900638</created>
@@ -828,7 +820,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581681303941</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="add executor task">
+      <created>1581683360294</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1581683360299</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -851,7 +850,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UseCase Membership add" />
     <MESSAGE value="UseCase Membership edit" />
     <MESSAGE value="UseCase Membership remove" />
     <MESSAGE value="Added membership fixtures" />
@@ -876,7 +874,8 @@
     <MESSAGE value="add changeType task" />
     <MESSAGE value="add changeStatus and changeProgress task" />
     <MESSAGE value="add changePriority task" />
-    <option name="LAST_COMMIT_MESSAGE" value="add changePriority task" />
+    <MESSAGE value="add executor task" />
+    <option name="LAST_COMMIT_MESSAGE" value="add executor task" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
@@ -901,13 +900,13 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2" timestamp="1581681303795">
+    <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2" timestamp="1581683360103">
       <screen x="0" y="27" width="1401" height="675" />
     </state>
     <state x="245" y="27" width="865" height="643" key="CommitChangelistDialog2/0.27.1360.643@0.27.1360.643" timestamp="1581675775918" />
     <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581674497188" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
-    <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2/0.27.1401.675@0.27.1401.675" timestamp="1581681303795" />
+    <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2/0.27.1401.675@0.27.1401.675" timestamp="1581683360103" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
@@ -944,13 +943,13 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1581617106201" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581681305995">
+    <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581683361921">
       <screen x="0" y="27" width="1401" height="675" />
     </state>
     <state x="275" y="92" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.643@0.27.1360.643" timestamp="1581675778637" />
     <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581674500605" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
-    <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1401.675@0.27.1401.675" timestamp="1581681305995" />
+    <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1401.675@0.27.1401.675" timestamp="1581683361921" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580590059578">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
