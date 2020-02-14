@@ -6,6 +6,7 @@ namespace App\Model\Work\Entity\Projects\Task;
 
 use App\Model\Work\Entity\Members\Member\Member;
 use App\Model\Work\Entity\Projects\Project\Project;
+use Webmozart\Assert\Assert;
 
 class Task
 {
@@ -64,6 +65,11 @@ class Task
      */
     private $parent;
 
+    /**
+     * @var Status
+     */
+    private $status;
+
 
     public function __construct(
         Id $id,
@@ -84,6 +90,8 @@ class Task
         $this->progress = 0;
         $this->type = $type;
         $this->priority = $priority;
+        $this->status = Status::new();
+
     }
 
     public function edit(string $name, ?string $content): void
@@ -124,6 +132,28 @@ class Task
             throw new \DomainException('Это тот же тип.');
         }
         $this->type = $type;
+    }
+
+    public function changeStatus(Status $status): void
+    {
+        if ($this->status->isEqual($status)) {
+            throw new \DomainException('Этот статус уже задан.');
+        }
+        $this->status = $status;
+    }
+
+    public function changeProgress(int $progress): void
+    {
+        Assert::range($progress, 0, 100);
+        if ($this->progress === $progress) {
+            throw new \DomainException('Прогресс уже такой же.');
+        }
+        $this->progress = $progress;
+    }
+
+    public function isNew(): bool
+    {
+        return $this->status->isNew();
     }
 
     /**
@@ -213,4 +243,13 @@ class Task
     {
         return $this->parent;
     }
+
+    /**
+     * @return Status
+     */
+    public function getStatus(): Status
+    {
+        return $this->status;
+    }
+
 }
