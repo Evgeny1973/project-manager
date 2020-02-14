@@ -110,6 +110,14 @@ class Task
         $this->parent = $parent;
     }
 
+    public function move(Project $project): void
+    {
+        if ($project === $this->project) {
+            throw new \DomainException('Это тот же проект.');
+        }
+        $this->project = $project;
+    }
+
     /**
      * @return Id
      */
