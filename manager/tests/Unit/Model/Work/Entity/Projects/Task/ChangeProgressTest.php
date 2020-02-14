@@ -32,7 +32,7 @@ class ChangeProgressTest extends TestCase
 
         $task->changeProgress($progress = 25);
 
-        $this->expectExceptionMessage('Progress is already same.');
+        $this->expectExceptionMessage('Сейчас прогресс тот же.');
         $task->changeProgress($progress);
     }
 

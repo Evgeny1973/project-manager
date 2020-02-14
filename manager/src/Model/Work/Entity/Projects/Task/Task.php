@@ -146,7 +146,7 @@ class Task
     {
         Assert::range($progress, 0, 100);
         if ($this->progress === $progress) {
-            throw new \DomainException('Прогресс уже такой же.');
+            throw new \DomainException('Сейчас прогресс тот же.');
         }
         $this->progress = $progress;
     }
