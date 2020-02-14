@@ -118,6 +118,14 @@ class Task
         $this->project = $project;
     }
 
+    public function changeType(Type $type): void
+    {
+        if ($this->type->isEqual($type)) {
+            throw new \DomainException('Это тот же тип.');
+        }
+        $this->type = $type;
+    }
+
     /**
      * @return Id
      */
