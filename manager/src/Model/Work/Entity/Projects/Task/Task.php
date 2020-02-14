@@ -76,6 +76,12 @@ class Task
         $this->priority = $priority;
     }
 
+    public function edit(string $name, ?string $content): void
+    {
+        $this->name = $name;
+        $this->content = $content;
+    }
+
     /**
      * @return Id
      */
