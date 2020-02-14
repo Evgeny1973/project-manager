@@ -22,6 +22,9 @@ class ChangeStatusTest extends TestCase
         $task->changeStatus($status = new Status(Status::WORKING), $date = new \DateTimeImmutable());
 
         self::assertEquals($status, $task->getStatus());
+
+        self::assertEquals($date, $task->getStartDate());
+        self::assertNull($task->getEndDate());
     }
 
     public function testAlready(): void

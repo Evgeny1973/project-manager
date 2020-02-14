@@ -324,17 +324,17 @@ class Task
     }
 
     /**
-     * @return \DateTimeImmutable
+     * @return \DateTimeImmutable|null
      */
-    public function getStartDate(): \DateTimeImmutable
+    public function getStartDate(): ?\DateTimeImmutable
     {
         return $this->startDate;
     }
 
     /**
-     * @return \DateTimeImmutable
+     * @return \DateTimeImmutable|null
      */
-    public function getEndDate(): \DateTimeImmutable
+    public function getEndDate(): ?\DateTimeImmutable
     {
         return $this->endDate;
     }

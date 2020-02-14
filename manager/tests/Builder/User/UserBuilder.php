@@ -4,6 +4,7 @@
 namespace App\Tests\Builder\User;
 
 use App\Model\User\Entity\User\Email;
+use App\Model\User\Entity\User\Name;
 use App\Model\User\Entity\User\User;
 use App\Model\User\Entity\User\Id;
 
@@ -11,10 +12,13 @@ class UserBuilder
 {
     private $id;
     private $date;
+    private $name;
+
     private $email;
     private $hash;
     private $token;
     private $confirmed;
+
     private $network;
     private $identity;
 
@@ -22,6 +26,7 @@ class UserBuilder
     {
         $this->id = Id::next();
         $this->date = new \DateTimeImmutable();
+        $this->name = new Name('First', 'Last');
     }
 
     public function viaEmail(Email $email = null, string $hash = null, string $token = null): self
@@ -54,23 +59,29 @@ class UserBuilder
             $user = User::signUpByEmail(
                 $this->id,
                 $this->date,
+                $this->name,
                 $this->email,
                 $this->hash,
                 $this->token
             );
+
             if ($this->confirmed) {
                 $user->confirmSignUp();
             }
+
             return $user;
         }
+
         if ($this->network) {
             return User::signUpByNetwork(
                 $this->id,
                 $this->date,
+                $this->name,
                 $this->network,
                 $this->identity
             );
         }
+
         throw new \BadMethodCallException('Укажите метод регистрации.');
     }
 }
