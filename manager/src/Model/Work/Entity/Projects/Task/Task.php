@@ -137,7 +137,7 @@ class Task
     public function changeStatus(Status $status): void
     {
         if ($this->status->isEqual($status)) {
-            throw new \DomainException('Этот статус уже задан.');
+            throw new \DomainException('Сейчас такой же статус.');
         }
         $this->status = $status;
     }
@@ -146,9 +146,18 @@ class Task
     {
         Assert::range($progress, 0, 100);
         if ($this->progress === $progress) {
-            throw new \DomainException('Сейчас прогресс тот же.');
+            throw new \DomainException('Сейчас такой же прогресс.');
         }
         $this->progress = $progress;
+    }
+
+    public function changePriority(int $priority): void
+    {
+        Assert::range($priority, 1, 4);
+        if ($this->priority === $priority) {
+            throw new \DomainException('Сейчас такой же приоритет.');
+        }
+        $this->priority = $priority;
     }
 
     public function isNew(): bool
