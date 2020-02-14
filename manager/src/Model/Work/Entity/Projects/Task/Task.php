@@ -6,7 +6,6 @@ namespace App\Model\Work\Entity\Projects\Task;
 
 use App\Model\Work\Entity\Members\Member\Member;
 use App\Model\Work\Entity\Projects\Project\Project;
-use phpDocumentor\Reflection\Types\Null_;
 
 class Task
 {
@@ -31,7 +30,7 @@ class Task
     private $date;
 
     /**
-     * @var \DateTimeImmutable|Null
+     * @var \DateTimeImmutable|null
      */
     private $planDate;
 
@@ -59,6 +58,11 @@ class Task
      * @var int
      */
     private $progress;
+
+    /**
+     * @var Task|null
+     */
+    private $parent;
 
 
     public function __construct(
@@ -91,6 +95,19 @@ class Task
     public function plan(?\DateTimeImmutable $date): void
     {
         $this->planDate = $date;
+    }
+
+    public function setChildOf(?Task $parent): void
+    {
+        if ($parent) {
+            $current = $parent;
+            do {
+                if ($current === $this) {
+                    throw new \DomainException('Нельзя: можем впасть в цикл.');
+                }
+            } while ($current && $current = $current->getParent());
+        }
+        $this->parent = $parent;
     }
 
     /**
@@ -173,5 +190,11 @@ class Task
         return $this->progress;
     }
 
-
+    /**
+     * @return Task|null
+     */
+    public function getParent(): ?Task
+    {
+        return $this->parent;
+    }
 }
