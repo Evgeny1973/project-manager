@@ -69,10 +69,11 @@ class Task
         $this->project = $project;
         $this->author = $author;
         $this->date = $date;
-        $this->type = $type;
-        $this->priority = $priority;
         $this->name = $name;
         $this->content = $content;
+        $this->progress = 0;
+        $this->type = $type;
+        $this->priority = $priority;
     }
 
     /**
