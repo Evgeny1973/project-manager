@@ -219,6 +219,24 @@ class Task
         return $this->status->isNew();
     }
 
+    public function isWorking(): bool
+    {
+        return $this->status->isWorking();
+    }
+
+    public function start(\DateTimeImmutable $date): void
+    {
+        if (!$this->isNew()) {
+            throw new \DomainException('Задача уже в работе.');
+        }
+
+        if (!$this->executors->count()) {
+            throw new \DomainException('У задачи нет исполнителей.');
+        }
+
+        $this->changeStatus(Status::working(), $date);
+    }
+
     /**
      * @return Id
      */

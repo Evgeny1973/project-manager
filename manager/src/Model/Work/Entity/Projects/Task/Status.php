@@ -35,6 +35,11 @@ class Status
         return new self(self::NEW);
     }
 
+    public function isWorking(): bool
+    {
+        return $this->name === self::WORKING;
+    }
+
     public static function working(): self
     {
         return new self(self::WORKING);
