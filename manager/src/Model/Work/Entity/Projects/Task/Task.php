@@ -37,6 +37,16 @@ class Task
     private $planDate;
 
     /**
+     * @var \DateTimeImmutable
+     */
+    private $startDate;
+
+    /**
+     * @var \DateTimeImmutable
+     */
+    private $endDate;
+
+    /**
      * @var Type
      */
     private $type;
@@ -138,14 +148,22 @@ class Task
         $this->type = $type;
     }
 
-    public function changeStatus(Status $status): void
+    public function changeStatus(Status $status, \DateTimeImmutable $date): void
     {
         if ($this->status->isEqual($status)) {
             throw new \DomainException('Сейчас такой же статус.');
         }
         $this->status = $status;
-        if ($status->isDone() && $this->progress !== 100) {
-            $this->changeProgress(100);
+        if (!$status->isNew() && !$this->startDate) {
+            $this->startDate = $date;
+        }
+        if ($status->isDone()) {
+            if ($this->progress !== 100) {
+                $this->changeProgress(100);
+            }
+            $this->endDate = $date;
+        } else {
+            $this->endDate = null;
         }
     }
 
@@ -303,5 +321,21 @@ class Task
     public function getExecutors(): array
     {
         return $this->executors->toArray();
+    }
+
+    /**
+     * @return \DateTimeImmutable
+     */
+    public function getStartDate(): \DateTimeImmutable
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @return \DateTimeImmutable
+     */
+    public function getEndDate(): \DateTimeImmutable
+    {
+        return $this->endDate;
     }
 }

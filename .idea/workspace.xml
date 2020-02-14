@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/ChangeStatusTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/ChangeStatusTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/CreateTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/CreateTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -482,14 +483,7 @@
       <workItem from="1581416732898" duration="1207000" />
       <workItem from="1581611617822" duration="3282000" />
       <workItem from="1581617128226" duration="7262000" />
-      <workItem from="1581672948128" duration="10461000" />
-    </task>
-    <task id="LOCAL-00125" summary="Roles controller">
-      <created>1580559900638</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1580559900638</updated>
+      <workItem from="1581672948128" duration="11694000" />
     </task>
     <task id="LOCAL-00126" summary="Roles controller Create">
       <created>1580561687308</created>
@@ -827,7 +821,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581683360299</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="add progress to 100 task">
+      <created>1581683936731</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1581683936731</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -850,7 +851,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UseCase Membership edit" />
     <MESSAGE value="UseCase Membership remove" />
     <MESSAGE value="Added membership fixtures" />
     <MESSAGE value="Added cant remove role with members" />
@@ -875,19 +875,20 @@
     <MESSAGE value="add changeStatus and changeProgress task" />
     <MESSAGE value="add changePriority task" />
     <MESSAGE value="add executor task" />
-    <option name="LAST_COMMIT_MESSAGE" value="add executor task" />
+    <MESSAGE value="add progress to 100 task" />
+    <option name="LAST_COMMIT_MESSAGE" value="add progress to 100 task" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1360.694@0.27.1360.694" timestamp="1578326308176" />
-    <state x="503" y="90" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1581679675754">
+    <state x="503" y="90" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1581684809302">
       <screen x="0" y="27" width="1401" height="675" />
     </state>
     <state x="488" y="87" key="#com.intellij.ide.util.MemberChooser/0.27.1360.643@0.27.1360.643" timestamp="1581675533665" />
     <state x="488" y="92" width="441" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1581630443818" />
-    <state x="503" y="90" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1401.675@0.27.1401.675" timestamp="1581679675754" />
+    <state x="503" y="90" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1401.675@0.27.1401.675" timestamp="1581684809302" />
     <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579371764048">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
@@ -900,13 +901,13 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2" timestamp="1581683360103">
+    <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2" timestamp="1581683936608">
       <screen x="0" y="27" width="1401" height="675" />
     </state>
     <state x="245" y="27" width="865" height="643" key="CommitChangelistDialog2/0.27.1360.643@0.27.1360.643" timestamp="1581675775918" />
     <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581674497188" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
-    <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2/0.27.1401.675@0.27.1401.675" timestamp="1581683360103" />
+    <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2/0.27.1401.675@0.27.1401.675" timestamp="1581683936608" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
@@ -943,13 +944,13 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1581617106201" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581683361921">
+    <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581683938150">
       <screen x="0" y="27" width="1401" height="675" />
     </state>
     <state x="275" y="92" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.643@0.27.1360.643" timestamp="1581675778637" />
     <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581674500605" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
-    <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1401.675@0.27.1401.675" timestamp="1581683361921" />
+    <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1401.675@0.27.1401.675" timestamp="1581683938150" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580590059578">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
