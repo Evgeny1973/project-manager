@@ -28,7 +28,7 @@ class Type
 
     public function isEqual(self $other): bool
     {
-        return $this->getName() === $other>getName();
+        return $this->getName() === $other->getName();
     }
 
     /**

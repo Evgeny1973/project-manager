@@ -32,7 +32,7 @@ class ChangePriorityTest extends TestCase
 
         $task->changePriority($priority = 3);
 
-        $this->expectExceptionMessage('Priority is already same.');
+        $this->expectExceptionMessage('Сейчас такой же приоритет.');
         $task->changePriority($priority);
     }
 
