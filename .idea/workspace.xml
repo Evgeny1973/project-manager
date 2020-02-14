@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/tests/Builder/Work/Projects/TaskBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/EditTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/_tabs.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Menu/Work/ProjectMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Menu/Work/Projects/ProjectMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Menu/Work/ProjectSettingsMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Menu/Work/Projects/SettingsMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Menu/Work/ProjectsMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Menu/Work/MainMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/_tabs.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/create.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/copy.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/copy.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/create.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/roles/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +274,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/src/Security/Voter/Work/Projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/src/Menu/Work/Projects" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -272,19 +282,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/src/Security/Voter/Work/Projects" />
-      <recent name="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Role/Remove" />
-      <recent name="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/Filter" />
-      <recent name="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Group" />
-      <recent name="$PROJECT_DIR$/manager/templates/widget/work/members/member" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member" />
       <recent name="$PROJECT_DIR$/manager/config/packages/test" />
       <recent name="$PROJECT_DIR$/manager/docker/production" />
       <recent name="$PROJECT_DIR$/manager/docker/production/nginx" />
       <recent name="$PROJECT_DIR$/manager/docker/development" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/src/Menu/Work/Projects" />
+      <recent name="$PROJECT_DIR$/manager/src/Security/Voter/Work/Projects" />
+      <recent name="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Role/Remove" />
+      <recent name="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/Filter" />
+      <recent name="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Members/Group" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -483,14 +493,7 @@
       <workItem from="1581416732898" duration="1207000" />
       <workItem from="1581611617822" duration="3282000" />
       <workItem from="1581617128226" duration="7262000" />
-      <workItem from="1581672948128" duration="1401000" />
-    </task>
-    <task id="LOCAL-00115" summary="Project settings menu and tabs">
-      <created>1580409767586</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1580409767586</updated>
+      <workItem from="1581672948128" duration="2354000" />
     </task>
     <task id="LOCAL-00116" summary="Project settings menu and tabs">
       <created>1580410467246</created>
@@ -828,7 +831,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581673236923</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="add Task unittests">
+      <created>1581674497447</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1581674497447</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -851,7 +861,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Roles controller Delete" />
     <MESSAGE value="Roles controller Show" />
     <MESSAGE value="Roles templates" />
     <MESSAGE value="Roles some bug fix" />
@@ -876,7 +885,8 @@
     <MESSAGE value="some fixes" />
     <MESSAGE value="create builders for tests" />
     <MESSAGE value="add Task entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Task entity" />
+    <MESSAGE value="add Task unittests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Task unittests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
@@ -891,27 +901,27 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1360.694@0.27.1360.694" timestamp="1579371764048" />
-    <state x="367" y="27" width="606" height="694" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580507640696">
+    <state x="367" y="27" width="606" height="694" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581674766697">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="367" y="27" width="606" height="694" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1360.694@0.27.1360.694" timestamp="1580507640696" />
+    <state x="367" y="27" width="606" height="694" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1360.694@0.27.1360.694" timestamp="1581674766697" />
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1580059547227">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1581673236062">
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2" timestamp="1581674497188">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581673236062" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1581674497188" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey/0.27.1360.694@0.27.1360.694" timestamp="1580507968211" />
-    <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581624122521">
+    <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581674784205">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1581624122521" />
+    <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1581674784205" />
     <state width="1314" height="159" key="GridCell.Tab.0.bottom" timestamp="1580421390216">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
@@ -938,10 +948,10 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1581617106201" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581673242961">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1581674500605">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581673242961" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1581674500605" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580590059578">
       <screen x="0" y="27" width="1360" height="694" />
