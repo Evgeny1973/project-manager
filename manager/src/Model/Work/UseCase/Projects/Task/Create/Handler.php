@@ -57,7 +57,15 @@ class Handler
         );
 
         if ($command->parent) {
-
+            $parent = $this->tasks->get(new Id($command->parent));
+            $task->setChildOf($parent);
         }
+
+        if ($command->plan) {
+            $task->plan($command->plan);
+        }
+
+        $this->tasks->add($task);
+        $this->flusher->flush();
     }
 }
