@@ -56,6 +56,8 @@ class Handler
             $command->content
         );
 
-        if ($command->parent)
+        if ($command->parent) {
+
+        }
     }
 }
