@@ -23,6 +23,11 @@ class TaskRepository
         $this->connection = $em->getConnection();
     }
 
+    public function remove(Task $task): void
+    {
+        $this->em->remove($task);
+    }
+
     public function get(Id $id): Task
     {
         /** @var Task $task */
