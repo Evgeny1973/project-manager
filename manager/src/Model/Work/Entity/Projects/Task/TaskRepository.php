@@ -27,7 +27,16 @@ class TaskRepository
     {
         $this->em->remove($task);
     }
-
+    
+    /**
+     * @param Id $id
+     * @return Task[]
+     */
+    public function allByParent(Id $id): array
+    {
+        return $this->repo->findBy(['parent' => $id->getValue()]);
+    }
+    
     public function get(Id $id): Task
     {
         /** @var Task $task */

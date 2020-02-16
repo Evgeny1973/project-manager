@@ -19,6 +19,17 @@ class ProjectFetcher
         $this->paginator = $paginator;
     }
 
+    public function allList(): array
+    {
+        $stmt = $this->connection->createQueryBuilder()
+            ->select('id', 'name')
+            ->from('work_projects_projects')
+            ->orderBy('sort')
+            ->execute();
+        
+        return $stmt->fetchAll(\PDO::FETCH_KEY_PAIR);
+    }
+    
     public function getMaxSort(): int
     {
         return (int)$this->connection->createQueryBuilder()
