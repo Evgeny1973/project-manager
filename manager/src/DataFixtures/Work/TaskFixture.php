@@ -96,7 +96,7 @@ class TaskFixture extends Fixture implements DependentFixtureInterface
             $date,
             new Type($faker->randomElement([Type::NONE, Type::FEATURE, Type::ERROR])),
             $faker->numberBetween(1, 4),
-            trim($faker->sentence(random_int(2, 3)), '.'),
+            trim($faker->sentence(\random_int(2, 3)), '.'),
             $faker->paragraphs(3, true)
         );
     }

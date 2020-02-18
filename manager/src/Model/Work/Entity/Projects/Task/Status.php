@@ -24,7 +24,7 @@ class Status
             self::WORKING,
             self::HELP,
             self::CHECKING,
-            self::REJECTING,
+            self::REJECTED,
             self::DONE
         ]);
         $this->name = $name;
