@@ -12,7 +12,7 @@ class Status
     public const WORKING = 'working';
     public const HELP = 'help';
     public const CHECKING = 'checking';
-    public const REJECTING = 'rejecting';
+    public const REJECTED = 'rejected';
     public const DONE = 'done';
 
     private $name;

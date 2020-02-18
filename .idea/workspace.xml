@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Twig/Extension/GravatarExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/DataFixtures/Work/TaskFixture.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/DataFixtures/Work/Members/MemberFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/DataFixtures/Work/Members/MemberFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/DataFixtures/Work/Projects/ProjectFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/DataFixtures/Work/Projects/ProjectFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/DataFixtures/Work/Projects/RoleFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/DataFixtures/Work/Projects/RoleFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Status.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Status.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Status/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Status/Form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,6 +259,7 @@
       <path value="$PROJECT_DIR$/manager/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/manager/vendor/knplabs/knp-menu-bundle" />
       <path value="$PROJECT_DIR$/manager/vendor/knplabs/knp-menu" />
+      <path value="$PROJECT_DIR$/manager/vendor/fzaninotto/faker" />
     </include_path>
   </component>
   <component name="ProjectId" id="1RH0bnn9uEzKpBoXjeZL1F2dTxy" />
@@ -495,14 +501,7 @@
       <workItem from="1581794339643" duration="2724000" />
       <workItem from="1581852001962" duration="23777000" />
       <workItem from="1581971288335" duration="2556000" />
-      <workItem from="1582008030510" duration="13442000" />
-    </task>
-    <task id="LOCAL-00158" summary="add errors handler">
-      <created>1581617171691</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1581617171708</updated>
+      <workItem from="1582008030510" duration="15545000" />
     </task>
     <task id="LOCAL-00159" summary="add errors handler">
       <created>1581622021783</created>
@@ -840,7 +839,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582051432466</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="gravatar twig extension&#10;fzaninotto faker">
+      <created>1582052523762</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1582052523762</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -888,7 +894,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix some errors" />
     <MESSAGE value="add start task" />
     <MESSAGE value="add idtype, statustype" />
     <MESSAGE value="add typetype" />
@@ -913,7 +918,8 @@
     <MESSAGE value="add task executor/revoke usecase" />
     <MESSAGE value="add tasks permissions" />
     <MESSAGE value="add tasks voter" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tasks voter" />
+    <MESSAGE value="gravatar twig extension&#10;fzaninotto faker" />
+    <option name="LAST_COMMIT_MESSAGE" value="gravatar twig extension&#10;fzaninotto faker" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" width="800" height="694" key="#Intentions" timestamp="1581874708806">
@@ -924,11 +930,11 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1360.694@0.27.1360.694" timestamp="1578326308176" />
-    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1582051643638">
+    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1582052726719">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="488" y="87" key="#com.intellij.ide.util.MemberChooser/0.27.1360.643@0.27.1360.643" timestamp="1581675533665" />
-    <state x="488" y="92" width="441" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1582051643638" />
+    <state x="488" y="92" width="441" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1582052726719" />
     <state x="503" y="90" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1401.675@0.27.1401.675" timestamp="1581691188514" />
     <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579371764048">
       <screen x="0" y="27" width="1360" height="694" />
@@ -942,12 +948,12 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="865" height="675" key="CommitChangelistDialog2" timestamp="1582051432352">
+    <state x="245" y="69" width="865" height="675" key="CommitChangelistDialog2" timestamp="1582052523539">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="244" y="46" key="CommitChangelistDialog2/0.27.1356.694@0.27.1356.694" timestamp="1581798671746" />
     <state x="245" y="27" width="865" height="643" key="CommitChangelistDialog2/0.27.1360.643@0.27.1360.643" timestamp="1581675775918" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1582051432352" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1582052523539" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2/0.27.1401.675@0.27.1401.675" timestamp="1581693721687" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
@@ -974,11 +980,11 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state width="1314" height="159" key="GridCell.Tab.0.right/0.27.1360.694@0.27.1360.694" timestamp="1580421390216" />
-    <state x="330" y="186" width="889" height="373" key="NewPhpClassDialog" timestamp="1582051622272">
+    <state x="330" y="186" width="889" height="373" key="NewPhpClassDialog" timestamp="1582052693008">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="330" y="174" width="937" height="373" key="NewPhpClassDialog/0.27.1360.643@0.27.1360.643" timestamp="1581675584507" />
-    <state x="330" y="186" width="937" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1582051622272" />
+    <state x="330" y="186" width="937" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1582052693008" />
     <state x="330" y="191" width="593" height="373" key="NewPhpClassDialog/0.27.1360.715@0.27.1360.715" timestamp="1578179600773" />
     <state x="340" y="181" width="889" height="373" key="NewPhpClassDialog/0.27.1401.675@0.27.1401.675" timestamp="1581691137754" />
     <state x="475" y="298" width="399" height="149" key="NewPhpFileDialog" timestamp="1582051555800">
@@ -990,12 +996,12 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1581867550927" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1582051435482">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1582052525384">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="274" y="97" key="Vcs.Push.Dialog.v2/0.27.1356.694@0.27.1356.694" timestamp="1581798673626" />
     <state x="275" y="92" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.643@0.27.1360.643" timestamp="1581675778637" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1582051435482" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1582052525384" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1401.675@0.27.1401.675" timestamp="1581693723517" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581861632628">

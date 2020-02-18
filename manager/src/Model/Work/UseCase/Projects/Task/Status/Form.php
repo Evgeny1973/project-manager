@@ -21,7 +21,7 @@ class Form extends AbstractType
                     'Working' => Status::WORKING,
                     'Need help' => Status::HELP,
                     'Checking' => Status::CHECKING,
-                    'Rejecting' => Status::REJECTING,
+                    'Rejected' => Status::REJECTED,
                     'Done' => Status::DONE,
                 ], 'attr' => ['onchange' => 'this.form.submit()']
             ]);
