@@ -147,6 +147,7 @@
       <path value="$PROJECT_DIR$/manager/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/manager/vendor/knplabs/knp-menu-bundle" />
       <path value="$PROJECT_DIR$/manager/vendor/knplabs/knp-menu" />
+      <path value="$PROJECT_DIR$/manager/vendor/fzaninotto/faker" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
