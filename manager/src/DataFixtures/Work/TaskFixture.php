@@ -21,7 +21,7 @@ class TaskFixture extends Fixture implements DependentFixtureInterface
 {
     public function load(ObjectManager $manager): void
     {
-        $faker = Factory::create();
+        $faker = Factory::create('en_US');
         
         $projects = [
             $this->getReference(ProjectFixture::REFERENCE_FIRST),
