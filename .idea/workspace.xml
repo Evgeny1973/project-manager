@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/TaskController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/TasksController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/TasksController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/Filter/Filter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/Filter/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/TaskFetcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Widget/Work/Projects/Task/PriorityWidget.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Priority/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Priority/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Progress/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Progress/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Status/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Status/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Type/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Type/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Menu/Work/MainMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Menu/Work/MainMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Menu/Work/Projects/ProjectMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Menu/Work/Projects/ProjectMenu.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -493,14 +496,7 @@
       <workItem from="1581971288335" duration="2556000" />
       <workItem from="1582008030510" duration="18411000" />
       <workItem from="1582108382064" duration="1964000" />
-      <workItem from="1582113931013" duration="2531000" />
-    </task>
-    <task id="LOCAL-00163" summary="add Task entity">
-      <created>1581673236923</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1581673236923</updated>
+      <workItem from="1582113931013" duration="6329000" />
     </task>
     <task id="LOCAL-00164" summary="add Task unittests">
       <created>1581674497447</created>
@@ -838,7 +834,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582058252837</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="add form prefix">
+      <created>1582119833583</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1582119833584</updated>
+    </task>
+    <option name="localTasksCounter" value="213" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -886,7 +889,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add typetype" />
     <MESSAGE value="add doctrine annotations in task class" />
     <MESSAGE value="add migrations task class" />
     <MESSAGE value="add task repository" />
@@ -911,7 +913,8 @@
     <MESSAGE value="gravatar twig extension&#10;fzaninotto faker" />
     <MESSAGE value="add TaskFixture&#10;corrected other fixtures" />
     <MESSAGE value="add TaskFixture" />
-    <option name="LAST_COMMIT_MESSAGE" value="add TaskFixture" />
+    <MESSAGE value="add form prefix" />
+    <option name="LAST_COMMIT_MESSAGE" value="add form prefix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" width="800" height="694" key="#Intentions" timestamp="1581874708806">
@@ -932,20 +935,20 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1360.694@0.27.1360.694" timestamp="1579371764048" />
-    <state x="367" y="27" width="606" height="694" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581674766697">
+    <state x="367" y="27" width="606" height="694" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582123201750">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="367" y="27" width="606" height="694" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1360.694@0.27.1360.694" timestamp="1581674766697" />
+    <state x="367" y="27" width="606" height="694" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1360.694@0.27.1360.694" timestamp="1582123201750" />
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1580059547227">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="865" height="675" key="CommitChangelistDialog2" timestamp="1582119810947">
+    <state x="245" y="69" width="865" height="675" key="CommitChangelistDialog2" timestamp="1582119833239">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="244" y="46" key="CommitChangelistDialog2/0.27.1356.694@0.27.1356.694" timestamp="1581798671746" />
     <state x="245" y="27" width="865" height="643" key="CommitChangelistDialog2/0.27.1360.643@0.27.1360.643" timestamp="1581675775918" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1582119810947" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1582119833239" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2/0.27.1401.675@0.27.1401.675" timestamp="1581693721687" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
@@ -972,11 +975,11 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state width="1314" height="159" key="GridCell.Tab.0.right/0.27.1360.694@0.27.1360.694" timestamp="1580421390216" />
-    <state x="330" y="186" width="889" height="373" key="NewPhpClassDialog" timestamp="1582119798035">
+    <state x="330" y="186" width="889" height="373" key="NewPhpClassDialog" timestamp="1582123984725">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="330" y="174" width="937" height="373" key="NewPhpClassDialog/0.27.1360.643@0.27.1360.643" timestamp="1581675584507" />
-    <state x="330" y="186" width="937" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1582119798035" />
+    <state x="330" y="186" width="937" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1582123984725" />
     <state x="330" y="191" width="593" height="373" key="NewPhpClassDialog/0.27.1360.715@0.27.1360.715" timestamp="1578179600773" />
     <state x="340" y="181" width="889" height="373" key="NewPhpClassDialog/0.27.1401.675@0.27.1401.675" timestamp="1581691137754" />
     <state x="475" y="298" width="399" height="149" key="NewPhpFileDialog" timestamp="1582051555800">
@@ -988,12 +991,12 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1581867550927" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1582058254390">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1582119835512">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="274" y="97" key="Vcs.Push.Dialog.v2/0.27.1356.694@0.27.1356.694" timestamp="1581798673626" />
     <state x="275" y="92" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.643@0.27.1360.643" timestamp="1581675778637" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1582058254390" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1582119835512" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1401.675@0.27.1401.675" timestamp="1581693723517" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581861632628">
