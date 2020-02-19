@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/tasks/assign.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/tasks/child.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/tasks/comment.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/project/tasks/create.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/create.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/move.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/plan.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/widget/work/projects/task/priority.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/widget/work/projects/task/progress.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/widget/work/projects/task/status.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/widget/work/projects/task/type.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/project/tasks/comment.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/comment.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/override/sortable_link.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/override/sortable_link.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,19 +280,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/templates/app/work/projects/project" />
-      <recent name="$PROJECT_DIR$/manager/src/Menu/Work/Projects" />
-      <recent name="$PROJECT_DIR$/manager/src/Security/Voter/Work/Projects" />
-      <recent name="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Role/Remove" />
-      <recent name="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/Filter" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member" />
       <recent name="$PROJECT_DIR$/manager/config/packages/test" />
       <recent name="$PROJECT_DIR$/manager/docker/production" />
       <recent name="$PROJECT_DIR$/manager/docker/production/nginx" />
       <recent name="$PROJECT_DIR$/manager/docker/development" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/templates/widget/work/projects/task" />
+      <recent name="$PROJECT_DIR$/manager/templates/app/work/projects/tasks" />
+      <recent name="$PROJECT_DIR$/manager/templates/app/work/projects/project" />
+      <recent name="$PROJECT_DIR$/manager/src/Menu/Work/Projects" />
+      <recent name="$PROJECT_DIR$/manager/src/Security/Voter/Work/Projects" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -492,14 +500,8 @@
       <workItem from="1581971288335" duration="2556000" />
       <workItem from="1582008030510" duration="18411000" />
       <workItem from="1582108382064" duration="1964000" />
-      <workItem from="1582113931013" duration="6910000" />
-    </task>
-    <task id="LOCAL-00168" summary="add move task">
-      <created>1581678427983</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1581678427983</updated>
+      <workItem from="1582113931013" duration="6938000" />
+      <workItem from="1582135247356" duration="554000" />
     </task>
     <task id="LOCAL-00169" summary="add changeType task">
       <created>1581678794186</created>
@@ -837,7 +839,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582124629637</updated>
     </task>
-    <option name="localTasksCounter" value="217" />
+    <task id="LOCAL-00217" summary="add tasks templates">
+      <created>1582124859293</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1582124859293</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -885,7 +894,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add task usecase edit" />
     <MESSAGE value="add remove to taskrepository" />
     <MESSAGE value="add task plan remove usecase" />
     <MESSAGE value="add task plan set usecase" />
@@ -910,7 +918,8 @@
     <MESSAGE value="add progress widget" />
     <MESSAGE value="add status widget" />
     <MESSAGE value="add type widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="add type widget" />
+    <MESSAGE value="add tasks templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tasks templates" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" width="800" height="694" key="#Intentions" timestamp="1581874708806">
@@ -939,12 +948,12 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="865" height="675" key="CommitChangelistDialog2" timestamp="1582124629478">
+    <state x="245" y="69" width="865" height="675" key="CommitChangelistDialog2" timestamp="1582124859097">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="244" y="46" key="CommitChangelistDialog2/0.27.1356.694@0.27.1356.694" timestamp="1581798671746" />
     <state x="245" y="27" width="865" height="643" key="CommitChangelistDialog2/0.27.1360.643@0.27.1360.643" timestamp="1581675775918" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1582124629478" />
+    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1582124859097" />
     <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
     <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2/0.27.1401.675@0.27.1401.675" timestamp="1581693721687" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
@@ -987,12 +996,12 @@
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1581867550927" />
     <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1582124631032">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1582124860839">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="274" y="97" key="Vcs.Push.Dialog.v2/0.27.1356.694@0.27.1356.694" timestamp="1581798673626" />
     <state x="275" y="92" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.643@0.27.1360.643" timestamp="1581675778637" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1582124631032" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1582124860839" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
     <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1401.675@0.27.1401.675" timestamp="1581693723517" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581861632628">
