@@ -13,7 +13,8 @@ class PriorityWidget extends AbstractExtension
     public function getFunctions(): array
     {
         return [
-            new TwigFunction('work_projects_task_priority', [$this, 'priority'],
+            new TwigFunction('work_projects_task_priority',
+                [$this, 'priority'],
                 ['needs_environment' => true, 'is_safe' => ['html']])
         ];
     }
