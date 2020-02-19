@@ -7,6 +7,7 @@ namespace App\Model\Work\UseCase\Projects\Task\Type;
 use App\Model\Flusher;
 use App\Model\Work\Entity\Projects\Task\Id;
 use App\Model\Work\Entity\Projects\Task\TaskRepository;
+use App\Model\Work\Entity\Projects\Task\Type;
 
 class Handler
 {
@@ -29,7 +30,7 @@ class Handler
     public function handle(Command $command): void
     {
         $task = $this->tasks->get(new Id($command->id));
-        $task->changeType($command->type);
+        $task->changeType(new Type($command->type));
         
         $this->flusher->flush();
     }

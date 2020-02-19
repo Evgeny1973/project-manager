@@ -26,7 +26,7 @@ class Form extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('project', ChoiceType::class, [' choices' =>
+            ->add('project', ChoiceType::class, ['choices' =>
                 \array_flip($this->projects->allList())])
             ->add('withChildren', CheckboxType::class, ['required' => false]);
     }
