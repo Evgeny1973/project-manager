@@ -16,7 +16,7 @@ class Form extends AbstractType
     {
         
         $builder
-            ->add('priority', ChoiceType::class, ['choices' =>
+            ->add('progress', ChoiceType::class, ['choices' =>
                 [
                     0 => 0,
                     25 => 25,
