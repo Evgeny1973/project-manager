@@ -23,6 +23,7 @@ use App\ReadModel\Work\Projects\Task\Filter;
 use App\ReadModel\Work\Projects\Task\TaskFetcher;
 use App\Security\Voter\Work\Projects\TaskAccess;
 use App\Controller\Work\ErrorHandler;
+use phpDocumentor\Reflection\Types\Self_;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -77,6 +78,64 @@ class TasksController extends AbstractController
             'pagination' => $pagination,
             'form' => $form->createView(),
         ]);
+    }
+    
+    /**
+     * @Route("/me", name=".me")
+     * @param Request $request
+     * @param TaskFetcher $tasks
+     * @return Response
+     */
+    public function me(Request $request, TaskFetcher $tasks): Response
+    {
+        $filter = Filter\Filter::all();
+        
+        $form = $this->createForm(Filter\Form::class, $filter,
+            ['action' => $this->generateUrl('work.projects.tasks')]);
+        $form->handleRequest($request);
+        
+        $pagination = $tasks->all(
+            $filter->forExecutor($this->getUser()->getId()),
+            $request->query->getInt('page', 1),
+            self::PER_PAGE,
+            $request->query->get('sort', 't.id'),
+            $request->query->get('direction', 'desc')
+        );
+        
+        return $this->render('app/work/projects/tasks/index.html.twig',
+            [
+                'project' => null,
+                'pagination' => $pagination,
+                'form' => $form->createView()
+            ]);
+    }
+    
+    /**
+     * @Route("/own", name=".own")
+     * @param Request $request
+     * @param TaskFetcher $tasks
+     * @return Response
+     */
+    public function own(Request $request, TaskFetcher $tasks): Response
+    {
+        $filter = Filter\Filter::all();
+        
+        $form = $this->createForm(Filter\Form::class, $filter,
+            ['action' => $this->generateUrl('work.projects.tasks')]);
+        $form->handleRequest($request);
+        
+        $pagination = $tasks->all(
+            $filter->forAuthor($this->getUser()->getId()),
+            $request->query->getInt('page', 1),
+            self::PER_PAGE,
+            $request->query->get('sort', 't.date'),
+            $request->query->get('direction', 'desc')
+        );
+    
+        return $this->render('app/work/projects/tasks/index.html.twig',
+            ['project' => null,
+            'pagination' => $pagination,
+            'form' => $form->createView()]);
     }
     
     /**
@@ -159,7 +218,8 @@ class TasksController extends AbstractController
         
         $command = new Executor\Assign\Command($task->getId()->getValue());
         
-        $form = $this->createForm(Executor\Assign\Form::class, $command, ['project_id' => $project->getId()->getValue()]);
+        $form = $this->createForm(Executor\Assign\Form::class, $command,
+            ['project_id' => $project->getId()->getValue()]);
         $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid()) {
@@ -430,8 +490,7 @@ class TasksController extends AbstractController
         Progress\Handler $progressHandler,
         Type\Handler $typeHandler,
         Priority\Handler $priorityHandler
-    ): Response
-    {
+    ): Response {
         $this->denyAccessUnlessGranted(TaskAccess::VIEW, $task);
         
         if (!$member = $members->find($this->getUser()->getId())) {

@@ -32,7 +32,7 @@ class Handler
         $this->flusher = $flusher;
     }
     
-    public function handler(Command $command): void
+    public function handle(Command $command): void
     {
         $task = $this->tasks->get(new TaskId($command->id));
         $member = $this->members->get(new MemberId($command->member));
