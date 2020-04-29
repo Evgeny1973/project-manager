@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/config/services_dev.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/AuthFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/CreateTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/IndexTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/UsersFixture.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Builder/User/UserBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Builder/User/UserBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/HomeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/HomeTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -496,14 +495,7 @@
       <workItem from="1587759232993" duration="437000" />
       <workItem from="1587760155259" duration="2490000" />
       <workItem from="1587932383487" duration="2351000" />
-      <workItem from="1588152271753" duration="2811000" />
-    </task>
-    <task id="LOCAL-00177" summary="fix some errors">
-      <created>1581686806154</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1581686806154</updated>
+      <workItem from="1588152271753" duration="3952000" />
     </task>
     <task id="LOCAL-00178" summary="add start task">
       <created>1581687670503</created>
@@ -841,7 +833,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587936154088</updated>
     </task>
-    <option name="localTasksCounter" value="226" />
+    <task id="LOCAL-00226" summary="add functional tests">
+      <created>1588156425773</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1588156425774</updated>
+    </task>
+    <option name="localTasksCounter" value="227" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -888,7 +887,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add task remove usecase" />
     <MESSAGE value="add task start usecase" />
     <MESSAGE value="add task status usecase" />
     <MESSAGE value="add task type usecase" />
@@ -913,7 +911,8 @@
     <MESSAGE value="filter for own tasks" />
     <MESSAGE value="create multiple tasks" />
     <MESSAGE value="twig deprication fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="twig deprication fix" />
+    <MESSAGE value="add functional tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add functional tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" width="800" height="694" key="#Intentions" timestamp="1581874708806">
@@ -934,12 +933,12 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2" timestamp="1587936153600">
+    <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2" timestamp="1588156425342">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="244" y="46" key="CommitChangelistDialog2/0.27.1356.694@0.27.1356.694" timestamp="1581798671746" />
     <state x="245" y="27" width="865" height="643" key="CommitChangelistDialog2/0.27.1360.643@0.27.1360.643" timestamp="1581675775918" />
-    <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1587936153600" />
+    <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1588156425342" />
     <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2/0.27.1401.675@0.27.1401.675" timestamp="1581693721687" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
       <screen x="0" y="27" width="1360" height="694" />
@@ -969,11 +968,11 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state width="1314" height="159" key="GridCell.Tab.0.right/0.27.1360.694@0.27.1360.694" timestamp="1580421390216" />
-    <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog" timestamp="1588154700324">
+    <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog" timestamp="1588156595792">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="330" y="174" width="937" height="373" key="NewPhpClassDialog/0.27.1360.643@0.27.1360.643" timestamp="1581675584507" />
-    <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1588154700324" />
+    <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1588156595792" />
     <state x="340" y="181" width="889" height="373" key="NewPhpClassDialog/0.27.1401.675@0.27.1401.675" timestamp="1581691137754" />
     <state x="475" y="298" width="399" height="149" key="NewPhpFileDialog" timestamp="1582051555800">
       <screen x="0" y="27" width="1360" height="694" />
@@ -983,12 +982,12 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1581867550927" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1587936163148">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1588156428270">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="274" y="97" key="Vcs.Push.Dialog.v2/0.27.1356.694@0.27.1356.694" timestamp="1581798673626" />
     <state x="275" y="92" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.643@0.27.1360.643" timestamp="1581675778637" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1587936163148" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1588156428270" />
     <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1401.675@0.27.1401.675" timestamp="1581693723517" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581861632628">
       <screen x="0" y="27" width="1360" height="694" />
