@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/NameRow.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/NamesType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/config/services_dev.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/AuthFixture.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Migrations/Version20200219202732.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20200219202732.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Take/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Take/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Builder/User/UserBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Builder/User/UserBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/HomeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/HomeTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +15,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/manager/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -87,7 +81,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="some.fixes" />
+        <entry key="$PROJECT_DIR$" value="task" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,10 +94,10 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Form.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/manager/src/Model/User/Entity/User/Id.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/manager/src/Model/User/Entity/User/Id.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Form.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="project-manager_manager-php-cli:latest">
     <include_path>
@@ -259,7 +253,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -343,18 +336,6 @@
         <item itemvalue="PHPUnit.RoleTest.testSuccess" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -503,21 +484,19 @@
       <workItem from="1582569769565" duration="4774000" />
       <workItem from="1582615489163" duration="4092000" />
       <workItem from="1582633188602" duration="1034000" />
-      <workItem from="1582646691604" duration="5414000" />
-    </task>
-    <task id="LOCAL-00175" summary="add start and end task dates">
-      <created>1581685087315</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1581685087315</updated>
-    </task>
-    <task id="LOCAL-00176" summary="add start and end task dates">
-      <created>1581685689253</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1581685689253</updated>
+      <workItem from="1582646691604" duration="6103000" />
+      <workItem from="1582739919176" duration="666000" />
+      <workItem from="1582833743492" duration="1205000" />
+      <workItem from="1583308730479" duration="1505000" />
+      <workItem from="1583437966893" duration="84000" />
+      <workItem from="1583438055267" duration="9000" />
+      <workItem from="1584046235554" duration="214000" />
+      <workItem from="1584207650333" duration="168000" />
+      <workItem from="1586286826162" duration="890000" />
+      <workItem from="1587759232993" duration="437000" />
+      <workItem from="1587760155259" duration="2490000" />
+      <workItem from="1587932383487" duration="2351000" />
+      <workItem from="1588152271753" duration="2811000" />
     </task>
     <task id="LOCAL-00177" summary="fix some errors">
       <created>1581686806154</created>
@@ -848,11 +827,25 @@
       <option name="project" value="LOCAL" />
       <updated>1582578045643</updated>
     </task>
-    <option name="localTasksCounter" value="224" />
+    <task id="LOCAL-00224" summary="create multiple tasks">
+      <created>1582661465685</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1582661465686</updated>
+    </task>
+    <task id="LOCAL-00225" summary="twig deprication fix">
+      <created>1587936154087</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1587936154088</updated>
+    </task>
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.configurationType" implementationName="MAKEFILE_TARGET_RUN_CONFIGURATION" />
@@ -887,17 +880,14 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add task priority usecase" />
-    <MESSAGE value="add task progress usecase" />
     <MESSAGE value="add task remove usecase" />
     <MESSAGE value="add task start usecase" />
     <MESSAGE value="add task status usecase" />
@@ -921,27 +911,21 @@
     <MESSAGE value="fix role entity" />
     <MESSAGE value="new migrations" />
     <MESSAGE value="filter for own tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="filter for own tasks" />
+    <MESSAGE value="create multiple tasks" />
+    <MESSAGE value="twig deprication fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="twig deprication fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" width="800" height="694" key="#Intentions" timestamp="1581874708806">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="275" y="27" width="800" height="694" key="#Intentions/0.27.1360.694@0.27.1360.694" timestamp="1581874708806" />
-    <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578326308176">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state x="355" y="178" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1360.694@0.27.1360.694" timestamp="1578326308176" />
     <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1582124377263">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="488" y="87" key="#com.intellij.ide.util.MemberChooser/0.27.1360.643@0.27.1360.643" timestamp="1581675533665" />
     <state x="488" y="92" width="441" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1582124377263" />
     <state x="503" y="90" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1401.675@0.27.1401.675" timestamp="1581691188514" />
-    <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579371764048">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state x="363" y="101" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1360.694@0.27.1360.694" timestamp="1579371764048" />
     <state x="367" y="27" width="606" height="694" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582123201750">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
@@ -950,13 +934,12 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="865" height="675" key="CommitChangelistDialog2" timestamp="1582578045206">
+    <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2" timestamp="1587936153600">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="244" y="46" key="CommitChangelistDialog2/0.27.1356.694@0.27.1356.694" timestamp="1581798671746" />
     <state x="245" y="27" width="865" height="643" key="CommitChangelistDialog2/0.27.1360.643@0.27.1360.643" timestamp="1581675775918" />
-    <state x="245" y="69" width="860" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1582578045206" />
-    <state x="245" y="70" key="CommitChangelistDialog2/0.27.1360.715@0.27.1360.715" timestamp="1578179649382" />
+    <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1587936153600" />
     <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2/0.27.1401.675@0.27.1401.675" timestamp="1581693721687" />
     <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
       <screen x="0" y="27" width="1360" height="694" />
@@ -986,12 +969,11 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state width="1314" height="159" key="GridCell.Tab.0.right/0.27.1360.694@0.27.1360.694" timestamp="1580421390216" />
-    <state x="330" y="186" width="889" height="373" key="NewPhpClassDialog" timestamp="1582652282637">
+    <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog" timestamp="1588154700324">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="330" y="174" width="937" height="373" key="NewPhpClassDialog/0.27.1360.643@0.27.1360.643" timestamp="1581675584507" />
-    <state x="330" y="186" width="937" height="373" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1582652282637" />
-    <state x="330" y="191" width="593" height="373" key="NewPhpClassDialog/0.27.1360.715@0.27.1360.715" timestamp="1578179600773" />
+    <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1588154700324" />
     <state x="340" y="181" width="889" height="373" key="NewPhpClassDialog/0.27.1401.675@0.27.1401.675" timestamp="1581691137754" />
     <state x="475" y="298" width="399" height="149" key="NewPhpFileDialog" timestamp="1582051555800">
       <screen x="0" y="27" width="1360" height="694" />
@@ -1001,31 +983,26 @@
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1581867550927" />
-    <state x="229" y="27" key="SettingsEditor/0.27.1360.715@0.27.1360.715" timestamp="1578174169844" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1582578047683">
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1587936163148">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="274" y="97" key="Vcs.Push.Dialog.v2/0.27.1356.694@0.27.1356.694" timestamp="1581798673626" />
     <state x="275" y="92" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.643@0.27.1360.643" timestamp="1581675778637" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1582578047683" />
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.27.1360.715@0.27.1360.715" timestamp="1578179653732" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1587936163148" />
     <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1401.675@0.27.1401.675" timestamp="1581693723517" />
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581861632628">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1360.694@0.27.1360.694" timestamp="1581861632628" />
-    <state x="100" y="37" width="923" height="632" key="find.popup" timestamp="1582143682736">
+    <state x="100" y="37" width="923" height="632" key="find.popup" timestamp="1584207808096">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="100" y="37" width="923" height="632" key="find.popup/0.27.1360.694@0.27.1360.694" timestamp="1582143682736" />
-    <state x="343" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1581178445402">
+    <state x="97" y="37" width="898" height="632" key="find.popup/0.27.1323.694@0.27.1323.694" timestamp="1583438022050" />
+    <state x="100" y="37" width="923" height="632" key="find.popup/0.27.1360.694@0.27.1360.694" timestamp="1584207808096" />
+    <state x="343" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1587936105648">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="343" y="42" width="672" height="678" key="search.everywhere.popup/0.27.1360.694@0.27.1360.694" timestamp="1581178445402" />
-    <state x="405" y="205" width="540" height="336" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578678122362">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state x="405" y="205" width="540" height="336" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1360.694@0.27.1360.694" timestamp="1578678122362" />
+    <state x="343" y="42" width="672" height="678" key="search.everywhere.popup/0.27.1360.694@0.27.1360.694" timestamp="1587936105648" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/project_manager@Project.xml" NAME="Project Coverage Results" MODIFIED="1580407637929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
