@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/CreateTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/IndexTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/UsersFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/ShowTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Builder/User/UserBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Builder/User/UserBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/HomeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/HomeTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/Users/CreateTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/CreateTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/Users/IndexTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/IndexTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/Users/UsersFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/UsersFixture.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,60 +23,6 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/manager/composer.json</pharConfigPath>
     <execution />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="PostgreSQL - postgres@localhost [2]" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="PostgreSQL - postgres@localhost [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="PostgreSQL - postgres@localhost [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="app: database" type="162271b6:PgImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="PostgreSQL - postgres@localhost [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="app: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="PostgreSQL - postgres@localhost [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="app: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="PostgreSQL - postgres@localhost [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="app: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="sequences" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -257,6 +211,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -495,14 +450,13 @@
       <workItem from="1587759232993" duration="437000" />
       <workItem from="1587760155259" duration="2490000" />
       <workItem from="1587932383487" duration="2351000" />
-      <workItem from="1588152271753" duration="3952000" />
-    </task>
-    <task id="LOCAL-00178" summary="add start task">
-      <created>1581687670503</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1581687670504</updated>
+      <workItem from="1588152271753" duration="3977000" />
+      <workItem from="1590911084526" duration="604000" />
+      <workItem from="1590915979764" duration="503000" />
+      <workItem from="1590935724738" duration="4181000" />
+      <workItem from="1591511528948" duration="598000" />
+      <workItem from="1591539534119" duration="365000" />
+      <workItem from="1592071546373" duration="1777000" />
     </task>
     <task id="LOCAL-00179" summary="add idtype, statustype">
       <created>1581690280162</created>
@@ -840,7 +794,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588156425774</updated>
     </task>
-    <option name="localTasksCounter" value="227" />
+    <task id="LOCAL-00227" summary="add user functional tests">
+      <created>1588163969538</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1588163969538</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -887,7 +848,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add task start usecase" />
     <MESSAGE value="add task status usecase" />
     <MESSAGE value="add task type usecase" />
     <MESSAGE value="add task move usecase" />
@@ -912,87 +872,27 @@
     <MESSAGE value="create multiple tasks" />
     <MESSAGE value="twig deprication fix" />
     <MESSAGE value="add functional tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add functional tests" />
+    <MESSAGE value="add user functional tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add user functional tests" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="27" width="800" height="694" key="#Intentions" timestamp="1581874708806">
+    <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2" timestamp="1588163969339">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="275" y="27" width="800" height="694" key="#Intentions/0.27.1360.694@0.27.1360.694" timestamp="1581874708806" />
-    <state x="488" y="92" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1582124377263">
-      <screen x="0" y="27" width="1360" height="694" />
+    <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1588163969339" />
+    <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl" timestamp="1590912332879">
+      <screen x="0" y="27" width="1787" height="859" />
     </state>
-    <state x="488" y="87" key="#com.intellij.ide.util.MemberChooser/0.27.1360.643@0.27.1360.643" timestamp="1581675533665" />
-    <state x="488" y="92" width="441" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1360.694@0.27.1360.694" timestamp="1582124377263" />
-    <state x="503" y="90" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1401.675@0.27.1401.675" timestamp="1581691188514" />
-    <state x="367" y="27" width="606" height="694" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582123201750">
-      <screen x="0" y="27" width="1360" height="694" />
+    <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl/0.27.1787.859@0.27.1787.859" timestamp="1590912332879" />
+    <state x="439" y="223" width="937" height="505" key="NewPhpClassDialog" timestamp="1590960906334">
+      <screen x="0" y="27" width="1810" height="854" />
     </state>
-    <state x="367" y="27" width="606" height="694" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1360.694@0.27.1360.694" timestamp="1582123201750" />
-    <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1580059547227">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state x="413" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1360.694@0.27.1360.694" timestamp="1580059547227" />
-    <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2" timestamp="1588156425342">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state x="244" y="46" key="CommitChangelistDialog2/0.27.1356.694@0.27.1356.694" timestamp="1581798671746" />
-    <state x="245" y="27" width="865" height="643" key="CommitChangelistDialog2/0.27.1360.643@0.27.1360.643" timestamp="1581675775918" />
-    <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1588156425342" />
-    <state x="252" y="27" width="865" height="675" key="CommitChangelistDialog2/0.27.1401.675@0.27.1401.675" timestamp="1581693721687" />
-    <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey" timestamp="1580507968211">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state x="413" y="260" width="523" height="285" key="ComposerInitDialogKey/0.27.1360.694@0.27.1360.694" timestamp="1580507968211" />
-    <state x="100" y="125" width="1160" height="496" key="DiffContextDialog" timestamp="1582143316980">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state x="100" y="125" width="1160" height="496" key="DiffContextDialog/0.27.1360.694@0.27.1360.694" timestamp="1582143316980" />
-    <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582110879728">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state x="458" y="132" width="424" height="484" key="FileChooserDialogImpl/0.27.1360.694@0.27.1360.694" timestamp="1582110879728" />
-    <state width="1314" height="159" key="GridCell.Tab.0.bottom" timestamp="1580421390216">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state width="1314" height="159" key="GridCell.Tab.0.bottom/0.27.1360.694@0.27.1360.694" timestamp="1580421390216" />
-    <state width="1314" height="159" key="GridCell.Tab.0.center" timestamp="1580421390216">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state width="1314" height="159" key="GridCell.Tab.0.center/0.27.1360.694@0.27.1360.694" timestamp="1580421390216" />
-    <state width="1314" height="159" key="GridCell.Tab.0.left" timestamp="1580421390215">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state width="1314" height="159" key="GridCell.Tab.0.left/0.27.1360.694@0.27.1360.694" timestamp="1580421390215" />
-    <state width="1314" height="159" key="GridCell.Tab.0.right" timestamp="1580421390216">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state width="1314" height="159" key="GridCell.Tab.0.right/0.27.1360.694@0.27.1360.694" timestamp="1580421390216" />
-    <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog" timestamp="1588156595792">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state x="330" y="174" width="937" height="373" key="NewPhpClassDialog/0.27.1360.643@0.27.1360.643" timestamp="1581675584507" />
     <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1588156595792" />
-    <state x="340" y="181" width="889" height="373" key="NewPhpClassDialog/0.27.1401.675@0.27.1401.675" timestamp="1581691137754" />
-    <state x="475" y="298" width="399" height="149" key="NewPhpFileDialog" timestamp="1582051555800">
+    <state x="439" y="223" key="NewPhpClassDialog/0.27.1810.854@0.27.1810.854" timestamp="1590960906334" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1588163971793">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="475" y="298" width="399" height="149" key="NewPhpFileDialog/0.27.1360.694@0.27.1360.694" timestamp="1582051555800" />
-    <state x="169" y="27" width="1012" height="694" key="SettingsEditor" timestamp="1581867550927">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state x="169" y="27" width="1012" height="694" key="SettingsEditor/0.27.1360.694@0.27.1360.694" timestamp="1581867550927" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1588156428270">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state x="274" y="97" key="Vcs.Push.Dialog.v2/0.27.1356.694@0.27.1356.694" timestamp="1581798673626" />
-    <state x="275" y="92" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.643@0.27.1360.643" timestamp="1581675778637" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1588156428270" />
-    <state x="283" y="95" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1401.675@0.27.1401.675" timestamp="1581693723517" />
-    <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581861632628">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state x="448" y="293" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1360.694@0.27.1360.694" timestamp="1581861632628" />
+    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1588163971793" />
     <state x="100" y="37" width="923" height="632" key="find.popup" timestamp="1584207808096">
       <screen x="0" y="27" width="1360" height="694" />
     </state>

@@ -23,7 +23,7 @@ class HomeTest extends WebTestCase
         $crawler = $client->request('GET', '/');
         
         $this->assertSame(200, $client->getResponse()->getStatusCode());
-        $this->assertContains('Home', $crawler->filter('title')->text());
+        $this->assertStringContainsString('Home', $crawler->filter('title')->text());
     }
     
     public function testAdmin(): void
@@ -32,6 +32,6 @@ class HomeTest extends WebTestCase
         $crawler = $client->request('GET', '/');
         
         $this->assertSame(200, $client->getResponse()->getStatusCode());
-        $this->assertContains('Home', $crawler->filter('title')->text());
+        $this->assertStringContainsString('Home', $crawler->filter('title')->text());
     }
 }
