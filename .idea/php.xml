@@ -148,6 +148,9 @@
       <path value="$PROJECT_DIR$/manager/vendor/knplabs/knp-menu-bundle" />
       <path value="$PROJECT_DIR$/manager/vendor/knplabs/knp-menu" />
       <path value="$PROJECT_DIR$/manager/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/manager/vendor/cebe/markdown" />
+      <path value="$PROJECT_DIR$/manager/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/manager/vendor/exercise/htmlpurifier-bundle" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/DbWebTestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/config/packages/exercise_html_purifier.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Twig/Extension/MarkdownExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Twig/Extension/Work/Processor/Driver/Driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Twig/Extension/Work/Processor/Driver/MemberDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Twig/Extension/Work/Processor/Driver/TaskDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Twig/Extension/Work/Processor/ProcessorExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/processor/work/member.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/processor/work/task.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/manager/phpunit.xml.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/HomeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/HomeTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/Users/CreateTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/CreateTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/Users/IndexTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/IndexTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/Users/ShowTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/ShowTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/TaskFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/TaskFetcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fuctional.tests" />
+        <entry key="$PROJECT_DIR$" value="add.functional.tests" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -198,6 +207,9 @@
       <path value="$PROJECT_DIR$/manager/vendor/knplabs/knp-menu-bundle" />
       <path value="$PROJECT_DIR$/manager/vendor/knplabs/knp-menu" />
       <path value="$PROJECT_DIR$/manager/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/manager/vendor/cebe/markdown" />
+      <path value="$PROJECT_DIR$/manager/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/manager/vendor/exercise/htmlpurifier-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1RH0bnn9uEzKpBoXjeZL1F2dTxy" />
@@ -218,7 +230,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -457,14 +469,7 @@
       <workItem from="1592071546373" duration="3652000" />
       <workItem from="1592340704282" duration="597000" />
       <workItem from="1592684863742" duration="1923000" />
-      <workItem from="1592743911477" duration="3157000" />
-    </task>
-    <task id="LOCAL-00180" summary="add typetype">
-      <created>1581693721917</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1581693721917</updated>
+      <workItem from="1592743911477" duration="11861000" />
     </task>
     <task id="LOCAL-00181" summary="add doctrine annotations in task class">
       <created>1581776671007</created>
@@ -802,7 +807,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592083786875</updated>
     </task>
-    <option name="localTasksCounter" value="229" />
+    <task id="LOCAL-00229" summary="add functional tests">
+      <created>1592763984436</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1592763984438</updated>
+    </task>
+    <option name="localTasksCounter" value="230" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -872,39 +884,58 @@
     <MESSAGE value="filter for own tasks" />
     <MESSAGE value="create multiple tasks" />
     <MESSAGE value="twig deprication fix" />
-    <MESSAGE value="add functional tests" />
     <MESSAGE value="add user functional tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add user functional tests" />
+    <MESSAGE value="add functional tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add functional tests" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="325" y="80" width="912" height="607" key="CommitChangelistDialog2" timestamp="1592083786534">
-      <screen x="0" y="27" width="1802" height="873" />
+    <state x="726" y="185" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1592776061045">
+      <screen x="0" y="27" width="1836" height="881" />
+    </state>
+    <state x="726" y="185" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1836.881@0.27.1836.881" timestamp="1592776061045" />
+    <state x="331" y="80" width="912" height="607" key="CommitChangelistDialog2" timestamp="1592763984095">
+      <screen x="0" y="27" width="1836" height="881" />
     </state>
     <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1588163969339" />
     <state x="325" y="80" key="CommitChangelistDialog2/0.27.1802.873@0.27.1802.873" timestamp="1592083786534" />
+    <state x="331" y="80" key="CommitChangelistDialog2/0.27.1836.881@0.27.1836.881" timestamp="1592763984095" />
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl" timestamp="1590912332879">
       <screen x="0" y="27" width="1787" height="859" />
     </state>
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl/0.27.1787.859@0.27.1787.859" timestamp="1590912332879" />
-    <state x="445" y="229" width="937" height="505" key="NewPhpClassDialog" timestamp="1592743949766">
+    <state x="445" y="229" width="801" height="561" key="NewPhpClassDialog" timestamp="1592776546768">
       <screen x="0" y="27" width="1836" height="881" />
     </state>
     <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1588156595792" />
     <state x="439" y="223" key="NewPhpClassDialog/0.27.1810.854@0.27.1810.854" timestamp="1590960906334" />
-    <state x="445" y="229" key="NewPhpClassDialog/0.27.1836.881@0.27.1836.881" timestamp="1592743949766" />
-    <state x="364" y="115" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1592083794120">
-      <screen x="0" y="27" width="1802" height="873" />
+    <state x="445" y="229" width="801" height="561" key="NewPhpClassDialog/0.27.1836.881@0.27.1836.881" timestamp="1592776546768" />
+    <state x="407" y="101" key="SettingsEditor" timestamp="1592777311214">
+      <screen x="0" y="27" width="1836" height="881" />
+    </state>
+    <state x="407" y="101" key="SettingsEditor/0.27.1836.881@0.27.1836.881" timestamp="1592777311214" />
+    <state width="558" height="446" key="SwitcherDM" timestamp="1592773087879">
+      <screen x="0" y="27" width="1836" height="881" />
+    </state>
+    <state width="558" height="446" key="SwitcherDM/0.27.1836.881@0.27.1836.881" timestamp="1592773087879" />
+    <state x="371" y="116" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1592763988522">
+      <screen x="0" y="27" width="1836" height="881" />
     </state>
     <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1588163971793" />
     <state x="364" y="115" key="Vcs.Push.Dialog.v2/0.27.1802.873@0.27.1802.873" timestamp="1592083794120" />
+    <state x="371" y="116" key="Vcs.Push.Dialog.v2/0.27.1836.881@0.27.1836.881" timestamp="1592763988522" />
     <state x="100" y="37" width="923" height="632" key="find.popup" timestamp="1584207808096">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
     <state x="100" y="37" width="923" height="632" key="find.popup/0.27.1360.694@0.27.1360.694" timestamp="1584207808096" />
-    <state x="343" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1587936105648">
-      <screen x="0" y="27" width="1360" height="694" />
+    <state x="463" y="46" width="908" height="861" key="search.everywhere.popup" timestamp="1592770465233">
+      <screen x="0" y="27" width="1836" height="881" />
     </state>
     <state x="343" y="42" width="672" height="678" key="search.everywhere.popup/0.27.1360.694@0.27.1360.694" timestamp="1587936105648" />
+    <state x="463" y="46" width="908" height="861" key="search.everywhere.popup/0.27.1836.881@0.27.1836.881" timestamp="1592770465233" />
+    <state x="643" y="380" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1592774549028">
+      <screen x="0" y="27" width="1836" height="881" />
+    </state>
+    <state x="643" y="380" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1836.881@0.27.1836.881" timestamp="1592774549028" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/project_manager@Project.xml" NAME="Project Coverage Results" MODIFIED="1580407637929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
