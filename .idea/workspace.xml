@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/ShowTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/DbWebTestCase.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.phpunit.result.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Builder/User/UserBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Builder/User/UserBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/manager/phpunit.xml.dist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/tests/Functional/HomeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/HomeTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/tests/Functional/Users/CreateTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/CreateTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/tests/Functional/Users/IndexTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/IndexTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/Users/UsersFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/UsersFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/Users/ShowTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/Users/ShowTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="task" />
+        <entry key="$PROJECT_DIR$" value="fuctional.tests" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -456,14 +454,10 @@
       <workItem from="1590935724738" duration="4181000" />
       <workItem from="1591511528948" duration="598000" />
       <workItem from="1591539534119" duration="365000" />
-      <workItem from="1592071546373" duration="1777000" />
-    </task>
-    <task id="LOCAL-00179" summary="add idtype, statustype">
-      <created>1581690280162</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1581690280162</updated>
+      <workItem from="1592071546373" duration="3652000" />
+      <workItem from="1592340704282" duration="597000" />
+      <workItem from="1592684863742" duration="1923000" />
+      <workItem from="1592743911477" duration="3157000" />
     </task>
     <task id="LOCAL-00180" summary="add typetype">
       <created>1581693721917</created>
@@ -801,7 +795,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588163969538</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <task id="LOCAL-00228" summary="add user functional tests">
+      <created>1592083786875</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1592083786875</updated>
+    </task>
+    <option name="localTasksCounter" value="229" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -876,27 +877,29 @@
     <option name="LAST_COMMIT_MESSAGE" value="add user functional tests" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2" timestamp="1588163969339">
-      <screen x="0" y="27" width="1360" height="694" />
+    <state x="325" y="80" width="912" height="607" key="CommitChangelistDialog2" timestamp="1592083786534">
+      <screen x="0" y="27" width="1802" height="873" />
     </state>
     <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1588163969339" />
+    <state x="325" y="80" key="CommitChangelistDialog2/0.27.1802.873@0.27.1802.873" timestamp="1592083786534" />
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl" timestamp="1590912332879">
       <screen x="0" y="27" width="1787" height="859" />
     </state>
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl/0.27.1787.859@0.27.1787.859" timestamp="1590912332879" />
-    <state x="439" y="223" width="937" height="505" key="NewPhpClassDialog" timestamp="1590960906334">
-      <screen x="0" y="27" width="1810" height="854" />
+    <state x="445" y="229" width="937" height="505" key="NewPhpClassDialog" timestamp="1592743949766">
+      <screen x="0" y="27" width="1836" height="881" />
     </state>
     <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1588156595792" />
     <state x="439" y="223" key="NewPhpClassDialog/0.27.1810.854@0.27.1810.854" timestamp="1590960906334" />
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1588163971793">
-      <screen x="0" y="27" width="1360" height="694" />
+    <state x="445" y="229" key="NewPhpClassDialog/0.27.1836.881@0.27.1836.881" timestamp="1592743949766" />
+    <state x="364" y="115" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1592083794120">
+      <screen x="0" y="27" width="1802" height="873" />
     </state>
     <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1588163971793" />
+    <state x="364" y="115" key="Vcs.Push.Dialog.v2/0.27.1802.873@0.27.1802.873" timestamp="1592083794120" />
     <state x="100" y="37" width="923" height="632" key="find.popup" timestamp="1584207808096">
       <screen x="0" y="27" width="1360" height="694" />
     </state>
-    <state x="97" y="37" width="898" height="632" key="find.popup/0.27.1323.694@0.27.1323.694" timestamp="1583438022050" />
     <state x="100" y="37" width="923" height="632" key="find.popup/0.27.1360.694@0.27.1360.694" timestamp="1584207808096" />
     <state x="343" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1587936105648">
       <screen x="0" y="27" width="1360" height="694" />
