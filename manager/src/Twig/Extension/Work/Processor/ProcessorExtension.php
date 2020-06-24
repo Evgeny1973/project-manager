@@ -16,7 +16,7 @@ class ProcessorExtension extends AbstractExtension
      */
     private $drivers;
     
-    public function __construct(array $drivers)
+    public function __construct($drivers)
     {
         Assert::allIsInstanceOf($drivers, Driver::class);
         $this->drivers = $drivers;
