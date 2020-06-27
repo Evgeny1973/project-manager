@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manager/src/Container/Work/ProcessorCompilerPass.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Kernel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="add.functional.tests" />
+        <entry key="$PROJECT_DIR$" value="add.markdown" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -453,14 +455,9 @@
       <workItem from="1592340704282" duration="597000" />
       <workItem from="1592684863742" duration="1923000" />
       <workItem from="1592743911477" duration="11963000" />
-      <workItem from="1593033794340" duration="1405000" />
-    </task>
-    <task id="LOCAL-00182" summary="add doctrine annotations in task class">
-      <created>1581776855012</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1581776855012</updated>
+      <workItem from="1593033794340" duration="1800000" />
+      <workItem from="1593204031931" duration="2123000" />
+      <workItem from="1593288773028" duration="798000" />
     </task>
     <task id="LOCAL-00183" summary="add migrations task class">
       <created>1581787344858</created>
@@ -798,7 +795,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592777547472</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary="add twig processor extension">
+      <created>1593035322530</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1593035322530</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -873,24 +877,27 @@
     <option name="LAST_COMMIT_MESSAGE" value="add twig processor extension" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="726" y="185" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1592776061045">
-      <screen x="0" y="27" width="1836" height="881" />
+    <state x="707" y="174" width="412" height="524" key="#com.intellij.ide.util.MemberChooser" timestamp="1593204458076">
+      <screen x="0" y="27" width="1787" height="820" />
     </state>
+    <state x="707" y="174" width="412" height="524" key="#com.intellij.ide.util.MemberChooser/0.27.1787.820@0.27.1787.820" timestamp="1593204458076" />
     <state x="726" y="185" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1836.881@0.27.1836.881" timestamp="1592776061045" />
-    <state x="331" y="80" width="912" height="709" key="CommitChangelistDialog2" timestamp="1592777547153">
-      <screen x="0" y="27" width="1836" height="881" />
+    <state x="328" y="78" width="912" height="684" key="CommitChangelistDialog2" timestamp="1593035322146">
+      <screen x="0" y="27" width="1818" height="849" />
     </state>
     <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1588163969339" />
     <state x="325" y="80" key="CommitChangelistDialog2/0.27.1802.873@0.27.1802.873" timestamp="1592083786534" />
+    <state x="328" y="78" width="912" height="684" key="CommitChangelistDialog2/0.27.1818.849@0.27.1818.849" timestamp="1593035322146" />
     <state x="331" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1836.881@0.27.1836.881" timestamp="1592777547153" />
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl" timestamp="1590912332879">
       <screen x="0" y="27" width="1787" height="859" />
     </state>
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl/0.27.1787.859@0.27.1787.859" timestamp="1590912332879" />
-    <state x="445" y="229" width="801" height="561" key="NewPhpClassDialog" timestamp="1592776546768">
-      <screen x="0" y="27" width="1836" height="881" />
+    <state x="433" y="215" width="801" height="561" key="NewPhpClassDialog" timestamp="1593204393500">
+      <screen x="0" y="27" width="1787" height="820" />
     </state>
     <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1588156595792" />
+    <state x="433" y="215" key="NewPhpClassDialog/0.27.1787.820@0.27.1787.820" timestamp="1593204393500" />
     <state x="439" y="223" key="NewPhpClassDialog/0.27.1810.854@0.27.1810.854" timestamp="1590960906334" />
     <state x="445" y="229" width="801" height="561" key="NewPhpClassDialog/0.27.1836.881@0.27.1836.881" timestamp="1592776546768" />
     <state x="407" y="101" key="SettingsEditor" timestamp="1592777311214">
@@ -901,16 +908,13 @@
       <screen x="0" y="27" width="1836" height="881" />
     </state>
     <state width="558" height="446" key="SwitcherDM/0.27.1836.881@0.27.1836.881" timestamp="1592773087879" />
-    <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1592777549058">
-      <screen x="0" y="27" width="1836" height="881" />
+    <state x="367" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1593035325653">
+      <screen x="0" y="27" width="1818" height="849" />
     </state>
     <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1588163971793" />
     <state x="364" y="115" key="Vcs.Push.Dialog.v2/0.27.1802.873@0.27.1802.873" timestamp="1592083794120" />
+    <state x="367" y="113" key="Vcs.Push.Dialog.v2/0.27.1818.849@0.27.1818.849" timestamp="1593035325653" />
     <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1836.881@0.27.1836.881" timestamp="1592777549058" />
-    <state x="100" y="37" width="923" height="632" key="find.popup" timestamp="1584207808096">
-      <screen x="0" y="27" width="1360" height="694" />
-    </state>
-    <state x="100" y="37" width="923" height="632" key="find.popup/0.27.1360.694@0.27.1360.694" timestamp="1584207808096" />
     <state x="463" y="46" width="908" height="861" key="search.everywhere.popup" timestamp="1592770465233">
       <screen x="0" y="27" width="1836" height="881" />
     </state>
