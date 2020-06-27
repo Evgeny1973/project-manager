@@ -1,15 +1,15 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\ReadModel\Work\Projects\Task\Filter;
-
 
 class Filter
 {
     public $member;
     public $author;
     public $project;
-    public $name;
+    public $text;
     public $type;
     public $status;
     public $priority;

@@ -1,8 +1,8 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\Controller\Work\Projects\Project;
-
 
 use App\Model\Work\Entity\Projects\Project\Project;
 use App\Model\Work\UseCase\Projects\Task\Create;
@@ -11,7 +11,7 @@ use App\Model\Work\UseCase\Projects\Task\Plan;
 use App\ReadModel\Work\Projects\Task\Filter;
 use App\ReadModel\Work\Projects\Task\TaskFetcher;
 use App\Security\Voter\Work\Projects\ProjectAccess;
-use App\Controller\Work\ErrorHandler;
+use App\Controller\ErrorHandler;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Entity;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -56,8 +56,8 @@ class TasksController extends AbstractController
             $filter,
             $request->query->getInt('page', 1),
             self::PER_PAGE,
-            $request->query->get('sort', 't.date'),
-            $request->query->get('direction', 'desc')
+            $request->query->get('sort'),
+            $request->query->get('direction')
         );
         
         return $this->render('app/work/projects/tasks/index.html.twig', [
@@ -86,14 +86,15 @@ class TasksController extends AbstractController
             $filter->forExecutor($this->getUser()->getId()),
             $request->query->getInt('page', 1),
             self::PER_PAGE,
-            $request->query->get('sort', 't.date'),
-            $request->query->get('direction', 'desc')
+            $request->query->get('sort'),
+            $request->query->get('direction')
         );
-    
-        return $this->render('app/work/projects/tasks/index.html.twig',
-            ['project' => $project,
+        
+        return $this->render('app/work/projects/tasks/index.html.twig', [
+            'project' => $project,
             'pagination' => $pagination,
-            'form' => $form->createView()]);
+            'form' => $form->createView(),
+        ]);
     }
     
     /**
@@ -105,22 +106,25 @@ class TasksController extends AbstractController
     public function own(Project $project, Request $request): Response
     {
         $this->denyAccessUnlessGranted(ProjectAccess::VIEW, $project);
+        
         $filter = Filter\Filter::forProject($project->getId()->getValue());
-    
+        
         $form = $this->createForm(Filter\Form::class, $filter);
+        $form->handleRequest($request);
         
         $pagination = $this->tasks->all(
             $filter->forAuthor($this->getUser()->getId()),
             $request->query->getInt('page', 1),
             self::PER_PAGE,
-            $request->query->get('sort', 't.date'),
-            $request->query->get('direction', 'desc')
+            $request->query->get('sort'),
+            $request->query->get('direction')
         );
         
-        return $this->render('app/work/projects/tasks/index.html.twig',
-            ['project' => $project,
+        return $this->render('app/work/projects/tasks/index.html.twig', [
+            'project' => $project,
             'pagination' => $pagination,
-            'form' => $form->createView()]);
+            'form' => $form->createView(),
+        ]);
     }
     
     /**
