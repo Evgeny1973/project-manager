@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/ErrorHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/Filter/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/Filter/Filter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/Filter/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/Filter/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/TaskFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/TaskFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Twig/Extension/Work/Processor/ProcessorExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Twig/Extension/Work/Processor/ProcessorExtension.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="add.task.and.user.processor" />
+        <entry key="$PROJECT_DIR$" value="rise.search" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -461,14 +457,8 @@
       <workItem from="1592743911477" duration="11963000" />
       <workItem from="1593033794340" duration="1800000" />
       <workItem from="1593204031931" duration="2123000" />
-      <workItem from="1593288773028" duration="2322000" />
-    </task>
-    <task id="LOCAL-00184" summary="add task repository">
-      <created>1581788319659</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1581788319659</updated>
+      <workItem from="1593288773028" duration="2395000" />
+      <workItem from="1593328502950" duration="1230000" />
     </task>
     <task id="LOCAL-00185" summary="add task usecase create">
       <created>1581789215446</created>
@@ -806,7 +796,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593290944353</updated>
     </task>
-    <option name="localTasksCounter" value="233" />
+    <task id="LOCAL-00233" summary="update search">
+      <created>1593295842185</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1593295842185</updated>
+    </task>
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -853,7 +850,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add task move usecase" />
     <MESSAGE value="add task childOf usecase" />
     <MESSAGE value="add task takeandstart usecase" />
     <MESSAGE value="add task executor/assign usecase" />
@@ -878,7 +874,8 @@
     <MESSAGE value="add functional tests" />
     <MESSAGE value="add twig processor extension" />
     <MESSAGE value="add twig compiler pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="add twig compiler pass" />
+    <MESSAGE value="update search" />
+    <option name="LAST_COMMIT_MESSAGE" value="update search" />
   </component>
   <component name="WindowStateProjectService">
     <state x="707" y="174" width="412" height="524" key="#com.intellij.ide.util.MemberChooser" timestamp="1593204458076">
@@ -886,14 +883,14 @@
     </state>
     <state x="707" y="174" width="412" height="524" key="#com.intellij.ide.util.MemberChooser/0.27.1787.820@0.27.1787.820" timestamp="1593204458076" />
     <state x="726" y="185" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1836.881@0.27.1836.881" timestamp="1592776061045" />
-    <state x="332" y="79" width="912" height="684" key="CommitChangelistDialog2" timestamp="1593290943932">
+    <state x="332" y="79" width="912" height="709" key="CommitChangelistDialog2" timestamp="1593295841926">
       <screen x="0" y="27" width="1840" height="859" />
     </state>
     <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1588163969339" />
     <state x="325" y="80" key="CommitChangelistDialog2/0.27.1802.873@0.27.1802.873" timestamp="1592083786534" />
     <state x="328" y="78" width="912" height="684" key="CommitChangelistDialog2/0.27.1818.849@0.27.1818.849" timestamp="1593035322146" />
     <state x="331" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1836.881@0.27.1836.881" timestamp="1592777547153" />
-    <state x="332" y="79" key="CommitChangelistDialog2/0.27.1840.859@0.27.1840.859" timestamp="1593290943932" />
+    <state x="332" y="79" width="912" height="709" key="CommitChangelistDialog2/0.27.1840.859@0.27.1840.859" timestamp="1593295841926" />
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl" timestamp="1590912332879">
       <screen x="0" y="27" width="1787" height="859" />
     </state>
@@ -914,14 +911,14 @@
       <screen x="0" y="27" width="1836" height="881" />
     </state>
     <state width="558" height="446" key="SwitcherDM/0.27.1836.881@0.27.1836.881" timestamp="1592773087879" />
-    <state x="371" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1593290947099">
+    <state x="371" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1593295843952">
       <screen x="0" y="27" width="1840" height="859" />
     </state>
     <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1588163971793" />
     <state x="364" y="115" key="Vcs.Push.Dialog.v2/0.27.1802.873@0.27.1802.873" timestamp="1592083794120" />
     <state x="367" y="113" key="Vcs.Push.Dialog.v2/0.27.1818.849@0.27.1818.849" timestamp="1593035325653" />
     <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1836.881@0.27.1836.881" timestamp="1592777549058" />
-    <state x="371" y="114" key="Vcs.Push.Dialog.v2/0.27.1840.859@0.27.1840.859" timestamp="1593290947099" />
+    <state x="371" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1840.859@0.27.1840.859" timestamp="1593295843952" />
     <state x="463" y="46" width="908" height="861" key="search.everywhere.popup" timestamp="1592770465233">
       <screen x="0" y="27" width="1836" height="881" />
     </state>
