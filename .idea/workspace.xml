@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/config/packages/flysystem.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20200628120208.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/File/File.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/File/Id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/File/IdType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/File/Info.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/File.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Remove/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Remove/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Service/Uploader/File.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Service/Uploader/FileUploader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Twig/Extension/StoragePathExtension.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/files.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/File/AddTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/.env" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.phpunit.result.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/TasksController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -490,14 +459,7 @@
       <workItem from="1593204031931" duration="2123000" />
       <workItem from="1593288773028" duration="2395000" />
       <workItem from="1593328502950" duration="10565000" />
-      <workItem from="1593349430266" duration="6854000" />
-    </task>
-    <task id="LOCAL-00187" summary="add task usecase create">
-      <created>1581797815667</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1581797815668</updated>
+      <workItem from="1593349430266" duration="8361000" />
     </task>
     <task id="LOCAL-00188" summary="add task usecase create">
       <created>1581798672020</created>
@@ -835,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593341302083</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="upload files">
+      <created>1593375605598</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1593375605598</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -882,7 +851,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add task executor/assign usecase" />
     <MESSAGE value="add task executor/revoke usecase" />
     <MESSAGE value="add tasks permissions" />
     <MESSAGE value="add tasks voter" />
@@ -907,7 +875,8 @@
     <MESSAGE value="update search" />
     <MESSAGE value="remove compiler pass" />
     <MESSAGE value="added ftp emulator in docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ftp emulator in docker" />
+    <MESSAGE value="upload files" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="94" width="800" height="712" key="#Plugins" timestamp="1593349454742">
@@ -920,11 +889,11 @@
     <state x="702" y="179" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1774.849@0.27.1774.849" timestamp="1593350306787" />
     <state x="707" y="174" width="412" height="524" key="#com.intellij.ide.util.MemberChooser/0.27.1787.820@0.27.1787.820" timestamp="1593204458076" />
     <state x="726" y="185" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1836.881@0.27.1836.881" timestamp="1592776061045" />
-    <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2" timestamp="1593341301909">
+    <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2" timestamp="1593375605196">
       <screen x="0" y="27" width="1774" height="849" />
     </state>
     <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1588163969339" />
-    <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593341301909" />
+    <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593375605196" />
     <state x="325" y="80" key="CommitChangelistDialog2/0.27.1802.873@0.27.1802.873" timestamp="1592083786534" />
     <state x="328" y="78" width="912" height="684" key="CommitChangelistDialog2/0.27.1818.849@0.27.1818.849" timestamp="1593035322146" />
     <state x="331" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1836.881@0.27.1836.881" timestamp="1592777547153" />
@@ -946,15 +915,16 @@
       <screen x="0" y="27" width="1836" height="881" />
     </state>
     <state x="407" y="101" key="SettingsEditor/0.27.1836.881@0.27.1836.881" timestamp="1592777311214" />
-    <state width="558" height="446" key="SwitcherDM" timestamp="1592773087879">
-      <screen x="0" y="27" width="1836" height="881" />
+    <state width="540" height="430" key="SwitcherDM" timestamp="1593378048800">
+      <screen x="0" y="27" width="1774" height="849" />
     </state>
+    <state width="540" height="430" key="SwitcherDM/0.27.1774.849@0.27.1774.849" timestamp="1593378048800" />
     <state width="558" height="446" key="SwitcherDM/0.27.1836.881@0.27.1836.881" timestamp="1592773087879" />
-    <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1593341305561">
+    <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1593375611198">
       <screen x="0" y="27" width="1774" height="849" />
     </state>
     <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1588163971793" />
-    <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593341305561" />
+    <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593375611198" />
     <state x="364" y="115" key="Vcs.Push.Dialog.v2/0.27.1802.873@0.27.1802.873" timestamp="1592083794120" />
     <state x="367" y="113" key="Vcs.Push.Dialog.v2/0.27.1818.849@0.27.1818.849" timestamp="1593035325653" />
     <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1836.881@0.27.1836.881" timestamp="1592777549058" />
