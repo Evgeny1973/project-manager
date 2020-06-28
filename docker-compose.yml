@@ -18,6 +18,7 @@ services:
       - ./manager:/app
     depends_on:
       - manager-postgres
+      - storage
       - mailer
   manager-php-cli:
     build:
@@ -28,6 +29,7 @@ services:
       - composer:/root/.composer/cache
     depends_on:
       - manager-postgres
+      - storage
       - mailer
   manager-node-watch:
     image: node:10.16.3-alpine
@@ -55,10 +57,28 @@ services:
     volumes:
       - manager-redis:/data
     command: redis-server --requirepass secret
+
+  storage:
+    build:
+      context: ./storage/docker/development
+      dockerfile: nginx.docker
+    volumes:
+      - ./storage:/app
+    ports:
+      - "8081:80"
+  storage-ftp:
+    image: stilliard/pure-ftpd
+    environment:
+      FTP_USER_NAME: app
+      FTP_USER_PASS: secret
+      FTP_USER_HOME: /app
+    volumes:
+      - ./storage/public:/app
+
   mailer:
     image: mailhog/mailhog
     ports:
-      - "8081:8025"
+      - "8082:8025"
 
 volumes:
   manager-postgres:
