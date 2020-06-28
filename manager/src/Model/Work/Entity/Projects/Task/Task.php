@@ -6,6 +6,9 @@ namespace App\Model\Work\Entity\Projects\Task;
 use App\Model\Work\Entity\Members\Member\Id as MemberId;
 use App\Model\Work\Entity\Members\Member\Member;
 use App\Model\Work\Entity\Projects\Project\Project;
+use App\Model\Work\Entity\Projects\Task\File\File;
+use App\Model\Work\Entity\Projects\Task\File\Id as FileId;
+use App\Model\Work\Entity\Projects\Task\File\Info;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Webmozart\Assert\Assert;
@@ -75,7 +78,14 @@ class Task
      * @ORM\Column(type="text", nullable=true)
      */
     private $content;
-
+    
+    /**
+     * @var ArrayCollection|File[]
+     * @ORM\OneToMany(targetEntity=File::class, mappedBy="task", orphanRemoval=true, cascade={"all"})
+     * @ORM\OrderBy({"date" = "ASC"})
+     */
+    private $files;
+    
     /**
      * @var Type
      * @ORM\Column(type="work_projects_task_type", length=16)
@@ -124,8 +134,8 @@ class Task
         Type $type,
         int $priority,
         string $name,
-        ?string $content)
-    {
+        ?string $content
+    ) {
         $this->id = $id;
         $this->project = $project;
         $this->author = $author;
@@ -137,6 +147,7 @@ class Task
         $this->priority = $priority;
         $this->status = Status::new();
         $this->executors = new ArrayCollection();
+        $this->files = new ArrayCollection();
 
     }
 
@@ -256,6 +267,22 @@ class Task
         return $this->status->isWorking();
     }
 
+    public function addFile(FileId $id, Member $member, \DateTimeImmutable $date, Info $info): void
+    {
+        $this->files->add(new File($this, $id, $member, $date, $info));
+    }
+    
+    public function removeFile(FileId $id)
+    {
+        foreach ($this->files as $current) {
+            if ($current->getId()->isEqual($id)) {
+                $this->files->removeElement($id);
+                return;
+            }
+        }
+        throw new \DomainException('Файл не найден.');
+    }
+    
     public function start(\DateTimeImmutable $date): void
     {
         if (!$this->isNew()) {
@@ -307,6 +334,14 @@ class Task
     public function getPlanDate(): ?\DateTimeImmutable
     {
         return $this->planDate;
+    }
+    
+    /**
+     * @return File[]
+     */
+    public function getFiles(): array
+    {
+        return $this->files->toArray();
     }
 
     /**

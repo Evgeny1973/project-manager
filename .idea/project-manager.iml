@@ -42,6 +42,8 @@
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/knplabs/knp-menu-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/knplabs/knp-paginator-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/knpuniversity/oauth2-client-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/manager/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/manager/vendor/league/flysystem-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/league/oauth2-client" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/league/oauth2-facebook" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/monolog/monolog" />

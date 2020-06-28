@@ -151,6 +151,8 @@
       <path value="$PROJECT_DIR$/manager/vendor/cebe/markdown" />
       <path value="$PROJECT_DIR$/manager/vendor/ezyang/htmlpurifier" />
       <path value="$PROJECT_DIR$/manager/vendor/exercise/htmlpurifier-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/league/flysystem-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/league/flysystem" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

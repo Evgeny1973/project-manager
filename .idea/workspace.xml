@@ -2,14 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/storage/docker/development/nginx.docker" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/docker/development/nginx/default.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/config/packages/flysystem.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20200628120208.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/File/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/File/Id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/File/IdType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/File/Info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Remove/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Remove/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Service/Uploader/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Service/Uploader/FileUploader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Twig/Extension/StoragePathExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/files.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/File/AddTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/prod/monolog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/prod/monolog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.env" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/TasksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,6 +224,8 @@
       <path value="$PROJECT_DIR$/manager/vendor/cebe/markdown" />
       <path value="$PROJECT_DIR$/manager/vendor/ezyang/htmlpurifier" />
       <path value="$PROJECT_DIR$/manager/vendor/exercise/htmlpurifier-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/league/flysystem-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/league/flysystem" />
     </include_path>
   </component>
   <component name="ProjectId" id="1RH0bnn9uEzKpBoXjeZL1F2dTxy" />
@@ -463,14 +489,8 @@
       <workItem from="1593033794340" duration="1800000" />
       <workItem from="1593204031931" duration="2123000" />
       <workItem from="1593288773028" duration="2395000" />
-      <workItem from="1593328502950" duration="4513000" />
-    </task>
-    <task id="LOCAL-00186" summary="add task usecase create">
-      <created>1581789233920</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1581789233920</updated>
+      <workItem from="1593328502950" duration="10565000" />
+      <workItem from="1593349430266" duration="6854000" />
     </task>
     <task id="LOCAL-00187" summary="add task usecase create">
       <created>1581797815667</created>
@@ -808,7 +828,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593330267592</updated>
     </task>
-    <option name="localTasksCounter" value="235" />
+    <task id="LOCAL-00235" summary="added ftp emulator in docker">
+      <created>1593341302083</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1593341302083</updated>
+    </task>
+    <option name="localTasksCounter" value="236" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -855,7 +882,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add task takeandstart usecase" />
     <MESSAGE value="add task executor/assign usecase" />
     <MESSAGE value="add task executor/revoke usecase" />
     <MESSAGE value="add tasks permissions" />
@@ -880,19 +906,25 @@
     <MESSAGE value="add twig compiler pass" />
     <MESSAGE value="update search" />
     <MESSAGE value="remove compiler pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove compiler pass" />
+    <MESSAGE value="added ftp emulator in docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ftp emulator in docker" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="707" y="174" width="412" height="524" key="#com.intellij.ide.util.MemberChooser" timestamp="1593204458076">
-      <screen x="0" y="27" width="1787" height="820" />
+    <state x="482" y="94" width="800" height="712" key="#Plugins" timestamp="1593349454742">
+      <screen x="0" y="27" width="1774" height="849" />
     </state>
+    <state x="482" y="94" width="800" height="712" key="#Plugins/0.27.1774.849@0.27.1774.849" timestamp="1593349454742" />
+    <state x="702" y="179" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1593350306787">
+      <screen x="0" y="27" width="1774" height="849" />
+    </state>
+    <state x="702" y="179" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1774.849@0.27.1774.849" timestamp="1593350306787" />
     <state x="707" y="174" width="412" height="524" key="#com.intellij.ide.util.MemberChooser/0.27.1787.820@0.27.1787.820" timestamp="1593204458076" />
     <state x="726" y="185" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1836.881@0.27.1836.881" timestamp="1592776061045" />
-    <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2" timestamp="1593330267273">
+    <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2" timestamp="1593341301909">
       <screen x="0" y="27" width="1774" height="849" />
     </state>
     <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1588163969339" />
-    <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593330267273" />
+    <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593341301909" />
     <state x="325" y="80" key="CommitChangelistDialog2/0.27.1802.873@0.27.1802.873" timestamp="1592083786534" />
     <state x="328" y="78" width="912" height="684" key="CommitChangelistDialog2/0.27.1818.849@0.27.1818.849" timestamp="1593035322146" />
     <state x="331" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1836.881@0.27.1836.881" timestamp="1592777547153" />
@@ -901,10 +933,11 @@
       <screen x="0" y="27" width="1787" height="859" />
     </state>
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl/0.27.1787.859@0.27.1787.859" timestamp="1590912332879" />
-    <state x="446" y="224" width="801" height="561" key="NewPhpClassDialog" timestamp="1593291791678">
-      <screen x="0" y="27" width="1840" height="859" />
+    <state x="430" y="222" width="873" height="555" key="NewPhpClassDialog" timestamp="1593350519203">
+      <screen x="0" y="27" width="1774" height="849" />
     </state>
     <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1588156595792" />
+    <state x="430" y="222" width="873" height="555" key="NewPhpClassDialog/0.27.1774.849@0.27.1774.849" timestamp="1593350519203" />
     <state x="433" y="215" key="NewPhpClassDialog/0.27.1787.820@0.27.1787.820" timestamp="1593204393500" />
     <state x="439" y="223" key="NewPhpClassDialog/0.27.1810.854@0.27.1810.854" timestamp="1590960906334" />
     <state x="445" y="229" width="801" height="561" key="NewPhpClassDialog/0.27.1836.881@0.27.1836.881" timestamp="1592776546768" />
@@ -917,11 +950,11 @@
       <screen x="0" y="27" width="1836" height="881" />
     </state>
     <state width="558" height="446" key="SwitcherDM/0.27.1836.881@0.27.1836.881" timestamp="1592773087879" />
-    <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1593330269905">
+    <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1593341305561">
       <screen x="0" y="27" width="1774" height="849" />
     </state>
     <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1588163971793" />
-    <state x="358" y="113" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593330269905" />
+    <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593341305561" />
     <state x="364" y="115" key="Vcs.Push.Dialog.v2/0.27.1802.873@0.27.1802.873" timestamp="1592083794120" />
     <state x="367" y="113" key="Vcs.Push.Dialog.v2/0.27.1818.849@0.27.1818.849" timestamp="1593035325653" />
     <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1836.881@0.27.1836.881" timestamp="1592777549058" />
@@ -931,9 +964,10 @@
     </state>
     <state x="343" y="42" width="672" height="678" key="search.everywhere.popup/0.27.1360.694@0.27.1360.694" timestamp="1587936105648" />
     <state x="463" y="46" width="908" height="861" key="search.everywhere.popup/0.27.1836.881@0.27.1836.881" timestamp="1592770465233" />
-    <state x="643" y="380" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1592774549028">
-      <screen x="0" y="27" width="1836" height="881" />
+    <state x="621" y="367" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1593345996194">
+      <screen x="0" y="27" width="1774" height="849" />
     </state>
+    <state x="621" y="367" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1774.849@0.27.1774.849" timestamp="1593345996194" />
     <state x="643" y="380" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1836.881@0.27.1836.881" timestamp="1592774549028" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
