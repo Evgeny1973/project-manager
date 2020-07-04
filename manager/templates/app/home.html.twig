@@ -9,5 +9,16 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Hello!</h1>
+<h2>Hello, {{ app.user.display }}</h2>
+    {{ work_projects_calendar() }}
+
+    <div class="row">
+        <div class="col-md-6">
+            {{ work_projects_own_tasks() }}
+        </div>
+        <div class="col-md-6">
+            {{ work_projects_tasks_for_me() }}
+        </div>
+    </div>
+
 {% endblock %}
