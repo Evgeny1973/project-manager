@@ -27,6 +27,8 @@ doctrine:
             work_projects_task_type: 'App\Model\Work\Entity\Projects\Task\TypeType'
             work_projects_task_status: 'App\Model\Work\Entity\Projects\Task\StatusType'
             work_projects_task_file_id: 'App\Model\Work\Entity\Projects\Task\File\IdType'
+            comment_comment_id: 'App\Model\Comment\Entity\Comment\IdType'
+            comment_comment_author_id: 'App\Model\Comment\Entity\Comment\AuthorIdType'
 
     orm:
         auto_generate_proxy_classes: true
@@ -39,6 +41,12 @@ doctrine:
                 dir: '%kernel.project_dir%/src/Model/User/Entity'
                 prefix: 'App\Model\User\Entity'
                 alias: User
+            Comment:
+                is_bundle: false
+                type: annotation
+                dir: '%kernel.project_dir%/src/Model/Comment/Entity'
+                prefix: 'App\Model\Comment\Entity'
+                alias: Comment
             Work:
                 is_bundle: false
                 type: annotation
