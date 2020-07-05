@@ -8,6 +8,8 @@ doctrine:
             charset: utf8
             collate: -
 
+        schema_filter: '~^(?!work_projects_tasks_seq)~'
+
         url: '%env(resolve:DATABASE_URL)%'
 
         types:
@@ -46,7 +48,7 @@ doctrine:
                 type: annotation
                 dir: '%kernel.project_dir%/src/Model/Comment/Entity'
                 prefix: 'App\Model\Comment\Entity'
-                alias: Comment
+                alias: User
             Work:
                 is_bundle: false
                 type: annotation
