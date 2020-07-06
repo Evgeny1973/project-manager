@@ -3,8 +3,8 @@
 
 namespace App\DataFixtures\Work;
 
-
 use App\DataFixtures\Work\Projects\ProjectFixture;
+use App\Model\Work\Entity\Members\Member\Member;
 use App\Model\Work\Entity\Projects\Project\Membership;
 use App\Model\Work\Entity\Projects\Project\Project;
 use App\Model\Work\Entity\Projects\Task\Id;
@@ -13,7 +13,7 @@ use App\Model\Work\Entity\Projects\Task\Task;
 use App\Model\Work\Entity\Projects\Task\Type;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
-use Doctrine\Persistence\ObjectManager;
+use Doctrine\Common\Persistence\ObjectManager;
 use Faker\Factory;
 use Faker\Generator;
 
@@ -21,7 +21,7 @@ class TaskFixture extends Fixture implements DependentFixtureInterface
 {
     public function load(ObjectManager $manager): void
     {
-        $faker = Factory::create('en_US');
+        $faker = Factory::create();
         
         $projects = [
             $this->getReference(ProjectFixture::REFERENCE_FIRST),
@@ -35,41 +35,44 @@ class TaskFixture extends Fixture implements DependentFixtureInterface
         for ($i = 0; $i < 100; $i++) {
             
             /** @var Project $project */
+            /** @var Member $actor */
             $project = $faker->randomElement($projects);
+            $actor = $faker->randomElement($project->getMemberships())->getMember();
             
             $task = $this->createRandomTask(new Id($i + 1), $project, $faker, $date);
             $date = $date->modify('+' . $faker->numberBetween(1, 3) . 'days 3minutes');
             
             if ($faker->boolean(40)) {
-                $task->plan($date->modify('+' . $faker->numberBetween(1, 30) . 'days'));
+                $task->plan($actor, $date, $date->modify('+' . $faker->numberBetween(1, 30) . 'days'));
             }
             
             $memberships = $project->getMemberships();
             foreach ($faker->randomElements($memberships, $faker->numberBetween(0, count($memberships))) as $membership) {
                 /** @var Membership $membership */
-                $task->assignExecutor($membership->getMember());
+                $task->assignExecutor($actor, $date, $membership->getMember());
             }
             
             if ($faker->boolean(60)) {
-                $task->changeProgress($faker->randomElement([25, 50, 75]));
+                $task->changeProgress($actor, $date->modify('+5 hours'), $faker->randomElement([25, 50, 75]));
                 $task->changeStatus(
+                    $actor,
+                    $date->modify('+' . $faker->numberBetween(1, 2) . 'days'),
                     new Status($faker->randomElement([
                         Status::WORKING,
                         Status::HELP,
                         Status::CHECKING,
                         Status::REJECTED,
                         Status::DONE,
-                    ])),
-                    $date->modify('+' . $faker->numberBetween(1, 2) . 'days')
+                    ]))
                 );
             }
             
             if ($faker->boolean()) {
-                $task->changePriority($faker->randomElement(array_diff([1, 2, 3, 4], [$task->getPriority()])));
+                $task->changePriority($actor, $date->modify('+3 days'), $faker->randomElement(array_diff([1, 2, 3, 4], [$task->getPriority()])));
             }
             
-            if ($faker->boolean(30)) {
-                $task->setChildOf($faker->randomElement($previous));
+            if ($previous && $faker->boolean(30)) {
+                $task->setChildOf($actor, $date->modify('+5 days'), $faker->randomElement($previous));
             }
             
             $previous[] = $task;
@@ -96,7 +99,7 @@ class TaskFixture extends Fixture implements DependentFixtureInterface
             $date,
             new Type($faker->randomElement([Type::NONE, Type::FEATURE, Type::ERROR])),
             $faker->numberBetween(1, 4),
-            trim($faker->sentence(\random_int(2, 3)), '.'),
+            trim($faker->sentence(random_int(2, 3)), '.'),
             $faker->paragraphs(3, true)
         );
     }

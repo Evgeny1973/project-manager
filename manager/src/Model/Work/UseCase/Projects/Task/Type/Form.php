@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Model\Work\UseCase\Projects\Task\Type;
-
 
 use App\Model\Work\Entity\Projects\Task\Type as TaskType;
 use Symfony\Component\Form\AbstractType;

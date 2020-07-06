@@ -25,14 +25,20 @@ class Command
      */
     public $withChildren;
     
-    public function __construct(int $id)
+    /**
+     * @var string
+     */
+    public $actor;
+    
+    public function __construct(string $actor, int $id)
     {
         $this->id = $id;
+        $this->actor = $actor;
     }
     
-    public static function fromTask(Task $task): self
+    public static function fromTask(string $actor, Task $task): self
     {
-        $command = new self($task->getId()->getValue());
+        $command = new self($actor, $task->getId()->getValue());
         $command->project = $task->getProject()->getId()->getValue();
         
         return $command;

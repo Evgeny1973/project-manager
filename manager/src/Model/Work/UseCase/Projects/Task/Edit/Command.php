@@ -21,15 +21,22 @@ class Command
     public $name;
 
     public $content;
-
-    public function __construct(int $id)
+    
+    /**
+     * @var string
+     * @Assert\NotBlank()
+     */
+    public $actor;
+    
+    public function __construct(string $actor, int $id)
     {
         $this->id = $id;
+        $this->actor = $actor;
     }
-
-    public static function fromTask(Task $task): self
+    
+    public static function fromTask(string $actor, Task $task): self
     {
-        $command = new self($task->getId()->getValue());
+        $command = new self($actor, $task->getId()->getValue());
         $command->name = $task->getName();
         $command->content = $task->getContent();
 

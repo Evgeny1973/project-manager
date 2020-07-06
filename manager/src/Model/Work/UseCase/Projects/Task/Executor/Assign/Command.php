@@ -20,8 +20,15 @@ class Command
      */
     public $members;
     
-    public function __construct(int $id)
+    /**
+     * @var string
+     * @Assert\NotBlank()
+     */
+    public $actor;
+    
+    public function __construct(string $actor, int $id)
     {
         $this->id = $id;
+        $this->actor = $actor;
     }
 }

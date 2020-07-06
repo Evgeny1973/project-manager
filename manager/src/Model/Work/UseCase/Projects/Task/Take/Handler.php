@@ -34,11 +34,11 @@ class Handler
     
     public function handle(Command $command): void
     {
+        $actor = $this->members->get(new MemberId($command->actor));
         $task = $this->tasks->get(new TaskId($command->id));
-        $member = $this->members->get(new MemberId($command->member));
-        
-        if (!$task->hasExecutor($member->getId())) {
-            $task->assignExecutor($member);
+    
+        if (!$task->hasExecutor($actor->getId())) {
+            $task->assignExecutor($actor, new \DateTimeImmutable(), $actor);
         }
         $this->flusher->flush();
     }

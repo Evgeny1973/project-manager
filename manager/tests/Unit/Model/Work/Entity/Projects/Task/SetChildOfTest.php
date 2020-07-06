@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\Tests\Unit\Model\Work\Entity\Projects\Task;
 
@@ -18,49 +19,37 @@ class SetChildOfTest extends TestCase
         $project = (new ProjectBuilder())->build();
         $task = (new TaskBuilder())->build($project, $member);
         $parent = (new TaskBuilder())->build($project, $member);
-
-        $task->setChildOf($parent);
-
+        
+        $task->setChildOf($member, new \DateTimeImmutable(), $parent);
+        
         self::assertEquals($parent, $task->getParent());
     }
-
-    public function testEmpty(): void
-    {
-        $group = (new GroupBuilder())->build();
-        $member = (new MemberBuilder())->build($group);
-        $project = (new ProjectBuilder())->build();
-        $task = (new TaskBuilder())->build($project, $member);
-
-        $task->setChildOf(null);
-
-        self::assertNull($task->getParent());
-    }
-
+    
     public function testSelf(): void
     {
         $group = (new GroupBuilder())->build();
         $member = (new MemberBuilder())->build($group);
         $project = (new ProjectBuilder())->build();
         $task = (new TaskBuilder())->build($project, $member);
-
-        $this->expectExceptionMessage('Нельзя: можем впасть в цикл.');
-        $task->setChildOf($task);
+        
+        $this->expectExceptionMessage('Cyclomatic children.');
+        $task->setChildOf($member, new \DateTimeImmutable(), $task);
     }
-
+    
     public function testCycle(): void
     {
         $group = (new GroupBuilder())->build();
         $member = (new MemberBuilder())->build($group);
         $project = (new ProjectBuilder())->build();
         $task = (new TaskBuilder())->build($project, $member);
-
+        
         $child1 = (new TaskBuilder())->build($project, $member);
         $child2 = (new TaskBuilder())->build($project, $member);
-
-        $child1->setChildOf($task);
-        $child2->setChildOf($child1);
-
-        $this->expectExceptionMessage('Нельзя: можем впасть в цикл.');
-        $task->setChildOf($child2);
+        
+        $child1->setChildOf($member, new \DateTimeImmutable(), $task);
+        $child2->setChildOf($member, new \DateTimeImmutable(), $child1);
+        
+        $this->expectExceptionMessage('Cyclomatic children.');
+        $task->setChildOf($member, new \DateTimeImmutable(), $child2);
     }
 }

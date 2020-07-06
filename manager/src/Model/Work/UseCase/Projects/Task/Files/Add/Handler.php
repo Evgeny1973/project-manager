@@ -38,14 +38,15 @@ final class Handler
     
     public function handle(Command $command): void
     {
+        $actor = $this->members->get(new MemberId($command->actor));
         $member = $this->members->get(new MemberId($command->member));
         $task = $this->tasks->get(new TaskId($command->id));
     
         foreach ($command->files as $file) {
             $task->addFile(
-                FileId::next(),
-                $member,
+                $actor,
                 new \DateTimeImmutable(),
+                FileId::next(),
                 new Info(
                     $file->path,
                     $file->name,

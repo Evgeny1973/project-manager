@@ -36,10 +36,11 @@ class Handler
     
     public function handle(Command $command): void
     {
+        $actor = $this->members->get(new MemberId($command->actor));
         $task = $this->tasks->get(new TaskId($command->id));
         $member = $this->members->get(new MemberId($command->member));
-        
-        $task->revokeExecutor($member->getId());
+    
+        $task->revokeExecutor($actor, new \DateTimeImmutable(), $member->getId());
         
         $this->flusher->flush();
     }

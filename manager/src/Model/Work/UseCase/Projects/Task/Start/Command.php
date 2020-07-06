@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Model\Work\UseCase\Projects\Task\Start;
-
 
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -14,8 +12,15 @@ class Command
      */
     public $id;
     
-    public function __construct(int $id)
+    /**
+     * @var string
+     * @Assert\NotBlank()
+     */
+    public $actor;
+    
+    public function __construct(string $actor, int $id)
     {
         $this->id = $id;
+        $this->actor = $actor;
     }
 }

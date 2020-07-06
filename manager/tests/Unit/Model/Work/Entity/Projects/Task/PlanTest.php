@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\Tests\Unit\Model\Work\Entity\Projects\Task;
 
@@ -17,21 +18,9 @@ class PlanTest extends TestCase
         $member = (new MemberBuilder())->build($group);
         $project = (new ProjectBuilder())->build();
         $task = (new TaskBuilder())->build($project, $member);
-
-        $task->plan($date = new \DateTimeImmutable());
-
+        
+        $task->plan($member, new \DateTimeImmutable(), $date = new \DateTimeImmutable('+1 day'));
+        
         self::assertEquals($date, $task->getPlanDate());
-    }
-
-    public function testEmpty(): void
-    {
-        $group = (new GroupBuilder())->build();
-        $member = (new MemberBuilder())->build($group);
-        $project = (new ProjectBuilder())->build();
-        $task = (new TaskBuilder())->build($project, $member);
-
-        $task->plan(null);
-
-        self::assertNull($task->getPlanDate());
     }
 }

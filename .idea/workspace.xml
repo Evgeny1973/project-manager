@@ -2,8 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20200706135631.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Change/Change.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Change/Id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Change/IdType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Change/Set.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/RemovePlanTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/SetRootTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/TasksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/DataFixtures/Work/TaskFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/DataFixtures/Work/TaskFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/ChildOf/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/ChildOf/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/ChildOf/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/ChildOf/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/NamesType.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/NamesType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Edit/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Edit/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Edit/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Edit/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Executor/Assign/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Executor/Assign/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Executor/Assign/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Executor/Assign/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Executor/Revoke/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Executor/Revoke/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Executor/Revoke/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Executor/Revoke/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Remove/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Remove/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Remove/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Remove/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Move/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Move/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Move/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Move/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Remove/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Remove/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Remove/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Remove/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Set/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Set/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Set/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Set/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Priority/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Priority/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Priority/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Priority/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Progress/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Progress/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Progress/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Progress/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Start/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Start/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Start/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Start/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Status/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Status/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Status/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Status/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Take/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Take/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Take/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Take/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/TakeAndStart/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/TakeAndStart/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/TakeAndStart/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/TakeAndStart/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Type/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Type/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Type/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Type/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Type/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Type/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/TaskFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/TaskFetcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/ChangePriorityTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/ChangePriorityTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/ChangeProgressTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/ChangeProgressTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/ChangeStatusTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/ChangeStatusTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/ChangeTypeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/ChangeTypeTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/EditTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/EditTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/Executor/AssignTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/Executor/AssignTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/Executor/RevokeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/Executor/RevokeTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/File/AddTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/File/AddTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/MoveTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/MoveTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/PlanTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/PlanTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/SetChildOfTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/SetChildOfTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/StartTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Unit/Model/Work/Entity/Projects/Task/StartTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +84,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="calendar.widget" />
+        <entry key="$PROJECT_DIR$" value="some.refactor" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -466,14 +526,8 @@
       <workItem from="1593719809297" duration="1307000" />
       <workItem from="1593803967277" duration="3003000" />
       <workItem from="1593887067669" duration="6659000" />
-      <workItem from="1593940543024" duration="11807000" />
-    </task>
-    <task id="LOCAL-00194" summary="add task progress usecase">
-      <created>1581874902329</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1581874902330</updated>
+      <workItem from="1593940543024" duration="15062000" />
+      <workItem from="1594026149574" duration="7266000" />
     </task>
     <task id="LOCAL-00195" summary="add task progress usecase">
       <created>1581875245014</created>
@@ -811,7 +865,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593951668058</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="comments for tasks">
+      <created>1593972876906</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1593972876906</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -890,15 +951,16 @@
       <screen x="0" y="27" width="1774" height="849" />
     </state>
     <state x="482" y="94" width="800" height="712" key="#Plugins/0.27.1774.849@0.27.1774.849" timestamp="1593349454742" />
-    <state x="738" y="182" width="412" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1593947229008">
-      <screen x="0" y="27" width="1864" height="870" />
+    <state x="730" y="182" width="412" height="638" key="#com.intellij.ide.util.MemberChooser" timestamp="1594036568894">
+      <screen x="0" y="27" width="1843" height="869" />
     </state>
     <state x="702" y="179" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1774.849@0.27.1774.849" timestamp="1593350306787" />
     <state x="707" y="174" width="412" height="524" key="#com.intellij.ide.util.MemberChooser/0.27.1787.820@0.27.1787.820" timestamp="1593204458076" />
     <state x="726" y="185" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1836.881@0.27.1836.881" timestamp="1592776061045" />
+    <state x="730" y="182" width="412" height="638" key="#com.intellij.ide.util.MemberChooser/0.27.1843.869@0.27.1843.869" timestamp="1594036568894" />
     <state x="730" y="183" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1845.874@0.27.1845.874" timestamp="1593897185316" />
     <state x="738" y="182" width="412" height="560" key="#com.intellij.ide.util.MemberChooser/0.27.1864.870@0.27.1864.870" timestamp="1593947229008" />
-    <state x="336" y="80" width="912" height="709" key="CommitChangelistDialog2" timestamp="1593951667921">
+    <state x="336" y="80" width="912" height="709" key="CommitChangelistDialog2" timestamp="1593972876706">
       <screen x="0" y="27" width="1864" height="870" />
     </state>
     <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1588163969339" />
@@ -910,13 +972,13 @@
     <state x="331" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1836.881@0.27.1836.881" timestamp="1592777547153" />
     <state x="332" y="79" width="912" height="709" key="CommitChangelistDialog2/0.27.1840.859@0.27.1840.859" timestamp="1593295841926" />
     <state x="333" y="80" key="CommitChangelistDialog2/0.27.1845.874@0.27.1845.874" timestamp="1593893370538" />
-    <state x="336" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1864.870@0.27.1864.870" timestamp="1593951667921" />
+    <state x="336" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1864.870@0.27.1864.870" timestamp="1593972876706" />
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl" timestamp="1590912332879">
       <screen x="0" y="27" width="1787" height="859" />
     </state>
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl/0.27.1787.859@0.27.1787.859" timestamp="1590912332879" />
-    <state x="452" y="227" width="745" height="561" key="NewPhpClassDialog" timestamp="1593950744923">
-      <screen x="0" y="27" width="1864" height="870" />
+    <state x="447" y="227" width="817" height="561" key="NewPhpClassDialog" timestamp="1594036735157">
+      <screen x="0" y="27" width="1843" height="869" />
     </state>
     <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1588156595792" />
     <state x="430" y="222" width="873" height="555" key="NewPhpClassDialog/0.27.1774.849@0.27.1774.849" timestamp="1593350519203" />
@@ -926,20 +988,21 @@
     <state x="443" y="225" width="721" height="561" key="NewPhpClassDialog/0.27.1829.860@0.27.1829.860" timestamp="1593808444049" />
     <state x="445" y="229" width="801" height="561" key="NewPhpClassDialog/0.27.1836.881@0.27.1836.881" timestamp="1592776546768" />
     <state x="446" y="224" key="NewPhpClassDialog/0.27.1840.859@0.27.1840.859" timestamp="1593291791678" />
+    <state x="447" y="227" width="817" height="561" key="NewPhpClassDialog/0.27.1843.869@0.27.1843.869" timestamp="1594036735157" />
     <state x="447" y="228" width="737" height="561" key="NewPhpClassDialog/0.27.1845.874@0.27.1845.874" timestamp="1593897155363" />
-    <state x="452" y="227" width="745" height="561" key="NewPhpClassDialog/0.27.1864.870@0.27.1864.870" timestamp="1593950744923" />
+    <state x="452" y="227" width="817" height="561" key="NewPhpClassDialog/0.27.1864.870@0.27.1864.870" timestamp="1593981315678" />
     <state x="407" y="101" key="SettingsEditor" timestamp="1592777311214">
       <screen x="0" y="27" width="1836" height="881" />
     </state>
     <state x="407" y="101" key="SettingsEditor/0.27.1836.881@0.27.1836.881" timestamp="1592777311214" />
-    <state width="836" height="573" key="SwitcherDM" timestamp="1593957522867">
+    <state width="836" height="573" key="SwitcherDM" timestamp="1593973124219">
       <screen x="0" y="27" width="1864" height="870" />
     </state>
     <state width="540" height="430" key="SwitcherDM/0.27.1774.849@0.27.1774.849" timestamp="1593378048800" />
     <state width="558" height="446" key="SwitcherDM/0.27.1836.881@0.27.1836.881" timestamp="1592773087879" />
     <state width="562" height="443" key="SwitcherDM/0.27.1845.874@0.27.1845.874" timestamp="1593891243690" />
-    <state width="836" height="573" key="SwitcherDM/0.27.1864.870@0.27.1864.870" timestamp="1593957522867" />
-    <state x="377" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1593951669712">
+    <state width="836" height="573" key="SwitcherDM/0.27.1864.870@0.27.1864.870" timestamp="1593973124219" />
+    <state x="377" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1593973050735">
       <screen x="0" y="27" width="1864" height="870" />
     </state>
     <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1588163971793" />
@@ -951,7 +1014,7 @@
     <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1836.881@0.27.1836.881" timestamp="1592777549058" />
     <state x="371" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1840.859@0.27.1840.859" timestamp="1593295843952" />
     <state x="373" y="115" key="Vcs.Push.Dialog.v2/0.27.1845.874@0.27.1845.874" timestamp="1593893372894" />
-    <state x="377" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1864.870@0.27.1864.870" timestamp="1593951669712" />
+    <state x="377" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1864.870@0.27.1864.870" timestamp="1593973050735" />
     <state x="134" y="65" width="1404" height="783" key="find.popup" timestamp="1593616683908">
       <screen x="0" y="27" width="1823" height="862" />
     </state>

@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\Tests\Unit\Model\Work\Entity\Projects\Task\Executor;
 
@@ -17,29 +18,29 @@ class AssignTest extends TestCase
         $member = (new MemberBuilder())->build($group);
         $project = (new ProjectBuilder())->build();
         $task = (new TaskBuilder())->build($project, $member);
-
+        
         $executor = (new MemberBuilder())->build($group);
-
+        
         self::assertFalse($task->hasExecutor($executor->getId()));
-
-        $task->assignExecutor($executor);
-
+        
+        $task->assignExecutor($member, new \DateTimeImmutable(), $executor);
+        
         self::assertEquals([$executor], $task->getExecutors());
         self::assertTrue($task->hasExecutor($executor->getId()));
     }
-
+    
     public function testAlready(): void
     {
         $group = (new GroupBuilder())->build();
         $member = (new MemberBuilder())->build($group);
         $project = (new ProjectBuilder())->build();
         $task = (new TaskBuilder())->build($project, $member);
-
+        
         $executor = (new MemberBuilder())->build($group);
-
-        $task->assignExecutor($executor);
-
-        $this->expectExceptionMessage('Этот исполнитель уже назначен.');
-        $task->assignExecutor($executor);
+        
+        $task->assignExecutor($member, new \DateTimeImmutable(), $executor);
+        
+        $this->expectExceptionMessage('Executor is already assigned.');
+        $task->assignExecutor($member, new \DateTimeImmutable(), $executor);
     }
 }

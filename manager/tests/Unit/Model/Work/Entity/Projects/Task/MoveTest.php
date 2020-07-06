@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\Tests\Unit\Model\Work\Entity\Projects\Task;
 
@@ -17,22 +18,22 @@ class MoveTest extends TestCase
         $member = (new MemberBuilder())->build($group);
         $project = (new ProjectBuilder())->build();
         $task = (new TaskBuilder())->build($project, $member);
-
+        
         $destination = (new ProjectBuilder())->build();
-
-        $task->move($destination);
-
+        
+        $task->move($member, new \DateTimeImmutable(), $destination);
+        
         self::assertEquals($destination, $task->getProject());
     }
-
+    
     public function testAlready(): void
     {
         $group = (new GroupBuilder())->build();
         $member = (new MemberBuilder())->build($group);
         $project = (new ProjectBuilder())->build();
         $task = (new TaskBuilder())->build($project, $member);
-
-        $this->expectExceptionMessage('Это тот же проект.');
-        $task->move($project);
+        
+        $this->expectExceptionMessage('Project is already same.');
+        $task->move($member, new \DateTimeImmutable(), $project);
     }
 }

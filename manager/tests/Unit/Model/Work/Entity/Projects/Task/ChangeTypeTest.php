@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\Tests\Unit\Model\Work\Entity\Projects\Task;
 
@@ -20,12 +21,12 @@ class ChangeTypeTest extends TestCase
         $task = (new TaskBuilder())
             ->withType(new Type(Type::FEATURE))
             ->build($project, $member);
-
-        $task->changeType($type = new Type(Type::ERROR));
-
+        
+        $task->changeType($member, new \DateTimeImmutable(), $type = new Type(Type::ERROR));
+        
         self::assertEquals($type, $task->getType());
     }
-
+    
     public function testAlready(): void
     {
         $group = (new GroupBuilder())->build();
@@ -34,8 +35,8 @@ class ChangeTypeTest extends TestCase
         $task = (new TaskBuilder())
             ->withType($type = new Type(Type::FEATURE))
             ->build($project, $member);
-
-        $this->expectExceptionMessage('Это тот же тип.');
-        $task->changeType($type);
+        
+        $this->expectExceptionMessage('Type is already same.');
+        $task->changeType($member, new \DateTimeImmutable(), $type);
     }
 }
