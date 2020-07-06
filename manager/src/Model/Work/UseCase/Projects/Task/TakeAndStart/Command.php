@@ -20,7 +20,7 @@ class Command
      */
     public $actor;
     
-    public function __construct(int $id, string $actor)
+    public function __construct(string $actor, int $id)
     {
         $this->id = $id;
         $this->actor = $actor;
