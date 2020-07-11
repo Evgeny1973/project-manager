@@ -22,6 +22,7 @@ use App\Model\Work\UseCase\Projects\Task\Take;
 use App\Model\Work\UseCase\Projects\Task\TakeAndStart;
 use App\Model\Work\UseCase\Projects\Task\Type;
 use App\ReadModel\Work\Members\Member\MemberFetcher;
+use App\ReadModel\Work\Projects\Action\ActionFetcher;
 use App\ReadModel\Work\Projects\Task\Filter;
 use App\ReadModel\Work\Projects\Task\TaskFetcher;
 use App\ReadModel\Work\Projects\Task\CommentFetcher;
@@ -33,7 +34,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use App\ReadModel\Work\Projects\ActionFetcher;
 
 /**
  * @Route("/work/projects/tasks", name="work.projects.tasks")
