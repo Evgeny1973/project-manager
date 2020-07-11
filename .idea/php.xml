@@ -219,4 +219,7 @@
       <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/manager/vendor/autoload.php" />
     </phpunit_settings>
   </component>
+  <component name="TwigDebugConfiguration">
+    <cachePath>$PROJECT_DIR$/manager/var/cache/dev/twig</cachePath>
+  </component>
 </project>

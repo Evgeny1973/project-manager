@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/ActionFetcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/ActionsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/Project/ActionsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Action/ActionFetcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Action/Filter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Widget/Work/Projects/ActionRowWidget.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/actions.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/templates/widget/work/projects/action-row.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Projects/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/TakeAndStart/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/TakeAndStart/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Menu/Work/MainMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Menu/Work/MainMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Menu/Work/Projects/ProjectMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Menu/Work/Projects/ProjectMenu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,12 +220,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/src/Menu/Work/Projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager/var/cache/dev/twig" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="fr.adrienbrault.idea.symfony2plugin.ui.TwigSettingsForm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -470,14 +477,11 @@
       <workItem from="1593803967277" duration="3003000" />
       <workItem from="1593887067669" duration="6659000" />
       <workItem from="1593940543024" duration="15062000" />
-      <workItem from="1594026149574" duration="8872000" />
-    </task>
-    <task id="LOCAL-00196" summary="add task remove usecase">
-      <created>1581875257234</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1581875257234</updated>
+      <workItem from="1594026149574" duration="8896000" />
+      <workItem from="1594469952231" duration="2808000" />
+      <workItem from="1594484364856" duration="3240000" />
+      <workItem from="1594490709500" duration="1611000" />
+      <workItem from="1594492575587" duration="2879000" />
     </task>
     <task id="LOCAL-00197" summary="add task start usecase">
       <created>1581876390561</created>
@@ -815,7 +819,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594043936121</updated>
     </task>
-    <option name="localTasksCounter" value="245" />
+    <task id="LOCAL-00245" summary="history for user actions">
+      <created>1594046934191</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1594046934192</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -903,7 +914,7 @@
     <state x="730" y="182" width="412" height="638" key="#com.intellij.ide.util.MemberChooser/0.27.1843.869@0.27.1843.869" timestamp="1594036568894" />
     <state x="730" y="183" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1845.874@0.27.1845.874" timestamp="1593897185316" />
     <state x="738" y="182" width="412" height="560" key="#com.intellij.ide.util.MemberChooser/0.27.1864.870@0.27.1864.870" timestamp="1593947229008" />
-    <state x="332" y="80" width="912" height="709" key="CommitChangelistDialog2" timestamp="1594043935803">
+    <state x="332" y="80" width="912" height="709" key="CommitChangelistDialog2" timestamp="1594046933990">
       <screen x="0" y="27" width="1843" height="869" />
     </state>
     <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1588163969339" />
@@ -914,15 +925,16 @@
     <state x="331" y="79" key="CommitChangelistDialog2/0.27.1834.870@0.27.1834.870" timestamp="1593585648697" />
     <state x="331" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1836.881@0.27.1836.881" timestamp="1592777547153" />
     <state x="332" y="79" width="912" height="709" key="CommitChangelistDialog2/0.27.1840.859@0.27.1840.859" timestamp="1593295841926" />
-    <state x="332" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1843.869@0.27.1843.869" timestamp="1594043935803" />
+    <state x="332" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1843.869@0.27.1843.869" timestamp="1594046933990" />
     <state x="333" y="80" key="CommitChangelistDialog2/0.27.1845.874@0.27.1845.874" timestamp="1593893370538" />
     <state x="336" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1864.870@0.27.1864.870" timestamp="1593972876706" />
-    <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl" timestamp="1590912332879">
-      <screen x="0" y="27" width="1787" height="859" />
+    <state x="707" y="216" width="424" height="484" key="FileChooserDialogImpl" timestamp="1594491897390">
+      <screen x="0" y="27" width="1870" height="872" />
     </state>
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl/0.27.1787.859@0.27.1787.859" timestamp="1590912332879" />
-    <state x="447" y="227" width="817" height="561" key="NewPhpClassDialog" timestamp="1594044285403">
-      <screen x="0" y="27" width="1843" height="869" />
+    <state x="707" y="216" width="424" height="484" key="FileChooserDialogImpl/0.27.1870.872@0.27.1870.872" timestamp="1594491897390" />
+    <state x="454" y="228" width="769" height="561" key="NewPhpClassDialog" timestamp="1594495730846">
+      <screen x="0" y="27" width="1870" height="872" />
     </state>
     <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1588156595792" />
     <state x="430" y="222" width="873" height="555" key="NewPhpClassDialog/0.27.1774.849@0.27.1774.849" timestamp="1593350519203" />
@@ -935,19 +947,22 @@
     <state x="447" y="227" width="817" height="561" key="NewPhpClassDialog/0.27.1843.869@0.27.1843.869" timestamp="1594044285403" />
     <state x="447" y="228" width="737" height="561" key="NewPhpClassDialog/0.27.1845.874@0.27.1845.874" timestamp="1593897155363" />
     <state x="452" y="227" width="817" height="561" key="NewPhpClassDialog/0.27.1864.870@0.27.1864.870" timestamp="1593981315678" />
-    <state x="407" y="101" key="SettingsEditor" timestamp="1592777311214">
-      <screen x="0" y="27" width="1836" height="881" />
+    <state x="454" y="228" width="769" height="561" key="NewPhpClassDialog/0.27.1870.872@0.27.1870.872" timestamp="1594495730846" />
+    <state x="415" y="100" key="SettingsEditor" timestamp="1594493072400">
+      <screen x="0" y="27" width="1870" height="872" />
     </state>
     <state x="407" y="101" key="SettingsEditor/0.27.1836.881@0.27.1836.881" timestamp="1592777311214" />
-    <state width="827" height="573" key="SwitcherDM" timestamp="1594044861032">
-      <screen x="0" y="27" width="1843" height="869" />
+    <state x="415" y="100" key="SettingsEditor/0.27.1870.872@0.27.1870.872" timestamp="1594493072400" />
+    <state width="840" height="575" key="SwitcherDM" timestamp="1594481422628">
+      <screen x="0" y="27" width="1870" height="872" />
     </state>
     <state width="540" height="430" key="SwitcherDM/0.27.1774.849@0.27.1774.849" timestamp="1593378048800" />
     <state width="558" height="446" key="SwitcherDM/0.27.1836.881@0.27.1836.881" timestamp="1592773087879" />
     <state width="827" height="573" key="SwitcherDM/0.27.1843.869@0.27.1843.869" timestamp="1594044861032" />
     <state width="562" height="443" key="SwitcherDM/0.27.1845.874@0.27.1845.874" timestamp="1593891243690" />
     <state width="836" height="573" key="SwitcherDM/0.27.1864.870@0.27.1864.870" timestamp="1593973124219" />
-    <state x="373" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1594043938445">
+    <state width="840" height="575" key="SwitcherDM/0.27.1870.872@0.27.1870.872" timestamp="1594481422628" />
+    <state x="373" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1594046935795">
       <screen x="0" y="27" width="1843" height="869" />
     </state>
     <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1588163971793" />
@@ -958,7 +973,7 @@
     <state x="370" y="115" key="Vcs.Push.Dialog.v2/0.27.1834.870@0.27.1834.870" timestamp="1593585651177" />
     <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1836.881@0.27.1836.881" timestamp="1592777549058" />
     <state x="371" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1840.859@0.27.1840.859" timestamp="1593295843952" />
-    <state x="373" y="115" key="Vcs.Push.Dialog.v2/0.27.1843.869@0.27.1843.869" timestamp="1594043938445" />
+    <state x="373" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1843.869@0.27.1843.869" timestamp="1594046935795" />
     <state x="373" y="115" key="Vcs.Push.Dialog.v2/0.27.1845.874@0.27.1845.874" timestamp="1593893372894" />
     <state x="377" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1864.870@0.27.1864.870" timestamp="1593973050735" />
     <state x="134" y="65" width="1404" height="783" key="find.popup" timestamp="1593616683908">
