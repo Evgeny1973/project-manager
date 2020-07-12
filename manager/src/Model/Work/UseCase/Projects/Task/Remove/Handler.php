@@ -31,6 +31,6 @@ class Handler
         $task = $this->tasks->get(new Id($command->id));
         $this->tasks->remove($task);
         
-        $this->flusher->flush();
+        $this->flusher->flush($task);
     }
 }

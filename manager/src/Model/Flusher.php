@@ -8,14 +8,24 @@ use Doctrine\ORM\EntityManagerInterface;
 class Flusher
 {
     private $em;
-
-    public function __construct(EntityManagerInterface $em)
+    
+    /**
+     * @var EventDispatcher
+     */
+    private $dispatcher;
+    
+    public function __construct(EntityManagerInterface $em, EventDispatcher $dispatcher)
     {
         $this->em = $em;
+        $this->dispatcher = $dispatcher;
     }
 
-    public function flush(): void
+    public function flush(AggregateRoot ...$roots): void
     {
         $this->em->flush();
+        
+        foreach ($roots as $root) {
+            $this->dispatcher->dispatch($root->releaseEvents());
+        }
     }
 }

@@ -38,6 +38,6 @@ class Handler
         $task = $this->tasks->get(new Id($command->id));
         $task->start($actor, new \DateTimeImmutable());
         
-        $this->flusher->flush();
+        $this->flusher->flush($task);
     }
 }

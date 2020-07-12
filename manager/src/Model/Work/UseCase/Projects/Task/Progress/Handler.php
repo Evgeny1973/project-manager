@@ -39,6 +39,6 @@ class Handler
         $task = $this->tasks->get(new Id($command->id));
         $task->changeProgress($actor, new \DateTimeImmutable(), $command->progress);
         
-        $this->flusher->flush();
+        $this->flusher->flush($task);
     }
 }

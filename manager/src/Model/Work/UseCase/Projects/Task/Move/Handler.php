@@ -55,6 +55,6 @@ class Handler
                 $child->move($actor, new \DateTimeImmutable(), $project);
             }
         }
-        $this->flusher->flush();
+        $this->flusher->flush($task);
     }
 }

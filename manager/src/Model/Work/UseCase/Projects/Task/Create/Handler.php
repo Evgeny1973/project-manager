@@ -51,6 +51,8 @@ class Handler
         $project = $this->projects->get(new ProjectId($command->project));
         $parent = $command->parent ? $this->tasks->get(new Id($command->parent)) : null;
         $date = new \DateTimeImmutable();
+    
+        $tasks = [];
         
         foreach ($command->names as $name) {
             $task = new Task(
@@ -74,8 +76,10 @@ class Handler
             $date = $date->modify('+1 sec');
             
             $this->tasks->add($task);
+    
+            $tasks[] = $task;
         }
         
-        $this->flusher->flush();
+        $this->flusher->flush(...$tasks);
     }
 }
