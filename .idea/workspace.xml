@@ -2,41 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Event/Listener/Work/Projects/Task/EmailNotificationSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/AggregateRoot.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/EventDispatcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/EventsTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Event/TaskEdited.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Event/TaskExecutorAssigned.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Event/TaskExecutorRevoked.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Event/TaskFileAdded.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Event/TaskFileRemoved.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Event/TaskPlanChanged.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Event/TaskPriorityChanged.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Event/TaskProgressChanged.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Event/TaskStatusChanged.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Event/TaskTypeChanged.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/mail/work/projects/task/executor-assigned-author.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/templates/mail/work/projects/task/executor-assigned-executor.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Event/Listener/Work/Projects/Task/FileRemoveSubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/.env" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Flusher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Flusher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Task/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Create/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Edit/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Edit/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Executor/Assign/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Executor/Assign/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Executor/Revoke/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Executor/Revoke/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Add/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Remove/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Files/Remove/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Move/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Move/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Remove/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Remove/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Set/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Set/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Progress/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Progress/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Remove/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Remove/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Start/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Start/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Status/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Status/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Take/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Take/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/TakeAndStart/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/TakeAndStart/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Service/Uploader/FileUploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Service/Uploader/FileUploader.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +39,10 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/manager/src/Model/User/Entity/User/Id.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/manager/src/Model/User/UseCase/SignUp/Request/Form.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/manager/tests/Unit/Model/User/Entity/User/SignUp/RequestTest.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/manager/src/ReadModel/User/UserFetcher.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="project-manager_manager-php-cli:latest">
     <include_path>
@@ -249,6 +218,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -319,6 +289,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -506,14 +477,9 @@
       <workItem from="1594490709500" duration="1611000" />
       <workItem from="1594492575587" duration="7254000" />
       <workItem from="1594538217817" duration="875000" />
-      <workItem from="1594585419768" duration="5691000" />
-    </task>
-    <task id="LOCAL-00200" summary="add task move usecase">
-      <created>1581889403750</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1581889403750</updated>
+      <workItem from="1594585419768" duration="6013000" />
+      <workItem from="1598729269873" duration="3032000" />
+      <workItem from="1598787525412" duration="1238000" />
     </task>
     <task id="LOCAL-00201" summary="add task childOf usecase">
       <created>1581974060864</created>
@@ -851,11 +817,18 @@
       <option name="project" value="LOCAL" />
       <updated>1594504013602</updated>
     </task>
-    <option name="localTasksCounter" value="249" />
+    <task id="LOCAL-00249" summary="add events for tasks">
+      <created>1594591688123</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1594591688124</updated>
+    </task>
+    <option name="localTasksCounter" value="250" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.configurationType" implementationName="MAKEFILE_TARGET_RUN_CONFIGURATION" />
@@ -898,7 +871,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add taskcontrollers&#10;add priority widget" />
     <MESSAGE value="add progress widget" />
     <MESSAGE value="add status widget" />
     <MESSAGE value="add type widget" />
@@ -923,7 +895,8 @@
     <MESSAGE value="history for user actions" />
     <MESSAGE value="show user actions" />
     <MESSAGE value="show user actions feed" />
-    <option name="LAST_COMMIT_MESSAGE" value="show user actions feed" />
+    <MESSAGE value="add events for tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="add events for tasks" />
   </component>
   <component name="WindowStateProjectService">
     <state x="506" y="95" width="800" height="712" key="#Plugins" timestamp="1594585457814">
@@ -942,10 +915,9 @@
     <state x="737" y="182" width="412" height="560" key="#com.intellij.ide.util.MemberChooser/0.27.1861.868@0.27.1861.868" timestamp="1594588909290" />
     <state x="738" y="182" width="412" height="560" key="#com.intellij.ide.util.MemberChooser/0.27.1864.870@0.27.1864.870" timestamp="1593947229008" />
     <state x="741" y="183" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1870.872@0.27.1870.872" timestamp="1594501513241" />
-    <state x="337" y="80" width="912" height="709" key="CommitChangelistDialog2" timestamp="1594504013418">
-      <screen x="0" y="27" width="1870" height="872" />
+    <state x="335" y="80" width="912" height="706" key="CommitChangelistDialog2" timestamp="1594591687793">
+      <screen x="0" y="27" width="1861" height="868" />
     </state>
-    <state x="245" y="69" width="912" height="607" key="CommitChangelistDialog2/0.27.1360.694@0.27.1360.694" timestamp="1588163969339" />
     <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593378848029" />
     <state x="325" y="80" key="CommitChangelistDialog2/0.27.1802.873@0.27.1802.873" timestamp="1592083786534" />
     <state x="328" y="78" width="912" height="684" key="CommitChangelistDialog2/0.27.1818.849@0.27.1818.849" timestamp="1593035322146" />
@@ -955,6 +927,7 @@
     <state x="332" y="79" width="912" height="709" key="CommitChangelistDialog2/0.27.1840.859@0.27.1840.859" timestamp="1593295841926" />
     <state x="332" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1843.869@0.27.1843.869" timestamp="1594046933990" />
     <state x="333" y="80" key="CommitChangelistDialog2/0.27.1845.874@0.27.1845.874" timestamp="1593893370538" />
+    <state x="335" y="80" width="912" height="706" key="CommitChangelistDialog2/0.27.1861.868@0.27.1861.868" timestamp="1594591687793" />
     <state x="336" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1864.870@0.27.1864.870" timestamp="1593972876706" />
     <state x="337" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1870.872@0.27.1870.872" timestamp="1594504013418" />
     <state x="707" y="216" width="424" height="484" key="FileChooserDialogImpl" timestamp="1594491897390">
@@ -962,11 +935,11 @@
     </state>
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl/0.27.1787.859@0.27.1787.859" timestamp="1590912332879" />
     <state x="707" y="216" width="424" height="484" key="FileChooserDialogImpl/0.27.1870.872@0.27.1870.872" timestamp="1594491897390" />
-    <state x="452" y="227" width="809" height="561" key="NewPhpClassDialog" timestamp="1594588802330">
-      <screen x="0" y="27" width="1861" height="868" />
+    <state x="431" y="228" width="777" height="565" key="NewPhpClassDialog" timestamp="1598733184199">
+      <screen x="0" y="27" width="1775" height="873" />
     </state>
-    <state x="330" y="186" width="937" height="505" key="NewPhpClassDialog/0.27.1360.694@0.27.1360.694" timestamp="1588156595792" />
     <state x="430" y="222" width="873" height="555" key="NewPhpClassDialog/0.27.1774.849@0.27.1774.849" timestamp="1593350519203" />
+    <state x="431" y="228" width="777" height="565" key="NewPhpClassDialog/0.27.1775.873@0.27.1775.873" timestamp="1598733184199" />
     <state x="433" y="215" key="NewPhpClassDialog/0.27.1787.820@0.27.1787.820" timestamp="1593204393500" />
     <state x="439" y="223" key="NewPhpClassDialog/0.27.1810.854@0.27.1810.854" timestamp="1590960906334" />
     <state x="442" y="225" width="817" height="561" key="NewPhpClassDialog/0.27.1823.862@0.27.1823.862" timestamp="1593617013169" />
@@ -993,10 +966,9 @@
     <state width="562" height="443" key="SwitcherDM/0.27.1845.874@0.27.1845.874" timestamp="1593891243690" />
     <state width="836" height="573" key="SwitcherDM/0.27.1864.870@0.27.1864.870" timestamp="1593973124219" />
     <state width="840" height="575" key="SwitcherDM/0.27.1870.872@0.27.1870.872" timestamp="1594502962545" />
-    <state x="378" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1594504015211">
-      <screen x="0" y="27" width="1870" height="872" />
+    <state x="376" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1594591690059">
+      <screen x="0" y="27" width="1861" height="868" />
     </state>
-    <state x="275" y="97" width="800" height="551" key="Vcs.Push.Dialog.v2/0.27.1360.694@0.27.1360.694" timestamp="1588163971793" />
     <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593378849971" />
     <state x="364" y="115" key="Vcs.Push.Dialog.v2/0.27.1802.873@0.27.1802.873" timestamp="1592083794120" />
     <state x="367" y="113" key="Vcs.Push.Dialog.v2/0.27.1818.849@0.27.1818.849" timestamp="1593035325653" />
@@ -1006,6 +978,7 @@
     <state x="371" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1840.859@0.27.1840.859" timestamp="1593295843952" />
     <state x="373" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1843.869@0.27.1843.869" timestamp="1594046935795" />
     <state x="373" y="115" key="Vcs.Push.Dialog.v2/0.27.1845.874@0.27.1845.874" timestamp="1593893372894" />
+    <state x="376" y="115" key="Vcs.Push.Dialog.v2/0.27.1861.868@0.27.1861.868" timestamp="1594591690059" />
     <state x="377" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1864.870@0.27.1864.870" timestamp="1593973050735" />
     <state x="378" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1870.872@0.27.1870.872" timestamp="1594504015211" />
     <state x="701" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594591379909">
@@ -1019,7 +992,6 @@
     <state x="463" y="46" width="908" height="861" key="search.everywhere.popup" timestamp="1592770465233">
       <screen x="0" y="27" width="1836" height="881" />
     </state>
-    <state x="343" y="42" width="672" height="678" key="search.everywhere.popup/0.27.1360.694@0.27.1360.694" timestamp="1587936105648" />
     <state x="463" y="46" width="908" height="861" key="search.everywhere.popup/0.27.1836.881@0.27.1836.881" timestamp="1592770465233" />
     <state x="621" y="367" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1593345996194">
       <screen x="0" y="27" width="1774" height="849" />
