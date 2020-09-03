@@ -2,25 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/config/packages/messenger.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Event/Dispatcher/Message/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Event/Dispatcher/Message/Message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/Event/Dispatcher/MessengerEventDispatcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/centrifugo/docker/development/centrifugo/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/.env" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/swiftmailer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/swiftmailer.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/php-cli.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/php-cli.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/development/php-fpm.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/development/php-fpm.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/production/php-cli.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/php-cli.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/php-fpm.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/EventDispatcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/EventDispatcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="events" />
+        <entry key="$PROJECT_DIR$" value="messenger" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -213,6 +210,7 @@
       <path value="$PROJECT_DIR$/manager/vendor/league/flysystem-bundle" />
       <path value="$PROJECT_DIR$/manager/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/manager/vendor/symfony/messenger" />
+      <path value="$PROJECT_DIR$/manager/vendor/centrifugal/phpcent" />
     </include_path>
   </component>
   <component name="ProjectId" id="1RH0bnn9uEzKpBoXjeZL1F2dTxy" />
@@ -497,14 +495,7 @@
       <workItem from="1598729269873" duration="3032000" />
       <workItem from="1598787525412" duration="1914000" />
       <workItem from="1598808806688" duration="7717000" />
-      <workItem from="1599157117974" duration="609000" />
-    </task>
-    <task id="LOCAL-00202" summary="add task takeandstart usecase">
-      <created>1582021616200</created>
-      <option name="number" value="00202" />
-      <option name="presentableId" value="LOCAL-00202" />
-      <option name="project" value="LOCAL" />
-      <updated>1582021616201</updated>
+      <workItem from="1599157117974" duration="8612000" />
     </task>
     <task id="LOCAL-00203" summary="add task executor/assign usecase">
       <created>1582036762648</created>
@@ -842,7 +833,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598789309346</updated>
     </task>
-    <option name="localTasksCounter" value="251" />
+    <task id="LOCAL-00251" summary="add messenger component">
+      <created>1599160252161</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1599160252161</updated>
+    </task>
+    <option name="localTasksCounter" value="252" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -889,7 +887,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add status widget" />
     <MESSAGE value="add type widget" />
     <MESSAGE value="add tasks templates" />
     <MESSAGE value="fix role entity" />
@@ -914,7 +911,8 @@
     <MESSAGE value="show user actions feed" />
     <MESSAGE value="add events for tasks" />
     <MESSAGE value="add file remove event" />
-    <option name="LAST_COMMIT_MESSAGE" value="add file remove event" />
+    <MESSAGE value="add messenger component" />
+    <option name="LAST_COMMIT_MESSAGE" value="add messenger component" />
   </component>
   <component name="WindowStateProjectService">
     <state x="506" y="95" width="800" height="712" key="#Plugins" timestamp="1594585457814">
@@ -934,11 +932,12 @@
     <state x="737" y="182" width="412" height="560" key="#com.intellij.ide.util.MemberChooser/0.27.1861.868@0.27.1861.868" timestamp="1594588909290" />
     <state x="738" y="182" width="412" height="560" key="#com.intellij.ide.util.MemberChooser/0.27.1864.870@0.27.1864.870" timestamp="1593947229008" />
     <state x="741" y="183" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1870.872@0.27.1870.872" timestamp="1594501513241" />
-    <state x="322" y="79" width="912" height="696" key="CommitChangelistDialog2" timestamp="1598789308997">
-      <screen x="0" y="27" width="1791" height="855" />
+    <state x="323" y="80" width="912" height="696" key="CommitChangelistDialog2" timestamp="1599160251674">
+      <screen x="0" y="27" width="1799" height="867" />
     </state>
     <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593378848029" />
     <state x="322" y="79" width="912" height="696" key="CommitChangelistDialog2/0.27.1791.855@0.27.1791.855" timestamp="1598789308997" />
+    <state x="323" y="80" key="CommitChangelistDialog2/0.27.1799.867@0.27.1799.867" timestamp="1599160251674" />
     <state x="325" y="80" key="CommitChangelistDialog2/0.27.1802.873@0.27.1802.873" timestamp="1592083786534" />
     <state x="328" y="78" width="912" height="684" key="CommitChangelistDialog2/0.27.1818.849@0.27.1818.849" timestamp="1593035322146" />
     <state x="330" y="79" width="912" height="696" key="CommitChangelistDialog2/0.27.1827.863@0.27.1827.863" timestamp="1593722926239" />
@@ -978,20 +977,22 @@
     <state x="407" y="101" key="SettingsEditor/0.27.1836.881@0.27.1836.881" timestamp="1592777311214" />
     <state x="413" y="100" width="1203" height="741" key="SettingsEditor/0.27.1861.868@0.27.1861.868" timestamp="1594586326533" />
     <state x="415" y="100" key="SettingsEditor/0.27.1870.872@0.27.1870.872" timestamp="1594493072400" />
-    <state width="840" height="575" key="SwitcherDM" timestamp="1594502962545">
-      <screen x="0" y="27" width="1870" height="872" />
+    <state width="809" height="572" key="SwitcherDM" timestamp="1599171501619">
+      <screen x="0" y="27" width="1799" height="867" />
     </state>
     <state width="540" height="430" key="SwitcherDM/0.27.1774.849@0.27.1774.849" timestamp="1593378048800" />
+    <state width="809" height="572" key="SwitcherDM/0.27.1799.867@0.27.1799.867" timestamp="1599171501619" />
     <state width="558" height="446" key="SwitcherDM/0.27.1836.881@0.27.1836.881" timestamp="1592773087879" />
     <state width="827" height="573" key="SwitcherDM/0.27.1843.869@0.27.1843.869" timestamp="1594044861032" />
     <state width="562" height="443" key="SwitcherDM/0.27.1845.874@0.27.1845.874" timestamp="1593891243690" />
     <state width="836" height="573" key="SwitcherDM/0.27.1864.870@0.27.1864.870" timestamp="1593973124219" />
     <state width="840" height="575" key="SwitcherDM/0.27.1870.872@0.27.1870.872" timestamp="1594502962545" />
-    <state x="362" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1598789313383">
-      <screen x="0" y="27" width="1791" height="855" />
+    <state x="364" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599160254810">
+      <screen x="0" y="27" width="1799" height="867" />
     </state>
     <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593378849971" />
     <state x="362" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1791.855@0.27.1791.855" timestamp="1598789313383" />
+    <state x="364" y="115" key="Vcs.Push.Dialog.v2/0.27.1799.867@0.27.1799.867" timestamp="1599160254810" />
     <state x="364" y="115" key="Vcs.Push.Dialog.v2/0.27.1802.873@0.27.1802.873" timestamp="1592083794120" />
     <state x="367" y="113" key="Vcs.Push.Dialog.v2/0.27.1818.849@0.27.1818.849" timestamp="1593035325653" />
     <state x="369" y="114" key="Vcs.Push.Dialog.v2/0.27.1827.863@0.27.1827.863" timestamp="1593722929312" />

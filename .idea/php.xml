@@ -154,6 +154,7 @@
       <path value="$PROJECT_DIR$/manager/vendor/league/flysystem-bundle" />
       <path value="$PROJECT_DIR$/manager/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/manager/vendor/symfony/messenger" />
+      <path value="$PROJECT_DIR$/manager/vendor/centrifugal/phpcent" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

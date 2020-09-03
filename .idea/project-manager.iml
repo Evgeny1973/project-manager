@@ -8,6 +8,7 @@
       <excludeFolder url="file://$MODULE_DIR$/manager/bin/.phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/manager/var" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/cebe/markdown" />
+      <excludeFolder url="file://$MODULE_DIR$/manager/vendor/centrifugal/phpcent" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/doctrine/annotations" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/doctrine/cache" />
