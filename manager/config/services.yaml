@@ -97,4 +97,4 @@ services:
         arguments:
             - '%env(CENTRIFUGO_API_HOST)%/api'
             - '%env(CENTRIFUGO_API_KEY)%'
-            - '%env(CENTRIFUGO_SECRET))%'
+            - '%env(CENTRIFUGO_SECRET)%'
