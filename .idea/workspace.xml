@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/evgeny.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/evgeny.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Twig/Extension/CentrifugoExtension.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/centrifugo/docker/development/centrifugo/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/centrifugo/docker/development/centrifugo/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -487,14 +486,8 @@
       <workItem from="1598729269873" duration="3032000" />
       <workItem from="1598787525412" duration="1914000" />
       <workItem from="1598808806688" duration="7717000" />
-      <workItem from="1599157117974" duration="11101000" />
-    </task>
-    <task id="LOCAL-00204" summary="add task executor/revoke usecase">
-      <created>1582049897652</created>
-      <option name="number" value="00204" />
-      <option name="presentableId" value="LOCAL-00204" />
-      <option name="project" value="LOCAL" />
-      <updated>1582049897652</updated>
+      <workItem from="1599157117974" duration="11133000" />
+      <workItem from="1599255391600" duration="2384000" />
     </task>
     <task id="LOCAL-00205" summary="add tasks permissions">
       <created>1582051056786</created>
@@ -832,7 +825,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599173208235</updated>
     </task>
-    <option name="localTasksCounter" value="253" />
+    <task id="LOCAL-00253" summary="add centrifugo/phpcent">
+      <created>1599175596008</created>
+      <option name="number" value="00253" />
+      <option name="presentableId" value="LOCAL-00253" />
+      <option name="project" value="LOCAL" />
+      <updated>1599175596008</updated>
+    </task>
+    <option name="localTasksCounter" value="254" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -879,7 +879,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add tasks templates" />
     <MESSAGE value="fix role entity" />
     <MESSAGE value="new migrations" />
     <MESSAGE value="filter for own tasks" />
@@ -904,7 +903,8 @@
     <MESSAGE value="add file remove event" />
     <MESSAGE value="add messenger component" />
     <MESSAGE value="add centrifugo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add centrifugo" />
+    <MESSAGE value="add centrifugo/phpcent" />
+    <option name="LAST_COMMIT_MESSAGE" value="add centrifugo/phpcent" />
   </component>
   <component name="WindowStateProjectService">
     <state x="506" y="95" width="800" height="712" key="#Plugins" timestamp="1594585457814">
@@ -924,12 +924,16 @@
     <state x="737" y="182" width="412" height="560" key="#com.intellij.ide.util.MemberChooser/0.27.1861.868@0.27.1861.868" timestamp="1594588909290" />
     <state x="738" y="182" width="412" height="560" key="#com.intellij.ide.util.MemberChooser/0.27.1864.870@0.27.1864.870" timestamp="1593947229008" />
     <state x="741" y="183" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1870.872@0.27.1870.872" timestamp="1594501513241" />
-    <state x="323" y="80" width="912" height="709" key="CommitChangelistDialog2" timestamp="1599173207967">
+    <state x="694" y="210" width="376" height="502" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599256948049">
+      <screen x="0" y="27" width="1786" height="869" />
+    </state>
+    <state x="694" y="210" width="376" height="502" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1786.869@0.27.1786.869" timestamp="1599256948049" />
+    <state x="323" y="80" width="912" height="709" key="CommitChangelistDialog2" timestamp="1599175595692">
       <screen x="0" y="27" width="1799" height="867" />
     </state>
     <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593378848029" />
     <state x="322" y="79" width="912" height="696" key="CommitChangelistDialog2/0.27.1791.855@0.27.1791.855" timestamp="1598789308997" />
-    <state x="323" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1799.867@0.27.1799.867" timestamp="1599173207967" />
+    <state x="323" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1799.867@0.27.1799.867" timestamp="1599175595692" />
     <state x="325" y="80" key="CommitChangelistDialog2/0.27.1802.873@0.27.1802.873" timestamp="1592083786534" />
     <state x="328" y="78" width="912" height="684" key="CommitChangelistDialog2/0.27.1818.849@0.27.1818.849" timestamp="1593035322146" />
     <state x="330" y="79" width="912" height="696" key="CommitChangelistDialog2/0.27.1827.863@0.27.1827.863" timestamp="1593722926239" />
@@ -946,11 +950,12 @@
     </state>
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl/0.27.1787.859@0.27.1787.859" timestamp="1590912332879" />
     <state x="707" y="216" width="424" height="484" key="FileChooserDialogImpl/0.27.1870.872@0.27.1870.872" timestamp="1594491897390" />
-    <state x="439" y="225" width="705" height="561" key="NewPhpClassDialog" timestamp="1598814328814">
-      <screen x="0" y="27" width="1807" height="861" />
+    <state x="434" y="227" width="705" height="561" key="NewPhpClassDialog" timestamp="1599256912583">
+      <screen x="0" y="27" width="1786" height="869" />
     </state>
     <state x="430" y="222" width="873" height="555" key="NewPhpClassDialog/0.27.1774.849@0.27.1774.849" timestamp="1593350519203" />
     <state x="431" y="228" width="777" height="565" key="NewPhpClassDialog/0.27.1775.873@0.27.1775.873" timestamp="1598733184199" />
+    <state x="434" y="227" key="NewPhpClassDialog/0.27.1786.869@0.27.1786.869" timestamp="1599256912583" />
     <state x="433" y="215" key="NewPhpClassDialog/0.27.1787.820@0.27.1787.820" timestamp="1593204393500" />
     <state x="439" y="225" width="705" height="561" key="NewPhpClassDialog/0.27.1807.861@0.27.1807.861" timestamp="1598814328814" />
     <state x="439" y="223" key="NewPhpClassDialog/0.27.1810.854@0.27.1810.854" timestamp="1590960906334" />
@@ -979,12 +984,12 @@
     <state width="562" height="443" key="SwitcherDM/0.27.1845.874@0.27.1845.874" timestamp="1593891243690" />
     <state width="836" height="573" key="SwitcherDM/0.27.1864.870@0.27.1864.870" timestamp="1593973124219" />
     <state width="840" height="575" key="SwitcherDM/0.27.1870.872@0.27.1870.872" timestamp="1594502962545" />
-    <state x="364" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599173211939">
+    <state x="364" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599175597615">
       <screen x="0" y="27" width="1799" height="867" />
     </state>
     <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593378849971" />
     <state x="362" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1791.855@0.27.1791.855" timestamp="1598789313383" />
-    <state x="364" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1799.867@0.27.1799.867" timestamp="1599173211939" />
+    <state x="364" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1799.867@0.27.1799.867" timestamp="1599175597615" />
     <state x="364" y="115" key="Vcs.Push.Dialog.v2/0.27.1802.873@0.27.1802.873" timestamp="1592083794120" />
     <state x="367" y="113" key="Vcs.Push.Dialog.v2/0.27.1818.849@0.27.1818.849" timestamp="1593035325653" />
     <state x="369" y="114" key="Vcs.Push.Dialog.v2/0.27.1827.863@0.27.1827.863" timestamp="1593722929312" />
