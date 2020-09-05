@@ -9,7 +9,6 @@ use App\Model\User\UseCase\SignUp;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
@@ -26,16 +25,10 @@ final class SignUpController extends AbstractController
      */
     private $validator;
     
-    /**
-     * @var ErrorHandler
-     */
-    private $errors;
-    
-    public function __construct(SerializerInterface $serializer, ValidatorInterface $validator, ErrorHandler $errors)
+    public function __construct(SerializerInterface $serializer, ValidatorInterface $validator)
     {
         $this->serializer = $serializer;
         $this->validator = $validator;
-        $this->errors = $errors;
     }
     
     /**
@@ -44,9 +37,9 @@ final class SignUpController extends AbstractController
      * @param Request                $request
      * @param SignUp\Request\Handler $handler
      *
-     * @return Response
+     * @return JsonResponse
      */
-    public function request(Request $request, SignUp\Request\Handler $handler): Response
+    public function request(Request $request, SignUp\Request\Handler $handler): JsonResponse
     {
         /** @var SignUp\Request\Command $command */
         $command = $this->serializer->deserialize(
