@@ -72,12 +72,12 @@ services:
     ports:
       - "54321:5432"
   manager-redis:
-    image: redis:3.0-alpine
+    image: library/redis:6.0.5-alpine
     volumes:
       - manager-redis:/data
     command: redis-server --requirepass secret
   manager-queue-redis:
-    image: redis:5.0-alpine
+    image: library/redis:6.0.5-alpine
     volumes:
       - manager-queue-redis:/data
 

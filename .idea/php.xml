@@ -142,7 +142,6 @@
       <path value="$PROJECT_DIR$/manager/vendor/league/oauth2-client" />
       <path value="$PROJECT_DIR$/manager/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/manager/vendor/symfony/webpack-encore-bundle" />
-      <path value="$PROJECT_DIR$/manager/vendor/predis/predis" />
       <path value="$PROJECT_DIR$/manager/vendor/knplabs/knp-paginator-bundle" />
       <path value="$PROJECT_DIR$/manager/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/manager/vendor/knplabs/knp-menu-bundle" />
