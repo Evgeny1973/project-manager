@@ -32,7 +32,7 @@ final class SignUpController extends AbstractController
     }
     
     /**
-     * @Route("/auth/signup", name="aith.signup", methods={"POST"})
+     * @Route("/auth/signup", name="auth.signup", methods={"POST"})
      *
      * @param Request                $request
      * @param SignUp\Request\Handler $handler

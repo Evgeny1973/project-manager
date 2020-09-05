@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Api/Profile/NameController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Api/Profile/NameTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.phpunit.result.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/routes/annotations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/routes/annotations.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Controller/Api/Auth/SignUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Api/Auth/SignUpController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Handler.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -491,14 +483,7 @@
       <workItem from="1598808806688" duration="7717000" />
       <workItem from="1599157117974" duration="11133000" />
       <workItem from="1599255391600" duration="2426000" />
-      <workItem from="1599296072119" duration="23463000" />
-    </task>
-    <task id="LOCAL-00211" summary="add TaskFixture">
-      <created>1582058252837</created>
-      <option name="number" value="00211" />
-      <option name="presentableId" value="LOCAL-00211" />
-      <option name="project" value="LOCAL" />
-      <updated>1582058252837</updated>
+      <workItem from="1599296072119" duration="24205000" />
     </task>
     <task id="LOCAL-00212" summary="add form prefix">
       <created>1582119833583</created>
@@ -836,7 +821,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599331754046</updated>
     </task>
-    <option name="localTasksCounter" value="260" />
+    <task id="LOCAL-00260" summary="api profile allow change firstname lastname">
+      <created>1599343601578</created>
+      <option name="number" value="00260" />
+      <option name="presentableId" value="LOCAL-00260" />
+      <option name="project" value="LOCAL" />
+      <updated>1599343601578</updated>
+    </task>
+    <option name="localTasksCounter" value="261" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -883,7 +875,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add user functional tests" />
     <MESSAGE value="add functional tests" />
     <MESSAGE value="add twig processor extension" />
     <MESSAGE value="add twig compiler pass" />
@@ -908,7 +899,8 @@
     <MESSAGE value="add (array) to task fetcher" />
     <MESSAGE value="api signup" />
     <MESSAGE value="api profile show" />
-    <option name="LAST_COMMIT_MESSAGE" value="api profile show" />
+    <MESSAGE value="api profile allow change firstname lastname" />
+    <option name="LAST_COMMIT_MESSAGE" value="api profile allow change firstname lastname" />
   </component>
   <component name="WindowStateProjectService">
     <state x="506" y="95" width="800" height="712" key="#Plugins" timestamp="1594585457814">
@@ -933,11 +925,11 @@
       <screen x="0" y="27" width="1786" height="869" />
     </state>
     <state x="694" y="210" width="376" height="502" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1786.869@0.27.1786.869" timestamp="1599256948049" />
-    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2" timestamp="1599331753921">
+    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2" timestamp="1599343601424">
       <screen x="0" y="27" width="1781" height="871" />
     </state>
     <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593378848029" />
-    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2/0.27.1781.871@0.27.1781.871" timestamp="1599331753921" />
+    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2/0.27.1781.871@0.27.1781.871" timestamp="1599343601424" />
     <state x="321" y="80" width="912" height="711" key="CommitChangelistDialog2/0.27.1786.869@0.27.1786.869" timestamp="1599258928935" />
     <state x="322" y="79" width="912" height="696" key="CommitChangelistDialog2/0.27.1791.855@0.27.1791.855" timestamp="1598789308997" />
     <state x="323" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1799.867@0.27.1799.867" timestamp="1599175595692" />
@@ -992,11 +984,11 @@
     <state width="562" height="443" key="SwitcherDM/0.27.1845.874@0.27.1845.874" timestamp="1593891243690" />
     <state width="836" height="573" key="SwitcherDM/0.27.1864.870@0.27.1864.870" timestamp="1593973124219" />
     <state width="840" height="575" key="SwitcherDM/0.27.1870.872@0.27.1870.872" timestamp="1594502962545" />
-    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599331756532">
+    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599343604464">
       <screen x="0" y="27" width="1781" height="871" />
     </state>
     <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593378849971" />
-    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1781.871@0.27.1781.871" timestamp="1599331756532" />
+    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1781.871@0.27.1781.871" timestamp="1599343604464" />
     <state x="361" y="115" key="Vcs.Push.Dialog.v2/0.27.1786.869@0.27.1786.869" timestamp="1599258931262" />
     <state x="362" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1791.855@0.27.1791.855" timestamp="1598789313383" />
     <state x="364" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1799.867@0.27.1799.867" timestamp="1599175597615" />
