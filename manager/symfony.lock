@@ -5,6 +5,9 @@
     "centrifugal/phpcent": {
         "version": "3.1.1"
     },
+    "dms/phpunit-arraysubset-asserts": {
+        "version": "v0.1.1"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {

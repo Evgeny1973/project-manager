@@ -32,8 +32,8 @@ class ShowTest extends DbWebTestCase
         $crawler = $this->client->request('GET', '/users/' . UsersFixture::EXISTING_ID);
         
         $this->assertSame(200, $this->client->getResponse()->getStatusCode());
-        $this->assertContains('Users', $crawler->filter('title')->text());
-        $this->assertContains('Show User', $crawler->filter('table')->text());
+        $this->assertStringContainsString('Users', $crawler->filter('title')->text());
+        $this->assertStringContainsString('Show User', $crawler->filter('table')->text());
     }
     
     public function testNotFound(): void

@@ -31,6 +31,6 @@ class IndexTest extends DbWebTestCase
         $crawler = $this->client->request('GET', '/users');
         
         $this->assertSame(200, $this->client->getResponse()->getStatusCode());
-        $this->assertContains('Users', $crawler->filter('title')->text());
+        $this->assertStringContainsString('Users', $crawler->filter('title')->text());
     }
 }

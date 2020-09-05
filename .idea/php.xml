@@ -154,6 +154,7 @@
       <path value="$PROJECT_DIR$/manager/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/manager/vendor/symfony/messenger" />
       <path value="$PROJECT_DIR$/manager/vendor/centrifugal/phpcent" />
+      <path value="$PROJECT_DIR$/manager/vendor/dms/phpunit-arraysubset-asserts" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

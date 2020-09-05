@@ -10,6 +10,7 @@
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/cebe/markdown" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/centrifugal/phpcent" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/manager/vendor/dms/phpunit-arraysubset-asserts" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/doctrine/annotations" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/doctrine/cache" />
       <excludeFolder url="file://$MODULE_DIR$/manager/vendor/doctrine/collections" />
