@@ -1,5 +1,5 @@
 api:
-    resource: ../../src/Controller/Api
+    resource: ../../src/Controller/Api/
     prefix: /api
     name_prefix: api.
     trailing_slash_on_root: false

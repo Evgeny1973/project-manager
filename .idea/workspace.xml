@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Api/Profile/ShowController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Api/Profile/ProfileFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Api/Profile/ShowTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Api/Profile/NameController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Api/Profile/NameTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/routes/annotations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/routes/annotations.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/Controller/Api/Auth/SignUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Api/Auth/SignUpController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/User/UseCase/Name/Handler.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -487,14 +491,7 @@
       <workItem from="1598808806688" duration="7717000" />
       <workItem from="1599157117974" duration="11133000" />
       <workItem from="1599255391600" duration="2426000" />
-      <workItem from="1599296072119" duration="17097000" />
-    </task>
-    <task id="LOCAL-00210" summary="add TaskFixture&#10;corrected other fixtures">
-      <created>1582056163435</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
-      <option name="project" value="LOCAL" />
-      <updated>1582056163435</updated>
+      <workItem from="1599296072119" duration="23463000" />
     </task>
     <task id="LOCAL-00211" summary="add TaskFixture">
       <created>1582058252837</created>
@@ -832,7 +829,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599330079805</updated>
     </task>
-    <option name="localTasksCounter" value="259" />
+    <task id="LOCAL-00259" summary="api profile show">
+      <created>1599331754046</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1599331754046</updated>
+    </task>
+    <option name="localTasksCounter" value="260" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -879,7 +883,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="twig deprication fix" />
     <MESSAGE value="add user functional tests" />
     <MESSAGE value="add functional tests" />
     <MESSAGE value="add twig processor extension" />
@@ -904,7 +907,8 @@
     <MESSAGE value="redis 6.0.5" />
     <MESSAGE value="add (array) to task fetcher" />
     <MESSAGE value="api signup" />
-    <option name="LAST_COMMIT_MESSAGE" value="api signup" />
+    <MESSAGE value="api profile show" />
+    <option name="LAST_COMMIT_MESSAGE" value="api profile show" />
   </component>
   <component name="WindowStateProjectService">
     <state x="506" y="95" width="800" height="712" key="#Plugins" timestamp="1594585457814">
@@ -912,11 +916,11 @@
     </state>
     <state x="482" y="94" width="800" height="712" key="#Plugins/0.27.1774.849@0.27.1774.849" timestamp="1593349454742" />
     <state x="506" y="95" key="#Plugins/0.27.1861.868@0.27.1861.868" timestamp="1594585457814" />
-    <state x="706" y="183" width="412" height="556" key="#com.intellij.ide.util.MemberChooser" timestamp="1599327406177">
+    <state x="706" y="183" width="441" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1599341823566">
       <screen x="0" y="27" width="1781" height="871" />
     </state>
     <state x="702" y="179" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1774.849@0.27.1774.849" timestamp="1593350306787" />
-    <state x="706" y="183" key="#com.intellij.ide.util.MemberChooser/0.27.1781.871@0.27.1781.871" timestamp="1599327406177" />
+    <state x="706" y="183" width="441" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1781.871@0.27.1781.871" timestamp="1599341823566" />
     <state x="707" y="174" width="412" height="524" key="#com.intellij.ide.util.MemberChooser/0.27.1787.820@0.27.1787.820" timestamp="1593204458076" />
     <state x="716" y="181" width="412" height="556" key="#com.intellij.ide.util.MemberChooser/0.27.1807.861@0.27.1807.861" timestamp="1598814284746" />
     <state x="726" y="185" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1836.881@0.27.1836.881" timestamp="1592776061045" />
@@ -929,11 +933,11 @@
       <screen x="0" y="27" width="1786" height="869" />
     </state>
     <state x="694" y="210" width="376" height="502" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1786.869@0.27.1786.869" timestamp="1599256948049" />
-    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2" timestamp="1599330079525">
+    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2" timestamp="1599331753921">
       <screen x="0" y="27" width="1781" height="871" />
     </state>
     <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593378848029" />
-    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2/0.27.1781.871@0.27.1781.871" timestamp="1599330079525" />
+    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2/0.27.1781.871@0.27.1781.871" timestamp="1599331753921" />
     <state x="321" y="80" width="912" height="711" key="CommitChangelistDialog2/0.27.1786.869@0.27.1786.869" timestamp="1599258928935" />
     <state x="322" y="79" width="912" height="696" key="CommitChangelistDialog2/0.27.1791.855@0.27.1791.855" timestamp="1598789308997" />
     <state x="323" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1799.867@0.27.1799.867" timestamp="1599175595692" />
@@ -953,12 +957,12 @@
     </state>
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl/0.27.1787.859@0.27.1787.859" timestamp="1590912332879" />
     <state x="707" y="216" width="424" height="484" key="FileChooserDialogImpl/0.27.1870.872@0.27.1870.872" timestamp="1594491897390" />
-    <state x="433" y="227" width="705" height="561" key="NewPhpClassDialog" timestamp="1599331009578">
+    <state x="433" y="227" width="705" height="561" key="NewPhpClassDialog" timestamp="1599338413465">
       <screen x="0" y="27" width="1781" height="871" />
     </state>
     <state x="430" y="222" width="873" height="555" key="NewPhpClassDialog/0.27.1774.849@0.27.1774.849" timestamp="1593350519203" />
     <state x="431" y="228" width="777" height="565" key="NewPhpClassDialog/0.27.1775.873@0.27.1775.873" timestamp="1598733184199" />
-    <state x="433" y="227" width="705" height="561" key="NewPhpClassDialog/0.27.1781.871@0.27.1781.871" timestamp="1599331009578" />
+    <state x="433" y="227" width="705" height="561" key="NewPhpClassDialog/0.27.1781.871@0.27.1781.871" timestamp="1599338413465" />
     <state x="434" y="227" key="NewPhpClassDialog/0.27.1786.869@0.27.1786.869" timestamp="1599256912583" />
     <state x="433" y="215" key="NewPhpClassDialog/0.27.1787.820@0.27.1787.820" timestamp="1593204393500" />
     <state x="439" y="225" width="705" height="561" key="NewPhpClassDialog/0.27.1807.861@0.27.1807.861" timestamp="1598814328814" />
@@ -988,11 +992,11 @@
     <state width="562" height="443" key="SwitcherDM/0.27.1845.874@0.27.1845.874" timestamp="1593891243690" />
     <state width="836" height="573" key="SwitcherDM/0.27.1864.870@0.27.1864.870" timestamp="1593973124219" />
     <state width="840" height="575" key="SwitcherDM/0.27.1870.872@0.27.1870.872" timestamp="1594502962545" />
-    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599330081899">
+    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599331756532">
       <screen x="0" y="27" width="1781" height="871" />
     </state>
     <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593378849971" />
-    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1781.871@0.27.1781.871" timestamp="1599330081899" />
+    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1781.871@0.27.1781.871" timestamp="1599331756532" />
     <state x="361" y="115" key="Vcs.Push.Dialog.v2/0.27.1786.869@0.27.1786.869" timestamp="1599258931262" />
     <state x="362" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1791.855@0.27.1791.855" timestamp="1598789313383" />
     <state x="364" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1799.867@0.27.1799.867" timestamp="1599175597615" />

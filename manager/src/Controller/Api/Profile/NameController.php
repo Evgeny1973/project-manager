@@ -2,18 +2,17 @@
 
 declare(strict_types=1);
 
-namespace App\Controller\Api\Auth;
+namespace App\Controller\Api\Profile;
 
-use App\Controller\ErrorHandler;
-use App\Model\User\UseCase\SignUp;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use App\Model\User\UseCase\Name;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 
-final class SignUpController extends AbstractController
+final class NameController extends AbstractController
 {
     /**
      * @var SerializerInterface
@@ -32,30 +31,34 @@ final class SignUpController extends AbstractController
     }
     
     /**
-     * @Route("/auth/signup", name="aith.signup", methods={"POST"})
+     * @Route("/profile/name", name="profile.name", methods={"PUT"})
      *
-     * @param Request                $request
-     * @param SignUp\Request\Handler $handler
+     * @param Request      $request
+     * @param Name\Handler $handler
      *
      * @return JsonResponse
      */
-    public function request(Request $request, SignUp\Request\Handler $handler): JsonResponse
+    public function request(Request $request, Name\Handler $handler): JsonResponse
     {
-        /** @var SignUp\Request\Command $command */
+        /** @var Name\Command $command */
         $command = $this->serializer->deserialize(
             $request->getContent(),
-            SignUp\Request\Command::class,
-            'json'
+            Name\Command::class,
+            'json',
+            [
+                'object_to_populate' => new Name\Command($this->getUser()->getId()),
+                'ignored_attributes' => ['id'],
+            ]
         );
-    
+        
         $violations = $this->validator->validate($command);
         if (\count($violations)) {
             $json = $this->serializer->serialize($violations, 'json');
             return new JsonResponse($json, 400, [], true);
         }
-    
+        
         $handler->handle($command);
-    
-        return $this->json([], 201);
+        
+        return $this->json([]);
     }
 }
