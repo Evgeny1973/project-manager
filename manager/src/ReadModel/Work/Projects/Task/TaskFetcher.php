@@ -132,7 +132,7 @@ class TaskFetcher
         /** @var AbstractPagination $pagination */
         $pagination = $this->paginator->paginate($qb, $page, $size);
         
-        $tasks = $pagination->getItems();
+        $tasks = (array)$pagination->getItems();
         $executors = $this->batchLoadExecutors(array_column($tasks, 'id'));
         
         $pagination->setItems(array_map(static function (array $task) use ($executors) {

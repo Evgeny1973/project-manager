@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/.env" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/docker/production/redis.docker" beforeDir="false" afterPath="$PROJECT_DIR$/manager/docker/production/redis.docker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/TaskFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Task/TaskFetcher.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -491,14 +481,7 @@
       <workItem from="1598808806688" duration="7717000" />
       <workItem from="1599157117974" duration="11133000" />
       <workItem from="1599255391600" duration="2426000" />
-      <workItem from="1599296072119" duration="5913000" />
-    </task>
-    <task id="LOCAL-00207" summary="gravatar twig extension&#10;fzaninotto faker">
-      <created>1582052523762</created>
-      <option name="number" value="00207" />
-      <option name="presentableId" value="LOCAL-00207" />
-      <option name="project" value="LOCAL" />
-      <updated>1582052523762</updated>
+      <workItem from="1599296072119" duration="6069000" />
     </task>
     <task id="LOCAL-00208" summary="add TaskFixture&#10;corrected other fixtures">
       <created>1582055020001</created>
@@ -836,7 +819,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599307271302</updated>
     </task>
-    <option name="localTasksCounter" value="256" />
+    <task id="LOCAL-00256" summary="redis 6.0.5">
+      <created>1599310481703</created>
+      <option name="number" value="00256" />
+      <option name="presentableId" value="LOCAL-00256" />
+      <option name="project" value="LOCAL" />
+      <updated>1599310481703</updated>
+    </task>
+    <option name="localTasksCounter" value="257" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -883,7 +873,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new migrations" />
     <MESSAGE value="filter for own tasks" />
     <MESSAGE value="create multiple tasks" />
     <MESSAGE value="twig deprication fix" />
@@ -908,7 +897,8 @@
     <MESSAGE value="add centrifugo" />
     <MESSAGE value="add centrifugo/phpcent" />
     <MESSAGE value="massage via centrifugo for user" />
-    <option name="LAST_COMMIT_MESSAGE" value="massage via centrifugo for user" />
+    <MESSAGE value="redis 6.0.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis 6.0.5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="506" y="95" width="800" height="712" key="#Plugins" timestamp="1594585457814">
@@ -932,11 +922,11 @@
       <screen x="0" y="27" width="1786" height="869" />
     </state>
     <state x="694" y="210" width="376" height="502" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1786.869@0.27.1786.869" timestamp="1599256948049" />
-    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2" timestamp="1599307270935">
+    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2" timestamp="1599310481479">
       <screen x="0" y="27" width="1781" height="871" />
     </state>
     <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593378848029" />
-    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2/0.27.1781.871@0.27.1781.871" timestamp="1599307270935" />
+    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2/0.27.1781.871@0.27.1781.871" timestamp="1599310481479" />
     <state x="321" y="80" width="912" height="711" key="CommitChangelistDialog2/0.27.1786.869@0.27.1786.869" timestamp="1599258928935" />
     <state x="322" y="79" width="912" height="696" key="CommitChangelistDialog2/0.27.1791.855@0.27.1791.855" timestamp="1598789308997" />
     <state x="323" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1799.867@0.27.1799.867" timestamp="1599175595692" />
@@ -990,11 +980,11 @@
     <state width="562" height="443" key="SwitcherDM/0.27.1845.874@0.27.1845.874" timestamp="1593891243690" />
     <state width="836" height="573" key="SwitcherDM/0.27.1864.870@0.27.1864.870" timestamp="1593973124219" />
     <state width="840" height="575" key="SwitcherDM/0.27.1870.872@0.27.1870.872" timestamp="1594502962545" />
-    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599307273408">
+    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599310512315">
       <screen x="0" y="27" width="1781" height="871" />
     </state>
     <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593378849971" />
-    <state x="360" y="115" key="Vcs.Push.Dialog.v2/0.27.1781.871@0.27.1781.871" timestamp="1599307273408" />
+    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1781.871@0.27.1781.871" timestamp="1599310512315" />
     <state x="361" y="115" key="Vcs.Push.Dialog.v2/0.27.1786.869@0.27.1786.869" timestamp="1599258931262" />
     <state x="362" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1791.855@0.27.1791.855" timestamp="1598789313383" />
     <state x="364" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1799.867@0.27.1799.867" timestamp="1599175597615" />
