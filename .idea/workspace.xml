@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20200906104355.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Api/Auth/SignUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Api/Auth/SignUpController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-production.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.env" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/packages/doctrine_migrations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/manager/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +57,6 @@
     <include_path>
       <path value="$PROJECT_DIR$/manager/vendor/psr/log" />
       <path value="$PROJECT_DIR$/manager/vendor/psr/link" />
-      <path value="$PROJECT_DIR$/manager/vendor/fig/link-util" />
       <path value="$PROJECT_DIR$/manager/vendor/composer" />
       <path value="$PROJECT_DIR$/manager/vendor/zendframework/zend-code" />
       <path value="$PROJECT_DIR$/manager/vendor/zendframework/zend-eventmanager" />
@@ -56,8 +66,6 @@
       <path value="$PROJECT_DIR$/manager/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/manager/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/manager/vendor/ocramius/proxy-manager" />
-      <path value="$PROJECT_DIR$/manager/vendor/ocramius/package-versions" />
-      <path value="$PROJECT_DIR$/manager/vendor/easycorp/easy-log-handler" />
       <path value="$PROJECT_DIR$/manager/vendor/doctrine/annotations" />
       <path value="$PROJECT_DIR$/manager/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/manager/vendor/doctrine/doctrine-bundle" />
@@ -144,7 +152,6 @@
       <path value="$PROJECT_DIR$/manager/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/manager/vendor/sensio/framework-extra-bundle" />
       <path value="$PROJECT_DIR$/manager/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/manager/vendor/jdorn/sql-formatter" />
       <path value="$PROJECT_DIR$/manager/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/manager/vendor/psr/container" />
       <path value="$PROJECT_DIR$/manager/vendor/psr/cache" />
@@ -197,6 +204,19 @@
       <path value="$PROJECT_DIR$/manager/vendor/symfony/messenger" />
       <path value="$PROJECT_DIR$/manager/vendor/centrifugal/phpcent" />
       <path value="$PROJECT_DIR$/manager/vendor/dms/phpunit-arraysubset-asserts" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/manager/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/manager/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/manager/vendor/league/event" />
+      <path value="$PROJECT_DIR$/manager/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/manager/vendor/trikoder/oauth2-bundle" />
+      <path value="$PROJECT_DIR$/manager/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/manager/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/manager/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/manager/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/manager/vendor/lcobucci/jwt" />
     </include_path>
   </component>
   <component name="ProjectId" id="1RH0bnn9uEzKpBoXjeZL1F2dTxy" />
@@ -483,14 +503,9 @@
       <workItem from="1598808806688" duration="7717000" />
       <workItem from="1599157117974" duration="11133000" />
       <workItem from="1599255391600" duration="2426000" />
-      <workItem from="1599296072119" duration="24205000" />
-    </task>
-    <task id="LOCAL-00212" summary="add form prefix">
-      <created>1582119833583</created>
-      <option name="number" value="00212" />
-      <option name="presentableId" value="LOCAL-00212" />
-      <option name="project" value="LOCAL" />
-      <updated>1582119833584</updated>
+      <workItem from="1599296072119" duration="25455000" />
+      <workItem from="1599384153942" duration="2837000" />
+      <workItem from="1599392729612" duration="4675000" />
     </task>
     <task id="LOCAL-00213" summary="add taskcontrollers&#10;add priority widget">
       <created>1582124312010</created>
@@ -828,7 +843,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599343601578</updated>
     </task>
-    <option name="localTasksCounter" value="261" />
+    <task id="LOCAL-00261" summary="api profile allow change firstname lastname">
+      <created>1599344876073</created>
+      <option name="number" value="00261" />
+      <option name="presentableId" value="LOCAL-00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1599344876073</updated>
+    </task>
+    <option name="localTasksCounter" value="262" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -925,11 +947,11 @@
       <screen x="0" y="27" width="1786" height="869" />
     </state>
     <state x="694" y="210" width="376" height="502" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1786.869@0.27.1786.869" timestamp="1599256948049" />
-    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2" timestamp="1599343601424">
+    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2" timestamp="1599344875922">
       <screen x="0" y="27" width="1781" height="871" />
     </state>
     <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593378848029" />
-    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2/0.27.1781.871@0.27.1781.871" timestamp="1599343601424" />
+    <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2/0.27.1781.871@0.27.1781.871" timestamp="1599344875922" />
     <state x="321" y="80" width="912" height="711" key="CommitChangelistDialog2/0.27.1786.869@0.27.1786.869" timestamp="1599258928935" />
     <state x="322" y="79" width="912" height="696" key="CommitChangelistDialog2/0.27.1791.855@0.27.1791.855" timestamp="1598789308997" />
     <state x="323" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1799.867@0.27.1799.867" timestamp="1599175595692" />
@@ -949,8 +971,8 @@
     </state>
     <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl/0.27.1787.859@0.27.1787.859" timestamp="1590912332879" />
     <state x="707" y="216" width="424" height="484" key="FileChooserDialogImpl/0.27.1870.872@0.27.1870.872" timestamp="1594491897390" />
-    <state x="433" y="227" width="705" height="561" key="NewPhpClassDialog" timestamp="1599338413465">
-      <screen x="0" y="27" width="1781" height="871" />
+    <state x="448" y="225" width="705" height="561" key="NewPhpClassDialog" timestamp="1599399177988">
+      <screen x="0" y="27" width="1842" height="864" />
     </state>
     <state x="430" y="222" width="873" height="555" key="NewPhpClassDialog/0.27.1774.849@0.27.1774.849" timestamp="1593350519203" />
     <state x="431" y="228" width="777" height="565" key="NewPhpClassDialog/0.27.1775.873@0.27.1775.873" timestamp="1598733184199" />
@@ -963,6 +985,7 @@
     <state x="443" y="225" width="721" height="561" key="NewPhpClassDialog/0.27.1829.860@0.27.1829.860" timestamp="1593808444049" />
     <state x="445" y="229" width="801" height="561" key="NewPhpClassDialog/0.27.1836.881@0.27.1836.881" timestamp="1592776546768" />
     <state x="446" y="224" key="NewPhpClassDialog/0.27.1840.859@0.27.1840.859" timestamp="1593291791678" />
+    <state x="448" y="225" key="NewPhpClassDialog/0.27.1842.864@0.27.1842.864" timestamp="1599399177985" />
     <state x="447" y="227" width="817" height="561" key="NewPhpClassDialog/0.27.1843.869@0.27.1843.869" timestamp="1594044285403" />
     <state x="447" y="228" width="737" height="561" key="NewPhpClassDialog/0.27.1845.874@0.27.1845.874" timestamp="1593897155363" />
     <state x="452" y="227" width="809" height="561" key="NewPhpClassDialog/0.27.1861.868@0.27.1861.868" timestamp="1594588802330" />
@@ -984,11 +1007,11 @@
     <state width="562" height="443" key="SwitcherDM/0.27.1845.874@0.27.1845.874" timestamp="1593891243690" />
     <state width="836" height="573" key="SwitcherDM/0.27.1864.870@0.27.1864.870" timestamp="1593973124219" />
     <state width="840" height="575" key="SwitcherDM/0.27.1870.872@0.27.1870.872" timestamp="1594502962545" />
-    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599343604464">
+    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599344877790">
       <screen x="0" y="27" width="1781" height="871" />
     </state>
     <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593378849971" />
-    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1781.871@0.27.1781.871" timestamp="1599343604464" />
+    <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1781.871@0.27.1781.871" timestamp="1599344877790" />
     <state x="361" y="115" key="Vcs.Push.Dialog.v2/0.27.1786.869@0.27.1786.869" timestamp="1599258931262" />
     <state x="362" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1791.855@0.27.1791.855" timestamp="1598789313383" />
     <state x="364" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1799.867@0.27.1799.867" timestamp="1599175597615" />
@@ -1015,10 +1038,11 @@
       <screen x="0" y="27" width="1836" height="881" />
     </state>
     <state x="463" y="46" width="908" height="861" key="search.everywhere.popup/0.27.1836.881@0.27.1836.881" timestamp="1592770465233" />
-    <state x="633" y="372" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1598814581483">
-      <screen x="0" y="27" width="1807" height="861" />
+    <state x="629" y="350" width="528" height="166" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1599398456306">
+      <screen x="0" y="27" width="1797" height="805" />
     </state>
     <state x="621" y="367" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1774.849@0.27.1774.849" timestamp="1593345996194" />
+    <state x="629" y="350" width="528" height="166" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1797.805@0.27.1797.805" timestamp="1599398456306" />
     <state x="633" y="372" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1807.861@0.27.1807.861" timestamp="1598814581483" />
     <state x="643" y="380" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1836.881@0.27.1836.881" timestamp="1592774549028" />
   </component>
