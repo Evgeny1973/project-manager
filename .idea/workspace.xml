@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Service/Gravatar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Service/Work/Processor/Processor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Twig/Extension/GravatarExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Twig/Extension/GravatarExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Twig/Extension/Work/Processor/Driver/Driver.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Service/Work/Processor/Driver/Driver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Twig/Extension/Work/Processor/Driver/MemberDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Service/Work/Processor/Driver/MemberDriver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Twig/Extension/Work/Processor/Driver/TaskDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Service/Work/Processor/Driver/TaskDriver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Twig/Extension/Work/Processor/ProcessorExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Twig/Extension/Work/Processor/ProcessorExtension.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,19 +235,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/manager/src/Model/Comment/UseCase/Comment" />
-      <recent name="$PROJECT_DIR$/manager/templates/app/work/projects/tasks" />
-      <recent name="$PROJECT_DIR$/manager/templates/widget/work/projects/task" />
-      <recent name="$PROJECT_DIR$/manager/templates/app/work/projects/project" />
-      <recent name="$PROJECT_DIR$/manager/src/Menu/Work/Projects" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/manager/tests/data/oauth" />
       <recent name="$PROJECT_DIR$/centrifugo/docker/production/centrifugo" />
       <recent name="$PROJECT_DIR$/manager/src/Model/Work/Entity/Members/Member" />
       <recent name="$PROJECT_DIR$/manager/config/packages/test" />
       <recent name="$PROJECT_DIR$/manager/docker/production" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/manager/src/Service/Work/Processor/Driver" />
+      <recent name="$PROJECT_DIR$/manager/src/Model/Comment/UseCase/Comment" />
+      <recent name="$PROJECT_DIR$/manager/templates/app/work/projects/tasks" />
+      <recent name="$PROJECT_DIR$/manager/templates/widget/work/projects/task" />
+      <recent name="$PROJECT_DIR$/manager/templates/app/work/projects/project" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -498,14 +502,7 @@
       <workItem from="1599392729612" duration="7927000" />
       <workItem from="1599418090683" duration="8833000" />
       <workItem from="1599504108805" duration="1261000" />
-      <workItem from="1599595648044" duration="3641000" />
-    </task>
-    <task id="LOCAL-00217" summary="add tasks templates">
-      <created>1582124859293</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1582124859293</updated>
+      <workItem from="1599595648044" duration="4518000" />
     </task>
     <task id="LOCAL-00218" summary="add tasks templates">
       <created>1582135826099</created>
@@ -843,7 +840,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599598723155</updated>
     </task>
-    <option name="localTasksCounter" value="266" />
+    <task id="LOCAL-00266" summary="change Gravatar extension">
+      <created>1599599506478</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1599599506478</updated>
+    </task>
+    <option name="localTasksCounter" value="267" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -890,7 +894,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update search" />
     <MESSAGE value="remove compiler pass" />
     <MESSAGE value="added ftp emulator in docker" />
     <MESSAGE value="upload files" />
@@ -915,7 +918,8 @@
     <MESSAGE value="updated symfony to 4.4.13&#10;add trikoder/oauth2-bundle" />
     <MESSAGE value="add tests for api" />
     <MESSAGE value="add api project controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="add api project controller" />
+    <MESSAGE value="change Gravatar extension" />
+    <option name="LAST_COMMIT_MESSAGE" value="change Gravatar extension" />
   </component>
   <component name="WindowStateProjectService">
     <state x="506" y="95" width="800" height="712" key="#Plugins" timestamp="1594585457814">
@@ -941,7 +945,7 @@
       <screen x="0" y="27" width="1786" height="869" />
     </state>
     <state x="694" y="210" width="376" height="502" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1786.869@0.27.1786.869" timestamp="1599256948049" />
-    <state x="331" y="81" width="912" height="709" key="CommitChangelistDialog2" timestamp="1599598722962">
+    <state x="331" y="81" width="912" height="709" key="CommitChangelistDialog2" timestamp="1599599506321">
       <screen x="0" y="27" width="1840" height="878" />
     </state>
     <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593378848029" />
@@ -956,7 +960,7 @@
     <state x="331" y="79" key="CommitChangelistDialog2/0.27.1834.870@0.27.1834.870" timestamp="1593585648697" />
     <state x="331" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1836.881@0.27.1836.881" timestamp="1592777547153" />
     <state x="332" y="79" width="912" height="709" key="CommitChangelistDialog2/0.27.1840.859@0.27.1840.859" timestamp="1593295841926" />
-    <state x="331" y="81" width="912" height="709" key="CommitChangelistDialog2/0.27.1840.878@0.27.1840.878" timestamp="1599598722962" />
+    <state x="331" y="81" width="912" height="709" key="CommitChangelistDialog2/0.27.1840.878@0.27.1840.878" timestamp="1599599506321" />
     <state x="331" y="80" key="CommitChangelistDialog2/0.27.1842.864@0.27.1842.864" timestamp="1599399541354" />
     <state x="332" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1843.869@0.27.1843.869" timestamp="1594046933990" />
     <state x="333" y="80" key="CommitChangelistDialog2/0.27.1845.874@0.27.1845.874" timestamp="1593893370538" />
@@ -967,7 +971,7 @@
       <screen x="0" y="27" width="1870" height="872" />
     </state>
     <state x="707" y="216" width="424" height="484" key="FileChooserDialogImpl/0.27.1870.872@0.27.1870.872" timestamp="1594491897390" />
-    <state x="448" y="228" width="569" height="561" key="NewPhpClassDialog" timestamp="1599599148759">
+    <state x="448" y="228" width="689" height="561" key="NewPhpClassDialog" timestamp="1599599640993">
       <screen x="0" y="27" width="1840" height="878" />
     </state>
     <state x="430" y="222" width="873" height="555" key="NewPhpClassDialog/0.27.1774.849@0.27.1774.849" timestamp="1593350519203" />
@@ -982,7 +986,7 @@
     <state x="445" y="225" width="753" height="561" key="NewPhpClassDialog/0.27.1829.863@0.27.1829.863" timestamp="1599430410674" />
     <state x="445" y="229" width="801" height="561" key="NewPhpClassDialog/0.27.1836.881@0.27.1836.881" timestamp="1592776546768" />
     <state x="446" y="224" key="NewPhpClassDialog/0.27.1840.859@0.27.1840.859" timestamp="1593291791678" />
-    <state x="448" y="228" width="569" height="561" key="NewPhpClassDialog/0.27.1840.878@0.27.1840.878" timestamp="1599599148759" />
+    <state x="448" y="228" width="689" height="561" key="NewPhpClassDialog/0.27.1840.878@0.27.1840.878" timestamp="1599599640993" />
     <state x="448" y="225" width="681" height="561" key="NewPhpClassDialog/0.27.1842.864@0.27.1842.864" timestamp="1599399478854" />
     <state x="447" y="227" width="817" height="561" key="NewPhpClassDialog/0.27.1843.869@0.27.1843.869" timestamp="1594044285403" />
     <state x="447" y="228" width="737" height="561" key="NewPhpClassDialog/0.27.1845.874@0.27.1845.874" timestamp="1593897155363" />
@@ -1006,7 +1010,7 @@
     <state width="562" height="443" key="SwitcherDM/0.27.1845.874@0.27.1845.874" timestamp="1593891243690" />
     <state width="836" height="573" key="SwitcherDM/0.27.1864.870@0.27.1864.870" timestamp="1593973124219" />
     <state width="840" height="575" key="SwitcherDM/0.27.1870.872@0.27.1870.872" timestamp="1594502962545" />
-    <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599599125765">
+    <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599599508264">
       <screen x="0" y="27" width="1840" height="878" />
     </state>
     <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593378849971" />
@@ -1021,7 +1025,7 @@
     <state x="370" y="115" key="Vcs.Push.Dialog.v2/0.27.1834.870@0.27.1834.870" timestamp="1593585651177" />
     <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1836.881@0.27.1836.881" timestamp="1592777549058" />
     <state x="371" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1840.859@0.27.1840.859" timestamp="1593295843952" />
-    <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1840.878@0.27.1840.878" timestamp="1599599125765" />
+    <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1840.878@0.27.1840.878" timestamp="1599599508264" />
     <state x="372" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1842.864@0.27.1842.864" timestamp="1599399543399" />
     <state x="373" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1843.869@0.27.1843.869" timestamp="1594046935795" />
     <state x="373" y="115" key="Vcs.Push.Dialog.v2/0.27.1845.874@0.27.1845.874" timestamp="1593893372894" />
