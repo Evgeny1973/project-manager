@@ -32,7 +32,7 @@ final class DomainExceptionFormatter implements EventSubscriberInterface
     
     public function onKernelException(ExceptionEvent $event)
     {
-        $exception = $event->getException();
+        $exception = $event->getThrowable();
         $request = $event->getRequest();
         
         if (!$exception instanceof \DomainException) {

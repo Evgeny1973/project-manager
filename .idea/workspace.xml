@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Api/Work/PaginationSerializer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Api/Work/Projects/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Api/Work/Projects/ProjectsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/ProjectFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/ProjectFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/OAuth/ClientFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/OAuth/ClientFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Api/DomainExceptionFormatter.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Api/DomainExceptionFormatter.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -500,14 +497,7 @@
       <workItem from="1599392729612" duration="7927000" />
       <workItem from="1599418090683" duration="8833000" />
       <workItem from="1599504108805" duration="1261000" />
-      <workItem from="1599595648044" duration="2740000" />
-    </task>
-    <task id="LOCAL-00215" summary="add status widget">
-      <created>1582124576844</created>
-      <option name="number" value="00215" />
-      <option name="presentableId" value="LOCAL-00215" />
-      <option name="project" value="LOCAL" />
-      <updated>1582124576844</updated>
+      <workItem from="1599595648044" duration="3056000" />
     </task>
     <task id="LOCAL-00216" summary="add type widget">
       <created>1582124629637</created>
@@ -845,7 +835,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599430444114</updated>
     </task>
-    <option name="localTasksCounter" value="264" />
+    <task id="LOCAL-00264" summary="add api project controller">
+      <created>1599598655984</created>
+      <option name="number" value="00264" />
+      <option name="presentableId" value="LOCAL-00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1599598655985</updated>
+    </task>
+    <option name="localTasksCounter" value="265" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -892,7 +889,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add twig compiler pass" />
     <MESSAGE value="update search" />
     <MESSAGE value="remove compiler pass" />
     <MESSAGE value="added ftp emulator in docker" />
@@ -917,7 +913,8 @@
     <MESSAGE value="api profile allow change firstname lastname" />
     <MESSAGE value="updated symfony to 4.4.13&#10;add trikoder/oauth2-bundle" />
     <MESSAGE value="add tests for api" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tests for api" />
+    <MESSAGE value="add api project controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="add api project controller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="506" y="95" width="800" height="712" key="#Plugins" timestamp="1594585457814">
@@ -943,8 +940,8 @@
       <screen x="0" y="27" width="1786" height="869" />
     </state>
     <state x="694" y="210" width="376" height="502" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1786.869@0.27.1786.869" timestamp="1599256948049" />
-    <state x="329" y="80" width="912" height="713" key="CommitChangelistDialog2" timestamp="1599430443816">
-      <screen x="0" y="27" width="1829" height="863" />
+    <state x="331" y="81" width="912" height="713" key="CommitChangelistDialog2" timestamp="1599598655651">
+      <screen x="0" y="27" width="1840" height="878" />
     </state>
     <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593378848029" />
     <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2/0.27.1781.871@0.27.1781.871" timestamp="1599344875922" />
@@ -958,6 +955,7 @@
     <state x="331" y="79" key="CommitChangelistDialog2/0.27.1834.870@0.27.1834.870" timestamp="1593585648697" />
     <state x="331" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1836.881@0.27.1836.881" timestamp="1592777547153" />
     <state x="332" y="79" width="912" height="709" key="CommitChangelistDialog2/0.27.1840.859@0.27.1840.859" timestamp="1593295841926" />
+    <state x="331" y="81" key="CommitChangelistDialog2/0.27.1840.878@0.27.1840.878" timestamp="1599598655651" />
     <state x="331" y="80" key="CommitChangelistDialog2/0.27.1842.864@0.27.1842.864" timestamp="1599399541354" />
     <state x="332" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1843.869@0.27.1843.869" timestamp="1594046933990" />
     <state x="333" y="80" key="CommitChangelistDialog2/0.27.1845.874@0.27.1845.874" timestamp="1593893370538" />
@@ -1007,8 +1005,8 @@
     <state width="562" height="443" key="SwitcherDM/0.27.1845.874@0.27.1845.874" timestamp="1593891243690" />
     <state width="836" height="573" key="SwitcherDM/0.27.1864.870@0.27.1864.870" timestamp="1593973124219" />
     <state width="840" height="575" key="SwitcherDM/0.27.1870.872@0.27.1870.872" timestamp="1594502962545" />
-    <state x="369" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599430445920">
-      <screen x="0" y="27" width="1829" height="863" />
+    <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599598658324">
+      <screen x="0" y="27" width="1840" height="878" />
     </state>
     <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593378849971" />
     <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1781.871@0.27.1781.871" timestamp="1599344877790" />
@@ -1022,6 +1020,7 @@
     <state x="370" y="115" key="Vcs.Push.Dialog.v2/0.27.1834.870@0.27.1834.870" timestamp="1593585651177" />
     <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1836.881@0.27.1836.881" timestamp="1592777549058" />
     <state x="371" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1840.859@0.27.1840.859" timestamp="1593295843952" />
+    <state x="371" y="116" key="Vcs.Push.Dialog.v2/0.27.1840.878@0.27.1840.878" timestamp="1599598658324" />
     <state x="372" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1842.864@0.27.1842.864" timestamp="1599399543399" />
     <state x="373" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1843.869@0.27.1843.869" timestamp="1594046935795" />
     <state x="373" y="115" key="Vcs.Push.Dialog.v2/0.27.1845.874@0.27.1845.874" timestamp="1593893372894" />
