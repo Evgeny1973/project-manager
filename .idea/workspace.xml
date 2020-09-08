@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/config/packages/nyholm_psr7.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/config/packages/trikoder_oauth2.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/DataFixtures/OAuth/ClientFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Builder/Work/Projects/RoleBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Api/ClientFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Api/Work/Projects/IndexFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Api/Work/Projects/IndexTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/OAuth/ClientFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/OAuth/OAuthFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/OAuth/PasswordTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/data/oauth/private.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/data/oauth/public.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/Controller/Api/Work/PaginationSerializer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.env.test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/packages/test/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/test/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Migrations/Version20200906104355.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Migrations/Version20200906203814.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Security/OAuth/Server/UserResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Security/OAuth/Server/UserResolver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Builder/Work/Members/GroupBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Builder/Work/Members/GroupBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Builder/Work/Members/MemberBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Builder/Work/Members/MemberBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Api/Work/Projects/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Api/Work/Projects/ProjectsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/ProjectFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/ReadModel/Work/Projects/Project/ProjectFetcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/OAuth/ClientFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/OAuth/ClientFixture.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -513,14 +498,9 @@
       <workItem from="1599296072119" duration="25455000" />
       <workItem from="1599384153942" duration="2837000" />
       <workItem from="1599392729612" duration="7927000" />
-      <workItem from="1599418090683" duration="8359000" />
-    </task>
-    <task id="LOCAL-00214" summary="add progress widget">
-      <created>1582124503649</created>
-      <option name="number" value="00214" />
-      <option name="presentableId" value="LOCAL-00214" />
-      <option name="project" value="LOCAL" />
-      <updated>1582124503649</updated>
+      <workItem from="1599418090683" duration="8833000" />
+      <workItem from="1599504108805" duration="1261000" />
+      <workItem from="1599595648044" duration="2740000" />
     </task>
     <task id="LOCAL-00215" summary="add status widget">
       <created>1582124576844</created>
@@ -858,7 +838,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599399541672</updated>
     </task>
-    <option name="localTasksCounter" value="263" />
+    <task id="LOCAL-00263" summary="add tests for api">
+      <created>1599430444113</created>
+      <option name="number" value="00263" />
+      <option name="presentableId" value="LOCAL-00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1599430444114</updated>
+    </task>
+    <option name="localTasksCounter" value="264" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -905,7 +892,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add twig processor extension" />
     <MESSAGE value="add twig compiler pass" />
     <MESSAGE value="update search" />
     <MESSAGE value="remove compiler pass" />
@@ -930,7 +916,8 @@
     <MESSAGE value="api profile show" />
     <MESSAGE value="api profile allow change firstname lastname" />
     <MESSAGE value="updated symfony to 4.4.13&#10;add trikoder/oauth2-bundle" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated symfony to 4.4.13&#10;add trikoder/oauth2-bundle" />
+    <MESSAGE value="add tests for api" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tests for api" />
   </component>
   <component name="WindowStateProjectService">
     <state x="506" y="95" width="800" height="712" key="#Plugins" timestamp="1594585457814">
@@ -956,8 +943,8 @@
       <screen x="0" y="27" width="1786" height="869" />
     </state>
     <state x="694" y="210" width="376" height="502" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1786.869@0.27.1786.869" timestamp="1599256948049" />
-    <state x="331" y="80" width="912" height="713" key="CommitChangelistDialog2" timestamp="1599399541354">
-      <screen x="0" y="27" width="1842" height="864" />
+    <state x="329" y="80" width="912" height="713" key="CommitChangelistDialog2" timestamp="1599430443816">
+      <screen x="0" y="27" width="1829" height="863" />
     </state>
     <state x="320" y="78" width="912" height="701" key="CommitChangelistDialog2/0.27.1774.849@0.27.1774.849" timestamp="1593378848029" />
     <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2/0.27.1781.871@0.27.1781.871" timestamp="1599344875922" />
@@ -967,6 +954,7 @@
     <state x="325" y="80" key="CommitChangelistDialog2/0.27.1802.873@0.27.1802.873" timestamp="1592083786534" />
     <state x="328" y="78" width="912" height="684" key="CommitChangelistDialog2/0.27.1818.849@0.27.1818.849" timestamp="1593035322146" />
     <state x="330" y="79" width="912" height="696" key="CommitChangelistDialog2/0.27.1827.863@0.27.1827.863" timestamp="1593722926239" />
+    <state x="329" y="80" width="912" height="713" key="CommitChangelistDialog2/0.27.1829.863@0.27.1829.863" timestamp="1599430443816" />
     <state x="331" y="79" key="CommitChangelistDialog2/0.27.1834.870@0.27.1834.870" timestamp="1593585648697" />
     <state x="331" y="80" width="912" height="709" key="CommitChangelistDialog2/0.27.1836.881@0.27.1836.881" timestamp="1592777547153" />
     <state x="332" y="79" width="912" height="709" key="CommitChangelistDialog2/0.27.1840.859@0.27.1840.859" timestamp="1593295841926" />
@@ -979,10 +967,9 @@
     <state x="707" y="216" width="424" height="484" key="FileChooserDialogImpl" timestamp="1594491897390">
       <screen x="0" y="27" width="1870" height="872" />
     </state>
-    <state x="676" y="213" width="424" height="484" key="FileChooserDialogImpl/0.27.1787.859@0.27.1787.859" timestamp="1590912332879" />
     <state x="707" y="216" width="424" height="484" key="FileChooserDialogImpl/0.27.1870.872@0.27.1870.872" timestamp="1594491897390" />
-    <state x="445" y="225" width="753" height="561" key="NewPhpClassDialog" timestamp="1599430373483">
-      <screen x="0" y="27" width="1829" height="863" />
+    <state x="448" y="228" width="753" height="561" key="NewPhpClassDialog" timestamp="1599597323097">
+      <screen x="0" y="27" width="1840" height="878" />
     </state>
     <state x="430" y="222" width="873" height="555" key="NewPhpClassDialog/0.27.1774.849@0.27.1774.849" timestamp="1593350519203" />
     <state x="431" y="228" width="777" height="565" key="NewPhpClassDialog/0.27.1775.873@0.27.1775.873" timestamp="1598733184199" />
@@ -993,9 +980,10 @@
     <state x="439" y="223" key="NewPhpClassDialog/0.27.1810.854@0.27.1810.854" timestamp="1590960906334" />
     <state x="442" y="225" width="817" height="561" key="NewPhpClassDialog/0.27.1823.862@0.27.1823.862" timestamp="1593617013169" />
     <state x="443" y="225" width="721" height="561" key="NewPhpClassDialog/0.27.1829.860@0.27.1829.860" timestamp="1593808444049" />
-    <state x="445" y="225" width="753" height="561" key="NewPhpClassDialog/0.27.1829.863@0.27.1829.863" timestamp="1599430373483" />
+    <state x="445" y="225" width="753" height="561" key="NewPhpClassDialog/0.27.1829.863@0.27.1829.863" timestamp="1599430410674" />
     <state x="445" y="229" width="801" height="561" key="NewPhpClassDialog/0.27.1836.881@0.27.1836.881" timestamp="1592776546768" />
     <state x="446" y="224" key="NewPhpClassDialog/0.27.1840.859@0.27.1840.859" timestamp="1593291791678" />
+    <state x="448" y="228" key="NewPhpClassDialog/0.27.1840.878@0.27.1840.878" timestamp="1599597323097" />
     <state x="448" y="225" width="681" height="561" key="NewPhpClassDialog/0.27.1842.864@0.27.1842.864" timestamp="1599399478854" />
     <state x="447" y="227" width="817" height="561" key="NewPhpClassDialog/0.27.1843.869@0.27.1843.869" timestamp="1594044285403" />
     <state x="447" y="228" width="737" height="561" key="NewPhpClassDialog/0.27.1845.874@0.27.1845.874" timestamp="1593897155363" />
@@ -1019,8 +1007,8 @@
     <state width="562" height="443" key="SwitcherDM/0.27.1845.874@0.27.1845.874" timestamp="1593891243690" />
     <state width="836" height="573" key="SwitcherDM/0.27.1864.870@0.27.1864.870" timestamp="1593973124219" />
     <state width="840" height="575" key="SwitcherDM/0.27.1870.872@0.27.1870.872" timestamp="1594502962545" />
-    <state x="372" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599399543399">
-      <screen x="0" y="27" width="1842" height="864" />
+    <state x="369" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1599430445920">
+      <screen x="0" y="27" width="1829" height="863" />
     </state>
     <state x="358" y="113" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1774.849@0.27.1774.849" timestamp="1593378849971" />
     <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1781.871@0.27.1781.871" timestamp="1599344877790" />
@@ -1030,6 +1018,7 @@
     <state x="364" y="115" key="Vcs.Push.Dialog.v2/0.27.1802.873@0.27.1802.873" timestamp="1592083794120" />
     <state x="367" y="113" key="Vcs.Push.Dialog.v2/0.27.1818.849@0.27.1818.849" timestamp="1593035325653" />
     <state x="369" y="114" key="Vcs.Push.Dialog.v2/0.27.1827.863@0.27.1827.863" timestamp="1593722929312" />
+    <state x="369" y="114" key="Vcs.Push.Dialog.v2/0.27.1829.863@0.27.1829.863" timestamp="1599430445920" />
     <state x="370" y="115" key="Vcs.Push.Dialog.v2/0.27.1834.870@0.27.1834.870" timestamp="1593585651177" />
     <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1836.881@0.27.1836.881" timestamp="1592777549058" />
     <state x="371" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1840.859@0.27.1840.859" timestamp="1593295843952" />
