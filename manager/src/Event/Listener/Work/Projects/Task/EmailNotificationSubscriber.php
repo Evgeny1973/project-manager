@@ -48,8 +48,8 @@ final class EmailNotificationSubscriber implements EventSubscriberInterface
     {
         return [
             TaskExecutorAssigned::class => [
-                'onTaskExecutorAssignedExecutor',
-                'onTaskExecutorAssignedAuthor',
+                ['onTaskExecutorAssignedExecutor'],
+                ['onTaskExecutorAssignedAuthor'],
             ]
         ];
     }
