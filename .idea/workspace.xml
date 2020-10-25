@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2d8f2d-8967-40df-9a26-42acbb1322f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Api/Work/MemberFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Api/Work/Tasks/PlanTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Api/Work/Tasks/RemovePlanTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Api/Work/Tasks/ShowTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/tests/Functional/Api/Work/Tasks/TaskFixture.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/manager/.phpunit.result.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Api/Work/Projects/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Api/Work/Projects/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Role/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/Entity/Projects/Role/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Remove/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Model/Work/UseCase/Projects/Task/Plan/Remove/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Builder/Work/Projects/ProjectBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Builder/Work/Projects/ProjectBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Builder/Work/Projects/TaskBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Builder/Work/Projects/TaskBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/tests/Functional/Api/Auth/SignUpTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/tests/Functional/Api/Auth/SignUpTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/Controller/Work/Members/MembersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/Controller/Work/Members/MembersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/actions.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/actions.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/calendar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/calendar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/app/work/projects/tasks/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/templates/widget/work/projects/action-row.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/manager/templates/widget/work/projects/action-row.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="update.to.5.1" />
+        <entry key="$PROJECT_DIR$" value="api.test" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -520,14 +514,7 @@
       <workItem from="1600755992318" duration="7397000" />
       <workItem from="1603528534925" duration="3520000" />
       <workItem from="1603559744836" duration="598000" />
-      <workItem from="1603651018107" duration="5099000" />
-    </task>
-    <task id="LOCAL-00220" summary="add tasks templates">
-      <created>1582142993698</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
-      <option name="project" value="LOCAL" />
-      <updated>1582142993698</updated>
+      <workItem from="1603651018107" duration="6847000" />
     </task>
     <task id="LOCAL-00221" summary="fix role entity">
       <created>1582143398215</created>
@@ -865,7 +852,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600757586738</updated>
     </task>
-    <option name="localTasksCounter" value="269" />
+    <task id="LOCAL-00269" summary="api tasks">
+      <created>1603657735637</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1603657735644</updated>
+    </task>
+    <option name="localTasksCounter" value="270" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -912,7 +906,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modified search in tasks" />
     <MESSAGE value="projects and tasks calendar" />
     <MESSAGE value="my tasks, for me tasks widgets" />
     <MESSAGE value="comments for tasks" />
@@ -937,7 +930,8 @@
     <MESSAGE value="move Processor to service" />
     <MESSAGE value="change Processor to service" />
     <MESSAGE value="Update php to 7.3.22&#10;Update symfony to 5.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update php to 7.3.22&#10;Update symfony to 5.1" />
+    <MESSAGE value="api tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="api tasks" />
   </component>
   <component name="WindowStateProjectService">
     <state x="713" y="182" width="412" height="638" key="#com.intellij.ide.util.MemberChooser" timestamp="1600765868974">
@@ -951,8 +945,8 @@
       <screen x="0" y="27" width="1786" height="869" />
     </state>
     <state x="694" y="210" width="376" height="502" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1786.869@0.27.1786.869" timestamp="1599256948049" />
-    <state x="324" y="80" width="912" height="699" key="CommitChangelistDialog2" timestamp="1600757586289">
-      <screen x="0" y="27" width="1799" height="865" />
+    <state x="332" y="81" width="912" height="699" key="CommitChangelistDialog2" timestamp="1603657735295">
+      <screen x="0" y="27" width="1842" height="874" />
     </state>
     <state x="320" y="80" width="912" height="713" key="CommitChangelistDialog2/0.27.1781.871@0.27.1781.871" timestamp="1599344875922" />
     <state x="321" y="80" width="912" height="711" key="CommitChangelistDialog2/0.27.1786.869@0.27.1786.869" timestamp="1599258928935" />
@@ -962,6 +956,7 @@
     <state x="329" y="80" width="912" height="713" key="CommitChangelistDialog2/0.27.1829.863@0.27.1829.863" timestamp="1599430443816" />
     <state x="331" y="81" width="912" height="709" key="CommitChangelistDialog2/0.27.1840.878@0.27.1840.878" timestamp="1599600234958" />
     <state x="331" y="80" key="CommitChangelistDialog2/0.27.1842.864@0.27.1842.864" timestamp="1599399541354" />
+    <state x="332" y="81" key="CommitChangelistDialog2/0.27.1842.874@0.27.1842.874" timestamp="1603657735295" />
     <state x="448" y="227" width="729" height="561" key="NewPhpClassDialog" timestamp="1603655482056">
       <screen x="0" y="27" width="1842" height="874" />
     </state>
@@ -986,8 +981,8 @@
     <state width="809" height="572" key="SwitcherDM/0.27.1799.867@0.27.1799.867" timestamp="1599173123016" />
     <state width="823" height="570" key="SwitcherDM/0.27.1829.863@0.27.1829.863" timestamp="1599419276367" />
     <state width="830" height="578" key="SwitcherDM/0.27.1842.874@0.27.1842.874" timestamp="1603653118473" />
-    <state x="363" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1600757589534">
-      <screen x="0" y="27" width="1799" height="865" />
+    <state x="372" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1603657744559">
+      <screen x="0" y="27" width="1842" height="874" />
     </state>
     <state x="360" y="115" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1781.871@0.27.1781.871" timestamp="1599344877790" />
     <state x="361" y="115" key="Vcs.Push.Dialog.v2/0.27.1786.869@0.27.1786.869" timestamp="1599258931262" />
@@ -997,6 +992,7 @@
     <state x="369" y="114" key="Vcs.Push.Dialog.v2/0.27.1829.863@0.27.1829.863" timestamp="1599430445920" />
     <state x="371" y="116" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1840.878@0.27.1840.878" timestamp="1599600236554" />
     <state x="372" y="114" width="800" height="556" key="Vcs.Push.Dialog.v2/0.27.1842.864@0.27.1842.864" timestamp="1599399543399" />
+    <state x="372" y="116" key="Vcs.Push.Dialog.v2/0.27.1842.874@0.27.1842.874" timestamp="1603657744559" />
     <state x="135" y="65" width="1420" height="795" key="find.popup" timestamp="1603655784857">
       <screen x="0" y="27" width="1842" height="874" />
     </state>
