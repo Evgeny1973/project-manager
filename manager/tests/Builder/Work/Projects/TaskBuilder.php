@@ -28,7 +28,14 @@ class TaskBuilder
         $this->name = 'Task';
         $this->content = 'Content';
     }
-
+    
+    public function withId(Id $id): self
+    {
+        $clone = clone $this;
+        $clone->id = $id;
+        return $clone;
+    }
+    
     public function build(Project $project, Member $author): Task
     {
         return new Task(

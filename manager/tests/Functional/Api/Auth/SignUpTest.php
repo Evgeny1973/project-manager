@@ -56,7 +56,7 @@ final class SignUpTest extends DbWebTestCase
                 ['propertyPath' => 'first_name', 'title' => 'This value should not be blank.'],
                 ['propertyPath' => 'last_name', 'title' => 'This value should not be blank.'],
                 ['propertyPath' => 'email', 'title' => 'This value is not a valid email address.'],
-                ['propertyPath' => 'password', 'title' => 'This value is too short. It should have 6 characters or more.'],
+                ['propertyPath' => 'password', 'title' => 'Пароль не менее 6 символов.'],
             ],
         ], $data);
     }
@@ -77,7 +77,7 @@ final class SignUpTest extends DbWebTestCase
         
         self::assertArraySubset([
             'error' => [
-                'message' => 'User already exists.',
+                'message' => 'Такой пользователь уже зарегистрирован.',
             ]
         ], $data);
     }
